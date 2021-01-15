@@ -1,0 +1,106 @@
+WEBVTT
+
+00:05.540 --> 00:09.520
+Hello everyone and welcome to part two function exercises.
+
+00:09.530 --> 00:11.540
+Let's get some practice of functions.
+
+00:11.680 --> 00:17.000
+But I want you to do is open up the file part to underscore functions underscore exercises that jazz
+
+00:17.300 --> 00:22.790
+which is located under the javascript level 2 folder the problems will gradually get harder as you go
+
+00:22.790 --> 00:23.570
+along.
+
+00:23.570 --> 00:27.690
+Let's take a quick look at this file and look at the problems.
+
+00:27.770 --> 00:31.430
+OK so this is what the exercise thought Jap's file looks like.
+
+00:31.430 --> 00:35.860
+And a lot of these problem statements are sourced from coding that dot com which is a great Web site
+
+00:35.860 --> 00:36.960
+for practice problems.
+
+00:36.970 --> 00:42.480
+You want to get more than what's here in this file but basically you're going to have a problem.
+
+00:42.550 --> 00:48.010
+The name of the problem and it's going to ask you to write a function to take in particular parameters
+
+00:48.040 --> 00:49.590
+and then give an output.
+
+00:49.600 --> 00:53.500
+And after the problem statement you'll see an example of what it should look like.
+
+00:53.500 --> 00:57.230
+So here we can see the sleep and function when it takes an false and false.
+
+00:57.280 --> 00:58.970
+It should output true.
+
+00:59.130 --> 01:04.120
+And if we keep going down we see something like monkey trouble if monkey trouble function takes and
+
+01:04.120 --> 01:06.960
+true and true it should output true center.
+
+01:07.180 --> 01:12.710
+We go down to string times and it says given a string and some integer do something with it.
+
+01:12.790 --> 01:19.360
+So string times we see it takes in a string a number and then outputs that string multiplied as many
+
+01:19.360 --> 01:21.100
+times as the number shows here.
+
+01:21.960 --> 01:27.420
+Then we see lucky some Which is another problem takes in three numbers a certain number of the penny
+
+01:27.420 --> 01:28.840
+and what's going on.
+
+01:29.040 --> 01:33.680
+And then finally we have problem five which is a speed ticket problem.
+
+01:33.810 --> 01:38.790
+You get a number and a boolean value and you either get 0 or 1 or 2.
+
+01:39.150 --> 01:43.300
+So if we go all the way down we get this bonus problem which is make bricks.
+
+01:43.320 --> 01:45.250
+This is a pretty tricky problem.
+
+01:45.270 --> 01:48.330
+So if you can't figure this one out don't worry that's why it's a bonus.
+
+01:48.330 --> 01:50.570
+Go ahead and read the problem see if you can figure it out.
+
+01:50.580 --> 01:56.310
+But this has to do not so much with javascript but more of just computer science and trying to think
+
+01:56.310 --> 01:57.630
+like a programmer.
+
+01:57.630 --> 01:57.960
+OK.
+
+01:58.020 --> 01:59.920
+So leave that one is a bonus for you.
+
+01:59.970 --> 02:04.000
+Go ahead and tackle the other five and I will see you in the next lecture.
+
+02:04.010 --> 02:06.180
+We're going to be programming through the solutions.
+
+02:06.390 --> 02:07.350
+Thanks everyone.

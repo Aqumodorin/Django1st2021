@@ -1,0 +1,703 @@
+WEBVTT
+
+00:05.020 --> 00:05.650
+Hello everyone.
+
+00:05.650 --> 00:08.860
+Welcome to part five decorators.
+
+00:08.860 --> 00:13.610
+Decorators are an advanced tool in Python and I want you to feel free to skip this lecture.
+
+00:13.630 --> 00:15.640
+Come back to it at another time.
+
+00:15.640 --> 00:20.500
+Since we all actually encountered decorator's until much further on into the advanced Gengel material
+
+00:20.740 --> 00:25.240
+it might make more sense for you to skip this lecture and once you encountered decorator's in the jingoes
+
+00:25.240 --> 00:30.400
+sections of the course come back to this and reviewed decorator's Otherwise you may find yourself understanding
+
+00:30.400 --> 00:31.020
+the syntax.
+
+00:31.030 --> 00:35.930
+But being a little forgetful by the time you actually reach the use case of decorators.
+
+00:36.290 --> 00:40.840
+OK so again we leave this lecturer in this section because material wise it makes the most sense to
+
+00:40.840 --> 00:43.150
+leave it here as far as using it in this course.
+
+00:43.150 --> 00:47.170
+I would recommend that you actually skip it for now and come back to it when you see decorator's mentioned
+
+00:47.200 --> 00:48.790
+again right.
+
+00:48.790 --> 00:49.740
+Is that all being said.
+
+00:49.870 --> 00:50.930
+Let's get started.
+
+00:51.270 --> 00:53.730
+OK so start off with decorator's.
+
+00:53.730 --> 00:58.750
+They can be thought of as functions which modify the functionality of another function and they really
+
+00:58.750 --> 01:01.310
+help make your code shorter and more pythonic.
+
+01:01.310 --> 01:06.540
+And there also used a lot in Python with frameworks especially Django and flask.
+
+01:06.560 --> 01:12.710
+Now you don't actually run into decorator's in Django until much further along in your learning of Django.
+
+01:12.940 --> 01:17.530
+But to properly explain decorator's we're going to be slowly building up from functions.
+
+01:17.530 --> 01:19.970
+So let's break down all the steps first.
+
+01:19.990 --> 01:22.450
+We'll start off with a very simple function or view.
+
+01:22.510 --> 01:27.210
+Remember if we want to create a function we can just say the F the name of your function.
+
+01:27.240 --> 01:31.170
+Any parameters you want to pass and then you can say return.
+
+01:31.450 --> 01:32.950
+For instance the number one.
+
+01:32.970 --> 01:36.090
+Now if I want to call this function later I just say func.
+
+01:36.130 --> 01:40.690
+And if I want to print something I can say prints func.
+
+01:40.900 --> 01:46.030
+OK so if I save this and I run this hopefully by now you have no problems with this.
+
+01:46.030 --> 01:47.040
+Your returns 1.
+
+01:47.050 --> 01:48.350
+It all makes sense.
+
+01:48.430 --> 01:50.200
+Now let's discuss scope.
+
+01:50.200 --> 01:55.890
+So also remember from the scope lecture that I have global variables and local variables.
+
+01:56.050 --> 02:06.010
+So if I have the string s global variable and I save this and thence inside of this the func I say something
+
+02:06.010 --> 02:18.270
+like taken s and then I say print's S and I save this and let's say over here.
+
+02:18.800 --> 02:25.050
+I just call func Well lips Phunk with s.
+
+02:25.150 --> 02:32.350
+Scuse me and then I run this I get back global variable and now if I don't provide s as a parameter
+
+02:32.350 --> 02:39.130
+to the function and instead do this and run this again it still works because here I don't have anything
+
+02:39.130 --> 02:40.860
+in the local namespace called S..
+
+02:40.930 --> 02:45.410
+So I jumped back out and look for the global variable namespace for S and I still find it.
+
+02:45.550 --> 02:47.680
+So the printing variable.
+
+02:47.980 --> 02:57.130
+Now I read the fine s to be equal to 50 inside of this save this run this I get back 50 when I call
+
+02:57.130 --> 03:04.940
+function but if outside of this I call print s save this I get back with the global variable.
+
+03:04.960 --> 03:10.630
+Remember if I actually want to re-assign not just the local variable s but instead the global variable
+
+03:10.640 --> 03:14.750
+s I have to say this global s.
+
+03:14.890 --> 03:18.100
+Then I save that run this again and go back.
+
+03:18.100 --> 03:19.560
+Now I get 50 50.
+
+03:19.570 --> 03:25.000
+So actually calling that global keyword calls in and tells me to affect the global not just the local
+
+03:25.000 --> 03:32.200
+variable S and there's actually a way you can grab a dictionary or a list of all local's variables and
+
+03:32.200 --> 03:39.810
+all global variables and the way you can do that is inside of this function just say print and then
+
+03:39.810 --> 03:49.350
+call locals so locals returns a dictionary puts locals close parentheses.
+
+03:49.690 --> 03:56.290
+We're going to save that and then I'm going to call the function here so I can save this run the code
+
+03:56.720 --> 03:57.640
+and here right now.
+
+03:57.640 --> 04:01.900
+I have an empty dictionary because I don't have any local variables defined here.
+
+04:01.900 --> 04:13.000
+If I do the find something like my local to equal to 10 save this run this and now I see my local is
+
+04:13.000 --> 04:18.190
+10 so that's just a convenient dictionary call to actually grab the local variables.
+
+04:18.190 --> 04:24.550
+Now if I say something like Crantz Global's this will print out all the global variables and there's
+
+04:24.550 --> 04:25.540
+going to be a lot here.
+
+04:25.570 --> 04:31.300
+So if I say Python it's up-I I get this huge function of global variables and that's because it not
+
+04:31.300 --> 04:36.090
+function excuse me a huge dictionary of global variables and that is because there are a bunch of builtin
+
+04:36.100 --> 04:36.650
+things.
+
+04:36.670 --> 04:40.810
+So even though we haven't defined a whole lot yet there are a lot of things so there's notes that pi
+
+04:40.900 --> 04:43.470
+is a global variable for the file s.
+
+04:43.480 --> 04:48.710
+Here we saw a global variable string so I can also just call this like a dictionary.
+
+04:48.790 --> 04:50.330
+So Global's remember it's a dictionary.
+
+04:50.340 --> 04:53.310
+So if I called the key for s.
+
+04:53.430 --> 04:58.020
+Now let's hash tag about how I run this and I get back global variables.
+
+04:58.020 --> 05:02.410
+So printing Global's s finds this key value pair.
+
+05:02.690 --> 05:09.080
+OK so now that we remember what Global's and locals are let's start by continuing on with functions
+
+05:09.890 --> 05:11.400
+in function assignment.
+
+05:11.870 --> 05:18.350
+If I have a function called hello and it takes in some parameter name will have the default value be
+
+05:18.350 --> 05:26.090
+Jose and I'm going to return Hello plus whatever name is provided.
+
+05:26.830 --> 05:32.060
+And let's say I call prints hello.
+
+05:32.530 --> 05:36.340
+I save this run notes up high and it says Hello Jose.
+
+05:36.370 --> 05:39.020
+We can put a space in there so it makes a little more sense.
+
+05:39.400 --> 05:51.180
+Now I can also assign a label to a function meaning I can say my new create and set it equal to hello.
+
+05:51.310 --> 05:54.150
+And note that I'm actually setting equal to the function itself.
+
+05:54.160 --> 05:57.870
+I'm not setting equal to what the function returns.
+
+05:57.880 --> 05:59.420
+I'm not doing these princes here.
+
+05:59.440 --> 06:05.140
+I'm sitting equal to the function itself which means I could say this my Negrete close print sees and
+
+06:05.140 --> 06:06.240
+print this out.
+
+06:06.660 --> 06:15.110
+Let's do that let's print out my new greets save this run this code and I see now I have twice.
+
+06:15.110 --> 06:17.140
+Hello Jose once from hello.
+
+06:17.210 --> 06:24.490
+And then since I defined my new green Ziegel to hello I also get my newgroup and now that we understand
+
+06:24.490 --> 06:27.360
+how we can assign functions to new variables.
+
+06:27.430 --> 06:33.400
+Let's continue on with functions within functions will flee so far everything seems sort of like Review
+
+06:34.540 --> 06:42.110
+non-points create a function called Hello again takes a default parameter name Jose and right off the
+
+06:42.110 --> 06:54.080
+top in this function of going to Prince the halo function has been run.
+
+06:54.170 --> 07:01.670
+So if I ever call halo I can see that the halo function has been run that makes sense so far.
+
+07:01.870 --> 07:06.290
+Now inside the hello I will define another function.
+
+07:07.080 --> 07:10.500
+Now I will call this function greets and what this does.
+
+07:10.500 --> 07:11.410
+It returns.
+
+07:11.430 --> 07:13.940
+No it returns it's not printing.
+
+07:14.040 --> 07:25.110
+It returns something that says this string is inside greets.
+
+07:25.130 --> 07:30.560
+So if I run Python lodestar PI I shouldn't expect anything else to be different because I don't actually
+
+07:30.710 --> 07:31.410
+call greed.
+
+07:31.430 --> 07:37.210
+I just define it here and I'm going to do one more that says the.
+
+07:37.220 --> 07:47.780
+Welcome and this returns this string is inside welcome.
+
+07:47.910 --> 07:50.560
+We can save that again if I run this code.
+
+07:50.580 --> 07:54.870
+I shouldn't expect anything different to happen because I'm only defining these functions inside of
+
+07:54.870 --> 07:55.760
+this function.
+
+07:55.770 --> 08:02.190
+I'm not actually calling them now and pay attention here to the indentation with the same indentation.
+
+08:02.190 --> 08:07.360
+Let's zoom out a little bit so we can see all this.
+
+08:07.370 --> 08:10.410
+So if the same indentation still inside the F Hello.
+
+08:10.640 --> 08:12.500
+What I'm going to do is say Prince
+
+08:15.220 --> 08:20.660
+greet and then I'm also going to Prince welcome
+
+08:25.130 --> 08:32.390
+I'm going to say Prince and of Hello.
+
+08:32.820 --> 08:35.210
+So now if I save this and actually call the function.
+
+08:35.220 --> 08:36.170
+Hello.
+
+08:36.450 --> 08:36.840
+Nope.
+
+08:36.840 --> 08:40.550
+Back I get the hello function has been run like it.
+
+08:40.560 --> 08:41.840
+The string is inside Greece.
+
+08:41.850 --> 08:48.010
+So actually the fine greet and call greet here and then I find a welcome and also call welcome.
+
+08:48.090 --> 08:56.690
+And then I get the hello and remember because of scope I cannot call greet or welcome outside of this
+
+08:57.230 --> 09:01.450
+so I cannot say flips I can call hello.
+
+09:01.740 --> 09:06.720
+But if I try to call welcome outside of the scope of this function you can quickly check what's inside
+
+09:06.720 --> 09:09.590
+this function by just collapsing that entire function here.
+
+09:10.330 --> 09:12.190
+So I run this welcome.
+
+09:12.220 --> 09:18.460
+I will get an air says name welcome is not the fine because welcome's only inside the scope of the hello
+
+09:18.460 --> 09:20.800
+function so keep that in mind.
+
+09:21.250 --> 09:26.590
+All right so that's the basics of functions within functions and I promise this will build up to decorator's.
+
+09:26.590 --> 09:31.440
+Now is talk about returning functions something we haven't actually seen yet.
+
+09:31.660 --> 09:43.790
+So let's say this inside of my halo function I will say if my name is equal to Jose put in lowercase
+
+09:43.800 --> 09:47.740
+Jose return.
+
+09:48.100 --> 09:48.870
+Greets.
+
+09:49.120 --> 09:49.800
+So note here.
+
+09:49.870 --> 09:55.090
+I'm returning a function we haven't actually seen that before and then I will see else return another
+
+09:55.090 --> 09:57.730
+function will return the welcome function.
+
+09:57.730 --> 10:02.890
+I'm not saying return the call of compunction I'm saying return the actual function itself meaning it's
+
+10:02.890 --> 10:08.240
+returning this entire function not just the string itself.
+
+10:08.330 --> 10:21.400
+And now I will say this x is equal to hello close parentheses and then I'm going to say save this if
+
+10:21.400 --> 10:22.840
+I run Python it's upaya.
+
+10:22.860 --> 10:28.410
+All I see is Hello function has been run but I don't know yet what has actually been returned so I can
+
+10:28.410 --> 10:29.580
+do this.
+
+10:29.940 --> 10:39.430
+X close parentheses so I run that it says hello function has been run in because this was just a return
+
+10:39.430 --> 10:40.110
+String.
+
+10:40.120 --> 10:42.020
+I need to actually print this out.
+
+10:42.200 --> 10:46.810
+I can say prints X run this.
+
+10:46.880 --> 10:49.140
+Now it says the string is inside Greek.
+
+10:49.400 --> 10:52.370
+So again let's break down what's happening here.
+
+10:52.430 --> 10:58.670
+I'm saying if the default name is equal to Jose which is the case if name is equal to Ozy return the
+
+10:58.670 --> 11:04.220
+grete function and the function is this entire thing and a function just says in itself.
+
+11:04.220 --> 11:05.910
+Return this string.
+
+11:06.090 --> 11:10.120
+So I set X equal to the result of hello and by default the name is Jose.
+
+11:10.130 --> 11:13.220
+Meaning I'm returning X to be equal to greet.
+
+11:13.270 --> 11:19.850
+This is the exact same thing as saying x is equal to greet except if it was happening inside of this
+
+11:19.850 --> 11:20.810
+function.
+
+11:21.760 --> 11:28.270
+So remember X hello and then I can call X since it sounds green and print out its result which is this
+
+11:28.300 --> 11:29.790
+string is in sight greet.
+
+11:29.890 --> 11:31.730
+Ok really take your time with this one.
+
+11:31.750 --> 11:35.590
+This kind of one of those jumps that might be a little confusing at first but it's actually not so bad.
+
+11:35.590 --> 11:40.960
+Again we're just returning a function assigning it to a variable and then calling that variables function
+
+11:41.260 --> 11:45.750
+and printing it out because it returned the string.
+
+11:45.750 --> 11:50.910
+Now we have one last concept to go over before we actually talk about decorators which is a function
+
+11:50.940 --> 11:52.040
+as an argument.
+
+11:52.190 --> 12:01.540
+So I'm going to delete all this code and say hello and it will return.
+
+12:01.600 --> 12:03.660
+Jose.
+
+12:03.800 --> 12:09.960
+And then it won't create another function will say other and it's actually going to take in a parameter
+
+12:10.060 --> 12:13.420
+func and it's going to Prince
+
+12:15.910 --> 12:16.400
+hello
+
+12:19.420 --> 12:28.510
+and then it's also going to Prince phunk will save this and I'm going to pass in a function as an argument
+
+12:28.510 --> 12:34.300
+so will call my other function and I will pasand the hello function and keep in mind I'm not passing
+
+12:34.630 --> 12:36.520
+what the hello function returns.
+
+12:36.620 --> 12:41.470
+I'm passing the function itself so I don't have open and close princes at the end of Hello.
+
+12:41.680 --> 12:45.140
+So if I run notes the reply I get back here.
+
+12:45.340 --> 12:46.370
+Function Hello.
+
+12:46.450 --> 12:47.620
+At this.
+
+12:47.620 --> 12:54.890
+Which means if I actually run this inside of the other function would close Princie is here.
+
+12:55.000 --> 12:56.960
+Now I should see.
+
+12:57.130 --> 12:57.630
+Hello.
+
+12:57.640 --> 12:58.700
+Hi Jose.
+
+12:59.050 --> 13:01.240
+So again make sure you really understand what's going on here.
+
+13:01.240 --> 13:08.120
+I'm passing in a function as an argument and the inside of the other function I can call that function.
+
+13:08.140 --> 13:13.360
+So again here we can see if we can pass and function as arguments just like we could pass strings numbers
+
+13:13.720 --> 13:14.730
+dictionaries etc..
+
+13:14.740 --> 13:19.120
+We can pass and functions themselves inside of another function and then play around with them.
+
+13:19.500 --> 13:24.820
+And now it's time to actually show the basic steps to create a decorator which has to do with all the
+
+13:24.820 --> 13:26.880
+concepts we just covered.
+
+13:27.040 --> 13:31.170
+So in the previous example we essentially manually created a decorator.
+
+13:31.170 --> 13:34.760
+So let's show and modify this to make it really clear.
+
+13:34.920 --> 13:45.130
+I'll create a function called new underscore decorator and this takes in some function and then inside
+
+13:45.130 --> 13:45.670
+is function.
+
+13:45.680 --> 13:49.570
+I find another one that says wrap underscore fun.
+
+13:49.730 --> 13:59.840
+It doesn't take any parameters and it's going to prance code here before executing
+
+14:04.000 --> 14:06.540
+and then here I will execute fun.
+
+14:06.540 --> 14:09.860
+And remember I can call phunk because it's in that namespace.
+
+14:09.970 --> 14:17.030
+And then after that going to Prince Bonk has been called
+
+14:20.850 --> 14:25.130
+in and outside of all this I'm going to return wrap fun
+
+14:28.690 --> 14:39.280
+and then I'm going to create a new function called phunk needs decorator and I'm going to have it just
+
+14:39.280 --> 14:39.990
+prints.
+
+14:40.000 --> 14:51.960
+No it's not returning It's just printing that this function can spell is in need of a decorator.
+
+14:54.400 --> 14:59.500
+So let's start off a simple example which happens when I call func needs a decorator.
+
+14:59.500 --> 15:02.220
+So if I just call that run Python it's up high.
+
+15:02.230 --> 15:06.050
+It says this function is in need of a decorator that makes sense so far.
+
+15:06.340 --> 15:10.300
+But what happens if I actually reassign it to say func needs.
+
+15:10.300 --> 15:19.240
+Decorator is equal to the new decorator with func needs decorator passed inside of it.
+
+15:21.270 --> 15:29.820
+So if I run this and then call func needs decorator save that run Python code pie.
+
+15:29.940 --> 15:35.100
+It says code here will it's actually expand this a little more says code here before executing phunk
+
+15:35.490 --> 15:37.210
+this function is in need of a decorator.
+
+15:37.320 --> 15:38.760
+Thunk hasn't called.
+
+15:39.120 --> 15:40.290
+So what happened here.
+
+15:40.290 --> 15:46.320
+The decorator simply wrapped the function and modified its behavior and all of this code can be rewritten
+
+15:46.590 --> 15:48.920
+with the at symbol.
+
+15:48.940 --> 15:54.060
+So again what's happening here is mainly all in line 13 member.
+
+15:54.070 --> 15:56.940
+I have this original function that needed the decorator.
+
+15:57.070 --> 16:04.030
+It just does a simple print command and I'm now passing it as an argument inside of new decorator and
+
+16:04.030 --> 16:10.510
+inside of that I'm calling it inside of this wrap function and returning that wrap function in all of
+
+16:10.510 --> 16:12.800
+this can be done with the at symbol.
+
+16:13.060 --> 16:14.990
+So let me show you what that actually looks like.
+
+16:15.800 --> 16:22.610
+I could say here instead of these lines so I let me just comment this out so you can compare.
+
+16:23.040 --> 16:26.210
+So I have the func needs is that grid equal to new decorator.
+
+16:26.220 --> 16:33.240
+What the funk needs a decorator instead of that sort of re-assignment I can use the as keyword and type
+
+16:33.240 --> 16:34.920
+in the name of the decorator want.
+
+16:34.920 --> 16:39.760
+Which is at new decorator and then call the function.
+
+16:40.160 --> 16:42.040
+The func needs decorator.
+
+16:42.530 --> 16:44.030
+Well I can actually call it.
+
+16:44.070 --> 16:50.740
+I would basically type this entire thing so we can just grab this special keyword that at keyword.
+
+16:50.980 --> 16:54.580
+And this is the same thing as doing this.
+
+16:54.750 --> 16:57.540
+So Neph I call Blunk needs decorator.
+
+16:57.630 --> 16:59.880
+Save this I need to run this.
+
+16:59.880 --> 17:03.180
+But remember what happened I said code here before executing function.
+
+17:03.180 --> 17:07.040
+This function is need a native decorator func has been called.
+
+17:07.210 --> 17:11.130
+I run this and I get back the exact same thing.
+
+17:11.230 --> 17:16.690
+So the key point of all of we talked about is this that if you ever had a situation where you would
+
+17:16.690 --> 17:22.670
+need to pass a function that needed a decorator into a new decorator and then reassign it.
+
+17:23.050 --> 17:26.400
+That's all going to be done with this simple at call.
+
+17:26.470 --> 17:32.980
+So the new decorator with this at symbol call is the same as doing this and that's all we wanted to
+
+17:32.980 --> 17:34.120
+get across.
+
+17:34.120 --> 17:38.290
+Now you might be wondering when the heck am I ever going to need to do something like this.
+
+17:38.290 --> 17:43.370
+Well it's not really clear now and it won't be clear until we actually show you an example with Django
+
+17:43.370 --> 17:48.220
+go much further along in the course but hopefully you're actually watch that already and came back to
+
+17:48.220 --> 17:52.900
+this because you were confused on what the heck we're doing with the decorator and I hope now this made
+
+17:52.900 --> 17:54.390
+it all clear.
+
+17:54.440 --> 17:57.560
+OK thanks everyone and I'll see you in the next lecture.

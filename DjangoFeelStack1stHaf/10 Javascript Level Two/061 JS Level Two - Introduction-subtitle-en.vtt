@@ -1,0 +1,43 @@
+WEBVTT
+
+00:05.080 --> 00:12.070
+Hello everyone and welcome to javascript level to so far we've only really covered the basics of javascript
+
+00:12.130 --> 00:17.380
+and now it's time to expand our understanding by learning a little more about advanced material.
+
+00:17.570 --> 00:23.570
+And in this section we're going to be covering three main topics functions arrays and objects.
+
+00:23.570 --> 00:29.570
+Functions are going to allow us to reuse or code arrays or a data structure that will allow us to store
+
+00:29.570 --> 00:34.700
+data sequentially and then we'll learn about objects which will allow us to store data with key value
+
+00:34.700 --> 00:35.510
+pairs.
+
+00:35.570 --> 00:37.380
+Three really important topics.
+
+00:37.380 --> 00:42.080
+And we'll also have exercises for each of these topics for plenty of practice by just learning these
+
+00:42.080 --> 00:46.670
+three additional topics we're really going to be able to expand our capabilities of javascript on the
+
+00:46.670 --> 00:47.720
+front end.
+
+00:48.020 --> 00:48.510
+OK.
+
+00:48.530 --> 00:49.360
+I hope you're excited.
+
+00:49.370 --> 00:50.390
+So let's get started.
+
+00:50.390 --> 00:51.590
+I'll see at the next lecture.

@@ -1,0 +1,490 @@
+WEBVTT
+
+00:04.930 --> 00:08.260
+Hello everyone and welcome back to Part five objects.
+
+00:08.900 --> 00:14.030
+And this lecture we're going to be talking about javascript objects and javascript objects are essentially
+
+00:14.030 --> 00:19.400
+hash tables they store information in a key value pair in other programming language.
+
+00:19.400 --> 00:22.020
+This is sometimes known as a dictionary.
+
+00:22.140 --> 00:29.900
+And unlike an array a javascript object will not retain any sort of order the name object can sometimes
+
+00:29.900 --> 00:33.960
+be confusing for coming in from another programming language because it sounds so generic.
+
+00:33.980 --> 00:40.330
+But keep in mind when someone says javascript objects are talking about a very specific thing now that
+
+00:40.330 --> 00:45.350
+typical javascript object is in this form it's inside curly brackets.
+
+00:45.350 --> 00:50.690
+And then you have the key colon and then the actual value that's associated with that key and you can
+
+00:50.720 --> 00:53.470
+access values through the corresponding key.
+
+00:53.900 --> 00:58.310
+All right let's hop to the consul and see some actual examples of this so we can learn more about javascript
+
+00:58.340 --> 00:59.430
+objects.
+
+00:59.450 --> 01:01.460
+I'm going to hop to my browser now.
+
+01:01.460 --> 01:05.720
+OK here I am at my browser of the console open and has a quick note.
+
+01:05.990 --> 01:11.290
+The Mozilla Developer Network has a great page on working of objects has a great overview.
+
+01:11.330 --> 01:15.450
+Talks about object properties and the various methods you can work with an object.
+
+01:15.570 --> 01:21.050
+And there's also a page in W3 schools dot com on javascript objects and what's really common we are
+
+01:21.050 --> 01:27.350
+working with objects with the very first time is a car object where you have different aspects of a
+
+01:27.350 --> 01:31.220
+car inside of an object so we can see it's actually here on both pages.
+
+01:31.220 --> 01:37.130
+So let's continue that trend by creating our first object to be some information about a car and we'll
+
+01:37.130 --> 01:38.800
+call it car info.
+
+01:39.050 --> 01:43.310
+And I've actually written this previously which is why you see it pop up here but I'm going to make
+
+01:43.310 --> 01:45.030
+a variable called car info.
+
+01:45.050 --> 01:50.920
+Start with a curly bracket and then the first key I'll have is the make the car and the make of the
+
+01:50.920 --> 01:58.920
+car is going to be Toyota then the next car I have is going to be year and it's 1990.
+
+01:58.920 --> 02:05.310
+So we can already see that a javascript object can take in and mix data types and then finally I'll
+
+02:05.310 --> 02:08.790
+have the model of the car and that will be the string Camry
+
+02:11.730 --> 02:13.050
+and then we've close this all off.
+
+02:13.050 --> 02:15.940
+Another curly bracket enter.
+
+02:15.990 --> 02:17.050
+And there we have it.
+
+02:17.460 --> 02:24.700
+So if I call car in full now I see I have a make Toyota year 1990 and the model is Camry.
+
+02:25.010 --> 02:28.380
+If I actually want to get a value back so the values are.
+
+02:28.400 --> 02:32.480
+Toyota 1994 Camry I have to call the corresponding key.
+
+02:32.930 --> 02:38.210
+So instead of indexing like we did of an array I will actually pass on the key.
+
+02:38.210 --> 02:43.170
+So if I want to make the car it looks like this.
+
+02:43.280 --> 02:45.080
+And then I get back Toyota.
+
+02:45.140 --> 02:51.000
+Something to keep in mind especially if you're used to Python is that by convention for javascript objects.
+
+02:51.020 --> 02:54.970
+The keys don't have quotes around them when you're building out the object itself.
+
+02:54.980 --> 03:00.560
+So you can see here make year and model won't have any quotes around them so they're not strings.
+
+03:00.560 --> 03:05.840
+But when you're calling the actual key value pair you do have to pass in strings.
+
+03:05.990 --> 03:13.340
+Otherwise if you were to just call car info and then call make in this manner with it not being a string
+
+03:13.600 --> 03:18.440
+javascript's is going to get confused because it thinks you're actually referencing some variable called
+
+03:18.440 --> 03:19.430
+make earlier.
+
+03:19.640 --> 03:22.510
+So keep that in mind when you're creating the actual object.
+
+03:22.520 --> 03:27.560
+By convention you're not going to have a string here but you also need when you're actually calling
+
+03:27.560 --> 03:30.360
+the key value pair a string here.
+
+03:30.380 --> 03:30.950
+All right.
+
+03:30.950 --> 03:35.710
+So that's just the point of confusion sometimes for beginners or people coming in from Python programming.
+
+03:35.720 --> 03:36.860
+So keep that in mind.
+
+03:36.970 --> 03:40.430
+We're going to clear this to show an other example.
+
+03:41.230 --> 03:49.570
+Javascript objects are really flexible that data types they can take in so we can make mine you will
+
+03:49.630 --> 03:58.980
+say my new show for my new jobs project and we'll say a has a string.
+
+03:59.080 --> 04:00.580
+So here's a key value pair.
+
+04:00.670 --> 04:05.590
+A hello will say the key B has an array.
+
+04:05.680 --> 04:07.070
+One two three.
+
+04:07.150 --> 04:14.380
+And finally we can say Keesey has a javascript object inside of it so we're nesting it and we can say
+
+04:14.380 --> 04:16.000
+something like inside.
+
+04:16.390 --> 04:23.510
+And then a b and let's make sure we actually balance out these brackets.
+
+04:24.840 --> 04:26.740
+And here we have my new O.
+
+04:26.740 --> 04:28.200
+So let's check it out.
+
+04:28.690 --> 04:30.130
+And it's the javascript object.
+
+04:30.150 --> 04:34.280
+And notice when we actually print this out it says oh for the Keesey we have.
+
+04:34.290 --> 04:35.210
+So their object.
+
+04:35.220 --> 04:38.140
+And then I can expand this and keep checking stuff out here.
+
+04:39.260 --> 04:39.570
+OK.
+
+04:39.590 --> 04:41.810
+Let's practice actually grabbing some stuff here.
+
+04:41.810 --> 04:47.210
+So the first thing I want to try to grab is hello in puzzle video see finger up hello on your own.
+
+04:47.600 --> 04:49.010
+OK I'm going to do it now.
+
+04:49.400 --> 04:50.240
+Well that's pretty easy.
+
+04:50.240 --> 04:54.590
+Just passin the string a here and it Riffe triva.
+
+04:54.590 --> 04:55.520
+Hello.
+
+04:55.520 --> 04:59.740
+Now see if you're able to get the number two out of this mine.
+
+04:59.800 --> 05:02.730
+Oh OK let's try it out.
+
+05:02.900 --> 05:04.140
+I get mine you know.
+
+05:04.250 --> 05:10.280
+First thing I want to do is actually grab B and then I see I have the array out so I can actually if
+
+05:10.280 --> 05:16.580
+I press up a my key stack the calls these indexing calls are these key calls in if I want the number
+
+05:16.580 --> 05:16.980
+to.
+
+05:17.000 --> 05:19.010
+Well that's index one number.
+
+05:19.020 --> 05:23.150
+0 is the starting index and there I have it.
+
+05:23.150 --> 05:24.630
+There's the number two.
+
+05:24.770 --> 05:29.240
+Now try to get the letter B from the very last object.
+
+05:30.230 --> 05:31.600
+So I call mine.
+
+05:31.640 --> 05:36.140
+Oh I have to grab the Keesey to begin with.
+
+05:36.140 --> 05:45.980
+Then I have to grab the key inside and then finally I have to grab the second item index one which is
+
+05:45.980 --> 05:46.910
+the letter B.
+
+05:47.000 --> 05:47.560
+I hit enter.
+
+05:47.560 --> 05:48.800
+Let's see if I got this right.
+
+05:48.950 --> 05:50.310
+There it is the letter B.
+
+05:50.330 --> 05:55.700
+So take your time make sure you can understand each of these steps for grabbing something that's nested
+
+05:55.820 --> 05:57.640
+inside of a javascript object.
+
+05:57.650 --> 06:01.730
+Now as a quick note it's definitely not that common to have something this nested.
+
+06:01.730 --> 06:07.290
+This is a pretty extreme example but just keep that in mind the capability that you can have objects
+
+06:07.290 --> 06:08.870
+with in objects.
+
+06:08.870 --> 06:16.190
+All right let's move along and talk about actually changing values that correspond to key going to clear
+
+06:16.190 --> 06:17.300
+my cons..
+
+06:17.390 --> 06:20.380
+And let's go back to car info that we had earlier.
+
+06:20.390 --> 06:22.320
+Remember let's just make here and model.
+
+06:22.430 --> 06:30.230
+If I wanted to change the car a year all I have to do is grab car info and then in the key I want to
+
+06:30.230 --> 06:34.220
+change in this case it's here and set it equal to some new value.
+
+06:34.220 --> 06:41.000
+So for instance we can make it 2006 and that want I call car info I can see that I successfully changed
+
+06:41.000 --> 06:44.500
+the year of my car OK.
+
+06:44.510 --> 06:47.750
+We can also use a reference to the object itself.
+
+06:47.930 --> 06:57.860
+So I can do something like this car info year and then say plus equals 1 and that will also work.
+
+06:57.880 --> 07:02.900
+Turn back 2007 and if I call car info I see it's 2007 now.
+
+07:03.050 --> 07:06.710
+So that works when your value is an actual number.
+
+07:06.710 --> 07:13.630
+You can edit it that way if we want to show an entire object sometimes different browser.
+
+07:13.700 --> 07:20.760
+So shoot I mean I'm going to clear this sometimes for some browsers if you just pass in the object itself
+
+07:20.820 --> 07:23.520
+it won't actually show you the entire object.
+
+07:23.520 --> 07:30.330
+But if you really want to make sure that you show the entire object you can call console dot Diyar and
+
+07:30.330 --> 07:32.080
+then passen your object here.
+
+07:32.370 --> 07:39.550
+So you pass incar info and we see we have the object itself and then you can expand this to see the
+
+07:39.870 --> 07:42.450
+different keys and the value pairs.
+
+07:42.480 --> 07:48.570
+Now for this very small object we basically got the same thing in our console so keep in mind that for
+
+07:48.570 --> 07:53.280
+some reason you're working at a browser and you have a very large object that you're not able to see
+
+07:53.280 --> 07:59.670
+the entire thing you can always call console dot Diyar and then passing your javascript object to make
+
+07:59.670 --> 08:02.780
+sure you see the entire thing and expand it.
+
+08:02.830 --> 08:03.280
+All right.
+
+08:03.280 --> 08:08.470
+Continuing on let's talk about iterating through an object so to iterate through an object you can actually
+
+08:08.470 --> 08:12.830
+use a for in and let me show you what that looks like.
+
+08:12.880 --> 08:18.060
+You say four and then you make up some temporary variable.
+
+08:18.130 --> 08:22.140
+Noise say four key in and then you pass in your object.
+
+08:22.150 --> 08:23.840
+In my case it's car info.
+
+08:25.170 --> 08:33.050
+Open curly brackets and a quick thing to remind you is there is no specific order to a javascript object.
+
+08:33.060 --> 08:38.430
+Even though I can iterate through it with a for loop I have no guarantees about what order and when
+
+08:38.430 --> 08:39.390
+to grab stuff in.
+
+08:39.430 --> 08:41.520
+Sometimes a year may come out first.
+
+08:41.520 --> 08:45.080
+Sometimes model may come up first sometimes make may come up first.
+
+08:45.210 --> 08:46.060
+So keep that in mind.
+
+08:46.050 --> 08:52.600
+There's not going to be any specific order continuing on let's show you how to grab keys so this is
+
+08:52.600 --> 08:55.040
+going to grab the keys.
+
+08:55.050 --> 09:04.800
+Want to do a console that log of the key itself and then close that bracket.
+
+09:04.990 --> 09:07.240
+So I see here for key incar info.
+
+09:07.250 --> 09:11.680
+Cancel that log key and just to quickly know I could have called key here.
+
+09:11.680 --> 09:15.700
+Anything this is just a temporary variable so I could call this jelly as well.
+
+09:15.700 --> 09:18.820
+Doesn't have to be the actual word key.
+
+09:18.880 --> 09:22.350
+So if I say for jelling car info I still get all the keys out.
+
+09:22.420 --> 09:27.730
+Now usually when you're programming you want to use some sort of variable name that makes sense so obviously
+
+09:27.730 --> 09:29.210
+Jelly's not a good idea.
+
+09:29.240 --> 09:32.520
+Maybe something simple like k is a good fit here.
+
+09:32.590 --> 09:40.860
+So if I'm actually able to use this for Eneloop to grab the keys it means I can grab items as well or
+
+09:40.860 --> 09:42.290
+those actual values.
+
+09:42.390 --> 09:44.020
+Let's show you how to do that.
+
+09:44.070 --> 09:55.390
+I'll just say console log and then inside of this I can call car info and then access at that key.
+
+09:55.420 --> 09:56.570
+Let's show that.
+
+09:56.770 --> 09:58.680
+Here we see make Toyota.
+
+09:58.720 --> 10:01.450
+Year 2007 model Camry.
+
+10:01.450 --> 10:04.540
+Now that's just by doing car info at that key.
+
+10:04.600 --> 10:09.850
+All right that's all we're going to discuss right now for this first part of javascript objects in the
+
+10:09.850 --> 10:14.690
+next part of five objects we're going to discuss object methods.
+
+10:14.770 --> 10:17.380
+Let's quickly review what we've covered so far.
+
+10:17.590 --> 10:19.920
+Javascript objects are key value pairs.
+
+10:19.960 --> 10:23.630
+You have a key and then you have a value that corresponds to that key.
+
+10:23.760 --> 10:27.870
+If you want to actually grab something you can use bracket notation to do it.
+
+10:27.880 --> 10:30.550
+So again I clear my Consul here.
+
+10:30.550 --> 10:37.690
+I can say the name of my object and in square brackets passen a string that corresponds with whatever
+
+10:37.690 --> 10:39.280
+Qiam interested in.
+
+10:39.280 --> 10:44.740
+So in this case Fomitch that and grabbing the make I get back that key value pair and then if we want
+
+10:44.740 --> 10:52.510
+to actually iterate through a javascript object Well I can just use this for N and I grab the keys here
+
+10:52.780 --> 10:57.400
+with my temporary variable name and if I want to grab the actual value the correspondence that key will
+
+10:57.430 --> 11:03.370
+then I just make the call with the variable name inside of this for loop and that's really all you need
+
+11:03.370 --> 11:05.640
+to know about objects at this time.
+
+11:05.650 --> 11:11.490
+Coming up next we're going to discuss a really cool feature of javascript objects which are object methods.
+
+11:11.500 --> 11:13.390
+Thanks everyone and I'll see at the next lecture.

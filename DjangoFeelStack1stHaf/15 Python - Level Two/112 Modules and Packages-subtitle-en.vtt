@@ -1,0 +1,196 @@
+WEBVTT
+
+00:05.110 --> 00:09.260
+Hello everyone and welcome to part six modules and packages.
+
+00:09.390 --> 00:10.290
+You've seen Python.
+
+00:10.290 --> 00:15.100
+Import statements before that you've probably wondered how do they work and how we create our own.
+
+00:15.120 --> 00:16.270
+It's actually quite simple.
+
+00:16.290 --> 00:18.600
+And we'll talk about it more when we actually reach Shingo.
+
+00:18.720 --> 00:23.160
+Well let's find out the very basics of modules and get started with the editor.
+
+00:23.610 --> 00:28.020
+OK so here I am at the editor and in this lecture we're basically just going to be showing you how you
+
+00:28.020 --> 00:31.320
+can create your own module and then import it into another file.
+
+00:31.320 --> 00:39.520
+So here under my project folder going to Right-Click add a new file and I will call this my module that
+
+00:39.540 --> 00:49.940
+pie in here is going to be a very simple function will say func in module close print CS and this just
+
+00:49.940 --> 01:04.520
+prints out I am inside the my module up-I wraps up my file save that and then I will create a new file.
+
+01:05.870 --> 01:12.000
+And I will call this my program that pi and this is going to be representative of my program so we can
+
+01:12.000 --> 01:18.310
+even do something like split left and right here so I can see them at same time.
+
+01:18.310 --> 01:23.470
+So again there's my module and here's my program and we can see they're both inside the same folder
+
+01:24.840 --> 01:30.490
+so how can I actually grab code from my module that pi and use it in my program.
+
+01:30.690 --> 01:34.340
+Well there's various ways and I'll show you the simplest.
+
+01:34.340 --> 01:39.740
+First we can say import my module and note that there's other things here.
+
+01:39.740 --> 01:45.590
+So there's the built in modules and the modules you use Condon's taller Pippin's Stallworth and those
+
+01:45.590 --> 01:50.590
+are saved in a specific location in Python that you can always call them from the matter where you are.
+
+01:50.720 --> 01:57.930
+In this case it's actually in the same folder as this file I can call my module and then if I want to
+
+01:57.930 --> 02:06.890
+call a function from my module I can say my module dots function module and then I can say close parentheses
+
+02:06.930 --> 02:08.490
+to actually call it.
+
+02:08.940 --> 02:19.980
+So now if I say Python and call my program the PI I get back I'm inside my module that py file in when
+
+02:19.980 --> 02:24.930
+you ran that file you probably noticed that you got this py cache folder and inside ASPI cache folder
+
+02:24.930 --> 02:30.210
+is some my module that C Python code up high C and if you try to open then read it.
+
+02:30.230 --> 02:33.300
+It's just a bunch of junk in here that you not be able to actually see.
+
+02:33.420 --> 02:38.250
+And basically what happens is when you run a program in Python the interpreter compiles it to byte code
+
+02:38.250 --> 02:38.640
+first.
+
+02:38.640 --> 02:43.520
+And thats kind of an oversimplification but essentially its stores that in the pie cache folder.
+
+02:43.590 --> 02:48.090
+And if you look in there you find a bunch of files sharing the names of the dot PI files in your projects
+
+02:48.090 --> 02:53.580
+folder only their extensions are going to be PI that PI C and essentially what this is its bytecode
+
+02:53.580 --> 02:57.570
+compiled optimized bytecode compiled versions of your programs file.
+
+02:57.660 --> 03:00.510
+And if you're just a programmer you can essentially just ignore it.
+
+03:00.510 --> 03:03.190
+All it does is it makes your program start a little faster.
+
+03:03.240 --> 03:06.950
+The next time you run it and when your script changed you're going to be recompiled.
+
+03:07.070 --> 03:11.460
+And if you delete the files with the whole folder and run your program again they're going to reappear
+
+03:12.150 --> 03:12.620
+again.
+
+03:12.720 --> 03:15.150
+Really you can just pretty much ignore this pie cache file.
+
+03:15.480 --> 03:18.970
+But I just want you to be aware and don't be surprised if you see it being created.
+
+03:20.150 --> 03:22.390
+OK moving along.
+
+03:22.390 --> 03:26.650
+Let's show you the other various ways you can import from a module.
+
+03:26.650 --> 03:31.110
+So what way again import the actual file and then call it off my module.
+
+03:31.120 --> 03:36.670
+In other way is to say import module as something so you don't want to write my module every time on
+
+03:36.820 --> 03:42.760
+a function for my module so maybe say import as an M and then you can shorten my module here to just
+
+03:43.110 --> 03:49.600
+add them and I save that I run Python my program that pi and I still get I am inside the module that
+
+03:49.600 --> 03:50.260
+py file.
+
+03:50.260 --> 03:55.030
+So that's another way you can call it if you actually just plan on using a few specific functions from
+
+03:55.030 --> 03:56.320
+my module that pi.
+
+03:56.380 --> 04:00.190
+You probably don't want to import the entire module you want to import a few functions.
+
+04:00.450 --> 04:08.970
+And in that case you can say from my module import and then the name of the function or classes you
+
+04:08.970 --> 04:09.570
+want to import.
+
+04:09.570 --> 04:15.000
+So we say import funkin module and then I don't need to call anything CCRI facing it or prefixing it
+
+04:15.720 --> 04:21.680
+we'll just say funkin module run this and I can see I am inside the my module that py file.
+
+04:21.690 --> 04:26.340
+Now let's see one last example and this is the example that I'm going to show you but it's really not
+
+04:26.340 --> 04:28.770
+recommended that you do this.
+
+04:28.770 --> 04:35.910
+You can say from my module import Asterix and this will import everything from my module and you can
+
+04:35.910 --> 04:38.990
+just call funkin module just like we did last time.
+
+04:40.030 --> 04:44.180
+So this is frowned upon you shouldn't really do this sort of Asterix behavior.
+
+04:44.320 --> 04:49.330
+But basically the reason for that is it kind of waste a lot of memory and importing everything with
+
+04:49.330 --> 04:50.710
+this Asterix.
+
+04:50.770 --> 04:51.210
+OK.
+
+04:51.460 --> 04:55.160
+So again use the first three months I showed you and you can always reference a nose for that.
+
+04:55.360 --> 04:59.830
+Hopefully now you have a basic understanding of how you can create one PI file a bunch of functions
+
+04:59.830 --> 05:03.280
+or classes and then call it from another file.
+
+05:03.280 --> 05:05.140
+Thanks everyone and I'll see you at the next lecture.

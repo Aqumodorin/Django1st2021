@@ -1,0 +1,274 @@
+WEBVTT
+
+00:04.670 --> 00:09.900
+Well everyone and welcome to part two content interaction in this lecture.
+
+00:09.900 --> 00:15.110
+We're going to be seeing more examples of how to interact with the c.m. from the document object model.
+
+00:15.180 --> 00:19.950
+We'll show you how to do things such as change text change the age to smell code and affect the attributes
+
+00:20.630 --> 00:24.250
+the relevant files for the structure are part to content that H.T. T.M..
+
+00:24.330 --> 00:29.130
+That's the actual file how open my browser and part to interact but yes that's just the copy of all
+
+00:29.130 --> 00:31.590
+the commands I'll be inputting into the console.
+
+00:31.590 --> 00:35.790
+Let's get started by opening up to content buddy T.M. in our browser.
+
+00:36.470 --> 00:40.790
+All right so here we have the HTL document open and we're going to be doing is showing you how to change
+
+00:40.790 --> 00:44.910
+the text it's him all content and attributes with the actual Dom.
+
+00:44.930 --> 00:50.860
+So imagine that you've used queery selector to actually select an element from the document object model
+
+00:51.020 --> 00:52.400
+and you call that variable.
+
+00:52.400 --> 00:58.320
+My variable then you could use some of these methods to actually affect or interact with it.
+
+00:58.430 --> 01:03.230
+So we could call my variable dot text content and that returns the actual text.
+
+01:03.290 --> 01:07.120
+So you could set that equal to some new text if you wanted to change the text or whatever.
+
+01:07.240 --> 01:13.310
+Team l variable you're messing around with or if you want it to actually affect the T.M. and have effects
+
+01:13.310 --> 01:16.170
+on things such as the strong tags or the emphasis tags.
+
+01:16.340 --> 01:21.770
+You could do something like inner or excuse me inner H.T. a male and that returns the actual age to
+
+01:21.770 --> 01:27.840
+a male if you want to effect attributes or interact with them you can use the doc get attribute or the
+
+01:28.100 --> 01:30.110
+set attribute.
+
+01:30.120 --> 01:32.550
+Now let's show some actual examples of all this.
+
+01:32.670 --> 01:36.290
+Here I'm going to be actually manipulating this page and I'm looking at right now.
+
+01:36.330 --> 01:39.800
+So again to edit styles you've already seen we can use the dot style tag.
+
+01:39.810 --> 01:43.490
+Now we're going to show you how to edit actually email or text or attributes.
+
+01:43.680 --> 01:47.570
+So I'm going to grab this paragraph right here that I'm highlighting.
+
+01:47.640 --> 01:52.060
+Let's show you how we can do that or create a new variable let's call it P for paragraph.
+
+01:52.110 --> 01:54.820
+Although you can probably call it whatever you want.
+
+01:55.660 --> 02:05.240
+Well say document dot query selector and I'm going to grab the paragraph tag here and if I type paragraph
+
+02:05.870 --> 02:11.450
+I can see I have the paragraph tag and I can expand this to actually view everything that says to edit
+
+02:11.450 --> 02:12.080
+styles.
+
+02:12.080 --> 02:14.260
+I see there's a link here it's attributes.
+
+02:14.300 --> 02:18.050
+So if I click on this attributes link it takes me to Google dot com.
+
+02:18.080 --> 02:24.270
+So here I see Google opening up now what you actually want to do is change some of the text here.
+
+02:25.000 --> 02:29.000
+So I will clear this and I'm going to say P Di
+
+02:32.900 --> 02:36.950
+text content and I can set it equal to any thing that I want.
+
+02:36.950 --> 02:40.630
+So let's call it all new text.
+
+02:42.430 --> 02:43.630
+And then hit enter.
+
+02:43.750 --> 02:46.540
+And now I see that I've actually changed the text here.
+
+02:46.630 --> 02:48.730
+So it says new text.
+
+02:48.730 --> 02:52.080
+Now imagine that I wanted to make the text bold.
+
+02:52.420 --> 03:03.220
+Well what I can't do is this I'm not able to say text content and then passen a strong tag and say something
+
+03:03.220 --> 03:10.690
+like I'm bold closing strong tag.
+
+03:10.720 --> 03:15.010
+The reason I'm not able to do something like this I will see why what happens is because I'm just grabbing
+
+03:15.010 --> 03:16.190
+the text content.
+
+03:16.420 --> 03:20.260
+If I actually want to affect the age T.M. I need to grab the inner h tim L.
+
+03:20.500 --> 03:26.750
+So I will say P dot inner HVM L and I'm going set it equal now to I previously did.
+
+03:26.770 --> 03:33.710
+So let's grab this and just copy and paste it back grab it with the quotes and then hit enter.
+
+03:33.770 --> 03:38.940
+And I can see now my paragraph is in bold says I'm bold and I can see that it's darker.
+
+03:39.020 --> 03:44.180
+So that's different between text content and each T.M. if you want to actually pass in HTL tax when
+
+03:44.210 --> 03:49.430
+you're interacting with the HTML then you're going to need to call in each team instead of just text
+
+03:49.430 --> 03:50.690
+content.
+
+03:50.690 --> 03:55.430
+Now let's show you how you can get attributes and set attributes.
+
+03:55.480 --> 04:00.430
+So if we look down here there's a link to Facebook all the way here at the end so click on this.
+
+04:00.430 --> 04:05.450
+It takes me to Facebook and says I'm another Hetter with the special I.D. so don't worry about that
+
+04:05.460 --> 04:06.320
+for right now.
+
+04:06.610 --> 04:13.880
+Instead what I'm going to do is clear my console and I'm going to grab everything with the special I.D.
+
+04:14.900 --> 04:25.490
+so I'll save our special as equal to document weary selector and remember it's night.
+
+04:25.520 --> 04:34.920
+So I say hashtags and say I can use CSSA style selectors and then say special and again you would use
+
+04:37.640 --> 04:38.530
+there.
+
+04:39.130 --> 04:44.020
+And again you would have to know that there's a special I.D. in the HP M-L here it's actually telling
+
+04:44.020 --> 04:47.930
+me that but you'd have to actually reference the symbol to know this.
+
+04:47.980 --> 04:51.260
+So it's not like special is just some sort of normal ID.
+
+04:51.370 --> 04:57.690
+So here I can see now if I type in special I have heading for IDs with a special.
+
+04:57.820 --> 04:59.020
+It says I'm in the header.
+
+04:59.050 --> 05:00.750
+Looks like the header has emphasis.
+
+05:00.970 --> 05:04.800
+And then I also see h ref to Facebook dot com.
+
+05:05.050 --> 05:06.680
+Now how can I actually change this.
+
+05:06.880 --> 05:17.140
+Well I can say this I can say variable special a is equal to.
+
+05:17.200 --> 05:25.530
+And then I'm going to grab special dot and I will do a query selector on that LCA query selector grabbed
+
+05:25.530 --> 05:26.120
+the anchor incontact
+
+05:28.960 --> 05:35.910
+enter and now when I see special 8 I see that I only grab Denker tag so i can see that I can actually
+
+05:36.180 --> 05:42.240
+call multiple queries selectors until I actually find or get what I'm looking for.
+
+05:42.240 --> 05:47.520
+So here's the ref it goes to Facebook dot com actually want to get just the attribute.
+
+05:47.820 --> 05:49.140
+I can say special
+
+05:53.030 --> 06:02.310
+attribute and then I can grab the Tref itself if I only want to grab that link if I want to change the
+
+06:02.310 --> 06:04.980
+attribute that I need to use the same attribute.
+
+06:05.280 --> 06:13.000
+So I need to say especially the set attribute and the stakes in two arguments the attribute that you
+
+06:13.000 --> 06:15.170
+want to change.
+
+06:15.340 --> 06:18.510
+And then the actual value you want to change it to.
+
+06:18.520 --> 06:24.440
+So I'll say HTP Yes and let's change it to something like Amazon.com
+
+06:28.870 --> 06:33.040
+we hit enter and now we've actually changed this to Amazon.com.
+
+06:33.260 --> 06:37.940
+So if I click on this link instead of Facebook we see that it takes me to Amazon.
+
+06:38.420 --> 06:38.750
+All right.
+
+06:38.750 --> 06:43.250
+So that's the general way of using these four methods member text content is just for returning the
+
+06:43.250 --> 06:46.440
+text interchange team l returns the actual each T.M..
+
+06:46.580 --> 06:51.890
+And if you want to effect attributes within something you need to do it with set attribute if you want
+
+06:51.890 --> 06:56.450
+to just grab the attribute and get say attribute if you want to change it instead of doing just an equal
+
+06:56.450 --> 07:01.190
+sign like we said earlier you said attribute where the first argument is the actual attribute and the
+
+07:01.190 --> 07:03.530
+second argument is what you want to set it to.
+
+07:03.530 --> 07:07.370
+All right thanks everyone if you have any questions feel free to post to the Q&amp;A forums.
+
+07:07.400 --> 07:08.770
+And I'm happy to help you out.
+
+07:08.780 --> 07:09.770
+I'll see you at the next lecture.

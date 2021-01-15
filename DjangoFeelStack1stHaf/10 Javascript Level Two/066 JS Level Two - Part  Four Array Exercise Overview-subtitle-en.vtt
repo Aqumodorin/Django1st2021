@@ -1,0 +1,232 @@
+WEBVTT
+
+00:05.020 --> 00:09.600
+Well everyone welcome back to part for a re exercise.
+
+00:09.610 --> 00:13.530
+It's now time to practice using arrays in a more realistic situation.
+
+00:13.640 --> 00:20.500
+And we're going creating a very simple student roster at using the javascript code that we know so far.
+
+00:20.620 --> 00:27.640
+Go ahead and check out for Array exercise se him I'll file open it up in your browser and read the instructions
+
+00:27.640 --> 00:28.140
+there.
+
+00:28.360 --> 00:33.490
+I'm going to hop over to my browser with that file open to explain the actual exercise.
+
+00:33.490 --> 00:39.340
+OK so I have here the h him l file for open in my browser and like I mentioned for this exercise we're
+
+00:39.340 --> 00:44.890
+making a very simple web app that contains an array of student names in a javascript file using an array
+
+00:45.460 --> 00:51.450
+and the Web site is going to prompt you for four possible commands Add Remove display and quit.
+
+00:51.520 --> 00:56.440
+So those are things that you're actually going to type in and this web page will prompt the user for
+
+00:56.440 --> 00:57.700
+one of those commands.
+
+00:57.790 --> 01:00.370
+And then here's what these commands should do so.
+
+01:00.460 --> 01:04.400
+And it will then create a prompt for a student name request.
+
+01:04.420 --> 01:09.600
+Then we add this name to the student to the array of the student names in the script file.
+
+01:10.900 --> 01:14.050
+Remove will create a prompt for a student named requests.
+
+01:14.190 --> 01:20.520
+Then remove this name from the roster array display will print out the roster using console log in quit
+
+01:20.570 --> 01:22.660
+will end the while loop of prompts.
+
+01:22.740 --> 01:25.120
+So let me actually show you what this would look like.
+
+01:25.170 --> 01:29.770
+I'm going to refresh this page and run through what this may actually look like.
+
+01:30.560 --> 01:34.920
+First off it asked me Would you like to start the roster webapp Y or N..
+
+01:34.940 --> 01:36.430
+Yes or no.
+
+01:36.570 --> 01:38.530
+I'll enter y.
+
+01:38.540 --> 01:39.320
+OK.
+
+01:39.590 --> 01:47.020
+And then it says Please select the action Add Remove display or quit point to add and what name would
+
+01:47.020 --> 01:48.130
+we like to add.
+
+01:48.910 --> 01:53.210
+And we're going to be worried about single word name so first names only.
+
+01:53.260 --> 01:55.130
+I would like that Jose.
+
+01:55.540 --> 02:01.780
+And then it says Please select an action add remove this player quit so I will say this play and if
+
+02:01.780 --> 02:07.490
+I hit OK I can see here in the Consul that I successfully added Jose incident roster.
+
+02:07.840 --> 02:11.050
+Now annoyed to add another name.
+
+02:11.290 --> 02:17.710
+Let's add Sam and Naledge display the roster again.
+
+02:18.630 --> 02:22.650
+I see now I have Jose and Sam in the array the consul.
+
+02:22.800 --> 02:35.230
+Now let's add one more name and I will add Franki books that he selects and action ad now it like that
+
+02:35.240 --> 02:39.450
+Frankie analogise display.
+
+02:41.160 --> 02:42.600
+I have Jose samen Frankie.
+
+02:42.630 --> 02:44.500
+Let's see what remove does.
+
+02:44.610 --> 02:50.010
+So it says Please select the action I type remove and then it says what name would you like to remove
+
+02:50.190 --> 02:56.230
+or remove my name Jose let's display aere.
+
+02:56.600 --> 03:01.340
+And here we see Sam and Frankie so I successfully removed Jose and then to end all this.
+
+03:01.360 --> 03:04.410
+I'll just quit and it says thank you for using the web app.
+
+03:04.460 --> 03:06.840
+Please refresh page start over.
+
+03:06.860 --> 03:08.090
+OK that's it.
+
+03:09.080 --> 03:09.510
+All right.
+
+03:09.620 --> 03:15.440
+So there is a javascript file that actually has a bunch of hints and comments.
+
+03:15.450 --> 03:20.220
+It's basically a walkthrough guide to help you out with this project going to take a look at it now.
+
+03:20.330 --> 03:26.750
+So the file you want to use and link to your east him file is called part for underscore array.
+
+03:26.750 --> 03:29.090
+Underscore exorcized javascript.
+
+03:29.210 --> 03:32.400
+This is a javascript file that just has a bunch of comments in it.
+
+03:32.460 --> 03:33.620
+Comments and hints.
+
+03:33.650 --> 03:38.900
+It's optional to use if you want you can go straight into the exercise without referencing this javascript
+
+03:38.900 --> 03:39.950
+file at all.
+
+03:39.950 --> 03:45.830
+But I would recommend that you check out the javascript file for the hints and the structure it provides.
+
+03:45.830 --> 03:48.170
+So again this is available to you.
+
+03:48.170 --> 03:50.030
+It basically tells you what to do.
+
+03:50.120 --> 03:52.760
+So for instance we've already created the roster for you.
+
+03:52.760 --> 03:57.940
+The variable roster and we want you to create functions for the tasks so add in use today.
+
+03:58.190 --> 04:03.600
+Create a function called add new that takes in a name uses that push to add a new students to the array.
+
+04:03.770 --> 04:07.250
+Then the remove student and we actually have hints here on stack overflow.
+
+04:07.430 --> 04:13.880
+We haven't shown you how to write a function called remove that takes in a name and then finds its index
+
+04:13.880 --> 04:16.100
+location that removes them from the roster.
+
+04:16.190 --> 04:21.200
+So there is a link here a stack overflow that will tell you how to remove a particular element from
+
+04:21.200 --> 04:22.450
+an array.
+
+04:22.530 --> 04:24.030
+Now we have the splay roster.
+
+04:24.140 --> 04:27.770
+Just create a function called display that prints up the roster con..
+
+04:27.810 --> 04:32.570
+That's pretty easy it's cons. that log basically and then start by asking if they want to use the web
+
+04:32.570 --> 04:33.770
+app yes or no.
+
+04:34.040 --> 04:36.740
+And now at the very bottom this is where all your logic is going to go.
+
+04:36.740 --> 04:37.720
+Create a while loop.
+
+04:37.850 --> 04:39.120
+It keeps asking for an action.
+
+04:39.140 --> 04:44.090
+Add Remove this player quit and then use if and else if statements to execute correct functions that
+
+04:44.090 --> 04:47.360
+we created above for each of those commands are right.
+
+04:47.390 --> 04:49.020
+You have any questions on this.
+
+04:49.040 --> 04:50.670
+Feel free to post the Kewney forums.
+
+04:50.690 --> 04:55.760
+You can always check out the javascript solutions if you get stuck on something or just hop straight
+
+04:55.760 --> 04:56.990
+to the next lecture.
+
+04:57.050 --> 05:00.080
+Run be coding through the solutions to this exercise.
+
+05:00.080 --> 05:02.220
+Thanks everyone and I'll see you in the next lecture.

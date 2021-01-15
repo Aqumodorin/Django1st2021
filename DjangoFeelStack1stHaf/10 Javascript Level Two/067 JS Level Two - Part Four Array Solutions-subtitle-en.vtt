@@ -1,0 +1,289 @@
+WEBVTT
+
+00:05.580 --> 00:11.460
+Hello everyone and welcome back to for Array exercise solution and in this lecture we're going to be
+
+00:11.460 --> 00:16.170
+coding through the solution for that student roster Auray exercise project.
+
+00:16.170 --> 00:18.870
+Let's head over to the editor and get started.
+
+00:18.870 --> 00:24.130
+OK so here with the javascript part for Array exercise file open.
+
+00:24.180 --> 00:26.400
+Let's start off by actually creating the functions.
+
+00:26.400 --> 00:32.640
+The first thing we need to create was the add new function for adding a new student so call the keyword
+
+00:32.640 --> 00:40.320
+function and we can just get it by typing F-you when hitting enter and we will say add new and add new
+
+00:40.320 --> 00:42.200
+will not take any parameters.
+
+00:42.270 --> 00:49.100
+Instead we're going to do is create a variable inside of add new called new name and we will prompt
+
+00:49.100 --> 00:54.140
+the user for what name would you like to add.
+
+00:54.140 --> 00:59.570
+Question mark and then once we get that new name we're going to push it to the roster.
+
+00:59.840 --> 01:07.730
+So we'll grab roster push and then push in that new name and that's all there really is for adding the
+
+01:07.730 --> 01:08.820
+new student.
+
+01:09.050 --> 01:13.760
+Now is talk about removing the student and this is actually quite a bit trickier and you definitely
+
+01:13.760 --> 01:20.120
+have to visit the stack overflow link if you're going to do it the same way I do it right now and that
+
+01:20.200 --> 01:25.540
+that overfilling basically has the answer of removing a particular element from an array.
+
+01:25.550 --> 01:34.920
+So again we'll create a function we'll call it remove and I'm going to say a variable we'll call it
+
+01:34.920 --> 01:36.800
+REM name for a move name.
+
+01:38.760 --> 01:43.130
+And we'll ask what name would you like to remove.
+
+01:43.130 --> 01:52.360
+Question mark and then I'm also going to create a variable called index and this is going to be roster
+
+01:52.390 --> 01:56.800
+dot and the method here is index of.
+
+01:56.800 --> 02:05.670
+And that was in the stack overflow link there so roster that index of REM name.
+
+02:06.180 --> 02:11.820
+And then the other thing from the stack overflow was the splice method and the splice method takes an
+
+02:12.810 --> 02:15.390
+index comma one
+
+02:18.100 --> 02:20.590
+where one is just how many elements who want to delete.
+
+02:20.590 --> 02:21.100
+Starting at.
+
+02:21.100 --> 02:22.440
+This index.
+
+02:22.680 --> 02:25.030
+And that's all there is for the remove function.
+
+02:25.270 --> 02:27.940
+Let's continue on with the next one.
+
+02:28.080 --> 02:30.310
+I actually want to do is display rosters.
+
+02:30.310 --> 02:31.940
+That was actually quite simple.
+
+02:32.170 --> 02:34.990
+It's basically just logging the roster.
+
+02:35.050 --> 02:47.540
+So we're going to say function display doesn't take any arguments but we will just log the actual roster.
+
+02:47.580 --> 02:54.510
+Now it's time for basically the hard part which is actual all actually programming all that logic and
+
+02:54.590 --> 02:59.960
+lines create a couple more lines here just so I can see everything clearly.
+
+02:59.970 --> 03:04.610
+We're going to start off by creating two variables called Start and star.
+
+03:04.650 --> 03:05.870
+It's just a prompt.
+
+03:07.440 --> 03:16.370
+That says Would you like to start the Ruster web at and will only accept why or.
+
+03:16.380 --> 03:24.700
+And so will tell the user wire and there and I will also create a variable called request that is equal
+
+03:24.700 --> 03:29.240
+to empty and we'll see a request for as in just the second.
+
+03:29.390 --> 03:38.850
+But basically it's going to be a string and I'm going to say if Star is equal to y meaning the user
+
+03:38.850 --> 03:42.490
+did want to start the Web at while
+
+03:44.770 --> 03:47.590
+request is not equal
+
+03:50.340 --> 03:55.290
+to quit I'm going to do the following.
+
+03:55.390 --> 04:00.010
+I'll ask for a new request by prompting them.
+
+04:00.210 --> 04:11.610
+Please select an action add or remove display or quit.
+
+04:11.830 --> 04:17.420
+And here is where I'm actually going to start testing for stuff all inside this while loop.
+
+04:17.450 --> 04:22.890
+So if the request was equal to add.
+
+04:23.340 --> 04:31.610
+Well in that case I'm going to call add new and add new has the prompt asking for the new name and pushing
+
+04:31.610 --> 04:33.110
+it to the roster.
+
+04:33.140 --> 04:36.560
+So all I have to do is call add new nothing else.
+
+04:38.350 --> 04:40.930
+LCF request
+
+04:43.530 --> 04:44.950
+is equal to display.
+
+04:45.180 --> 04:46.340
+That's quite easy too.
+
+04:46.370 --> 04:49.030
+I just call display
+
+04:53.060 --> 04:55.250
+and then LCF
+
+04:57.970 --> 04:59.410
+what say request
+
+05:01.860 --> 05:04.070
+is equal to remove.
+
+05:04.500 --> 05:08.260
+Well in that case I just call the remove function that I created earlier
+
+05:12.900 --> 05:18.950
+and if we scroll all the way down we can see the rest of these brackets to make sure they're all balanced.
+
+05:19.450 --> 05:27.520
+And I'm going to have an alert here that says Thanks for using the web at.
+
+05:27.610 --> 05:31.500
+Please refresh to start over.
+
+05:31.730 --> 05:34.940
+And as a quick note I don't have an else statement here.
+
+05:34.960 --> 05:38.980
+I technically don't really need one for this entire thing to work.
+
+05:38.980 --> 05:42.110
+And the reason for that is because they're all in the while loop here.
+
+05:42.430 --> 05:44.310
+But something it could do is say.
+
+05:44.310 --> 05:45.440
+Else.
+
+05:45.790 --> 05:47.400
+And then just have it be quick.
+
+05:47.450 --> 05:54.070
+So say request is equal to quit.
+
+05:54.290 --> 06:01.430
+And basically what this does is if request is not add remove the player quit.
+
+06:01.460 --> 06:04.010
+So maybe the person typed something wrong.
+
+06:04.190 --> 06:05.680
+It will automatically quit.
+
+06:05.690 --> 06:11.560
+So we probably also want to say an alert here not recognized
+
+06:15.140 --> 06:26.010
+we'll quit or we could just say not recognized and then comment this up and then we'll continually ask
+
+06:26.010 --> 06:27.140
+for the prompt here.
+
+06:28.440 --> 06:28.740
+All right.
+
+06:28.740 --> 06:30.590
+So that's really all you have to do.
+
+06:30.600 --> 06:33.710
+Let's actually run this and make sure it worked.
+
+06:33.720 --> 06:35.930
+We're going to open up my browser.
+
+06:36.010 --> 06:36.310
+OK.
+
+06:36.320 --> 06:37.580
+Here is my browser.
+
+06:37.710 --> 06:40.620
+I've refreshed the page says Would you like start the web app.
+
+06:40.680 --> 06:43.230
+I will say yes please select an action.
+
+06:43.230 --> 06:46.110
+Let's add something we'll add.
+
+06:46.120 --> 06:49.310
+Jose let's display to make sure it works.
+
+06:49.350 --> 06:50.090
+There is Jose.
+
+06:50.110 --> 06:57.020
+Let's add one more we'll add in Sammy display Jose and Sammy are there.
+
+06:57.440 --> 07:04.390
+Let's remove Sammy and Alex display again.
+
+07:05.040 --> 07:06.020
+There's Jose.
+
+07:06.300 --> 07:11.280
+And then let's try just typing some random and it says not recognize great.
+
+07:11.280 --> 07:12.590
+That's exactly what we wanted.
+
+07:12.930 --> 07:19.680
+And then we will quit and it says thinks reason the web please refresh to start over.
+
+07:20.130 --> 07:20.780
+OK.
+
+07:21.000 --> 07:21.750
+So that's it.
+
+07:21.750 --> 07:23.590
+Looks like everything works correctly.
+
+07:23.610 --> 07:25.470
+Thanks everyone and I'll see you at the next lecture.

@@ -1,0 +1,319 @@
+WEBVTT
+
+00:04.820 --> 00:10.900
+Hello everyone and welcome back to the continuation of five javascript objects.
+
+00:11.000 --> 00:16.730
+Let's continue by discussing object methods object methods are essentially functions that are inside
+
+00:16.730 --> 00:18.400
+of an object.
+
+00:18.470 --> 00:23.750
+For example imagine we have our car in full object in the previous lecture we have the make year and
+
+00:23.750 --> 00:29.530
+model and then we actually input a function there as the value for a key.
+
+00:29.570 --> 00:35.690
+So the key is car alert and the value there is an actual function call and the function call just says
+
+00:35.780 --> 00:36.150
+alert.
+
+00:36.170 --> 00:44.510
+We've got a car here and then we can actually call that method off of the car info object meaning we
+
+00:44.510 --> 00:52.040
+can actually call methods off objects and they essentially act those functions inside of an object.
+
+00:52.040 --> 00:57.110
+Now more realistically what you're going to want to do is use key value pairs from the object itself.
+
+00:57.290 --> 01:00.940
+And in that case you're going to need to use a special this keyword.
+
+01:01.190 --> 01:05.930
+And the this keyword can be confusing for beginners at first so don't worry if you don't immediately
+
+01:05.930 --> 01:07.040
+fully grasp it.
+
+01:07.130 --> 01:13.490
+We're going to be seeing it when we talk about Jake queery But again coming back to the previous example
+
+01:13.760 --> 01:18.630
+here my function doesn't actually use any information that pertains to the object.
+
+01:18.740 --> 01:20.620
+It doesn't use the make your model.
+
+01:20.660 --> 01:23.870
+It's just the function that gives a basic alert.
+
+01:23.870 --> 01:28.730
+But imagine I want to actually use some of those key value pairs from the object itself.
+
+01:29.510 --> 01:34.360
+Well the this keyword acts differently depending on the situation or a javascript object.
+
+01:34.430 --> 01:36.380
+This keyword is set to the object.
+
+01:36.380 --> 01:37.470
+The method is called on.
+
+01:37.480 --> 01:43.320
+Let me show you an example of what I mean by that imagine I have this very simple object where it just
+
+01:43.320 --> 01:48.120
+has one singular property and that is the number 37.
+
+01:48.210 --> 01:54.570
+If I wanted a function called Report property I should say a method called Report Propp inside of my
+
+01:54.570 --> 02:03.210
+object that I call report Propp function and it returns this stop Propp where this is acting as a reference
+
+02:03.210 --> 02:05.300
+to the actual object.
+
+02:05.310 --> 02:07.700
+And then if I were to say something like cancel the log.
+
+02:07.920 --> 02:15.820
+My object that report Propp with the Call it would log seven into the console screen.
+
+02:15.830 --> 02:16.250
+All right.
+
+02:16.370 --> 02:19.430
+Here's a really good link for more details on the this keyword.
+
+02:19.430 --> 02:23.030
+Again it behaves differently in different situations and we're only really concerned about it right
+
+02:23.030 --> 02:27.080
+now as it behaves in an object in reference to methods.
+
+02:27.290 --> 02:32.030
+So let's cut out a few more examples of object methods to get a better grasp on everything that I just
+
+02:32.090 --> 02:35.560
+briefly mentioned moins hop over to the console now.
+
+02:35.560 --> 02:35.780
+All right.
+
+02:35.780 --> 02:37.880
+Here I am at the actual console.
+
+02:37.880 --> 02:44.870
+Let's create a very simple object we'll call it the variable simple and it's going to be an object with
+
+02:45.680 --> 02:56.890
+a property we'll call it Propp and that property is Will say hello and then it's going to have a method
+
+02:56.920 --> 03:03.180
+inside of it and we'll call this method my method just to make it very clear.
+
+03:03.350 --> 03:05.080
+Everything that's going on here.
+
+03:05.300 --> 03:12.230
+And then I use the function keyword close parentheses so it doesn't actually have any parameters there.
+
+03:13.310 --> 03:16.780
+And then I'm going to say Alert.
+
+03:16.940 --> 03:28.810
+Actually it's make this a console that log and it's going to console log the my method was called
+
+03:32.540 --> 03:35.500
+and then let's close off these parentheses here.
+
+03:35.820 --> 03:37.960
+So there is simple.
+
+03:38.050 --> 03:41.800
+So again simple as an object and no to actually show simple.
+
+03:41.800 --> 03:47.920
+It doesn't display the methods It just displays objects with the single property that key value pair
+
+03:47.920 --> 03:48.830
+Propp hello.
+
+03:49.150 --> 03:57.210
+If I say console Diyar an impasse and simple there I see an object that I can continue to expand to
+
+03:57.210 --> 04:03.240
+see my method and that property again you could have also continue to expand appear but that's just
+
+04:03.240 --> 04:05.530
+a simple note depending on what browser are you using.
+
+04:05.550 --> 04:08.490
+You may find it easier to say console dot the.
+
+04:08.820 --> 04:12.400
+Anyways back to actually learning how to use this method.
+
+04:12.630 --> 04:19.860
+I want to call the method I just say simple dot and then call my method and if I call my method here
+
+04:19.860 --> 04:24.320
+without any close parentheses and enter then it just reports back.
+
+04:24.330 --> 04:29.490
+The actual method inside of the object just like when we're calling functions we need to actually have
+
+04:29.490 --> 04:32.080
+an open set in close parentheses on it.
+
+04:32.980 --> 04:38.650
+That way I can execute the function which means I will call that my method close parentheses.
+
+04:38.800 --> 04:40.170
+And here it says the.
+
+04:40.180 --> 04:42.240
+My method was called Perfect.
+
+04:42.250 --> 04:44.400
+That's exactly what we expected.
+
+04:44.410 --> 04:47.230
+So again just to review here you have the property.
+
+04:47.230 --> 04:49.140
+There it is with the key value of prayer.
+
+04:49.180 --> 04:50.670
+And here you have my method.
+
+04:50.860 --> 04:55.890
+We do a function call and then inside these clearly brackets whatever we want to actually execute whenever
+
+04:55.880 --> 04:59.620
+we call that method off of this function.
+
+04:59.650 --> 05:07.120
+Now let's see how we can use actual properties that are already in the object inside of my method.
+
+05:07.120 --> 05:12.280
+So I'm going to clear this all right so to show the use of the this keyword are going to create a new
+
+05:12.280 --> 05:20.740
+variable and we'll call it my Obie J for my object and I will set it equal to an object.
+
+05:20.860 --> 05:28.160
+The object is going to just have one property will say it's the name and the name is going to be Jose
+
+05:28.160 --> 05:34.310
+or you can just fill in whatever name you want there and then let's actually give it a method and we'll
+
+05:34.310 --> 05:39.880
+call this method great where we actually greet who's ever name isn't my object here.
+
+05:40.220 --> 05:48.520
+So I have three and I'm going to call the function keyword curly brackets and then here I'm going to
+
+05:48.520 --> 06:00.850
+say console log and I want to say hello and then concatenate the name in my object and the way I do
+
+06:00.850 --> 06:09.760
+this is by using the this keyword I call this dot and then I actually pass in whatever property I want
+
+06:09.790 --> 06:14.610
+the key to that value pair and in that case it's going to be name.
+
+06:14.630 --> 06:21.980
+So I say this name and refers to the current object thymine whatever property that is and that's how
+
+06:21.980 --> 06:29.000
+we can actually create a method that uses properties of the object we are currently in.
+
+06:29.000 --> 06:35.890
+So when you do now is actually close off and balance off these brackets here.
+
+06:36.070 --> 06:38.300
+Let's make sure that works when we hit enter there.
+
+06:38.390 --> 06:39.640
+Okay perfect.
+
+06:39.650 --> 06:41.830
+And then I'm going to call my object.
+
+06:42.880 --> 06:50.960
+It's an object with a name I want to see that name I could also just say name Jose.
+
+06:51.140 --> 06:53.600
+And now let's check to see if it actually worked.
+
+06:53.630 --> 06:55.050
+When I call.
+
+06:55.810 --> 06:59.180
+So called greets and remember just like a function.
+
+06:59.270 --> 07:03.460
+If I don't have open and close parentheses here enter nothing sinister.
+
+07:03.530 --> 07:07.400
+So I need to open and close the Sprint see actually execute this.
+
+07:07.550 --> 07:09.230
+And it says Hello Jose.
+
+07:09.230 --> 07:11.720
+So I forgot to put a little space after hello.
+
+07:11.720 --> 07:14.820
+So let's fix that and come back up here.
+
+07:15.110 --> 07:16.250
+There's my object.
+
+07:16.310 --> 07:23.100
+Let's fix that by putting a space in there and let's call my object again.
+
+07:25.320 --> 07:26.790
+And then I say Hello Jose.
+
+07:27.150 --> 07:27.540
+OK.
+
+07:27.600 --> 07:32.100
+And that's really the basics of object methods as far as we need to know them.
+
+07:32.220 --> 07:39.120
+Again the main thing to get out here is that an object method is simply just like a function call inside
+
+07:39.240 --> 07:40.900
+of a key value pair.
+
+07:41.070 --> 07:44.720
+And if you want to use the properties of the current object you're in.
+
+07:44.880 --> 07:51.270
+All you have to do is use the this keyword and syntax highlighting will show you that it's a keyword
+
+07:51.580 --> 07:55.580
+and then you say dots and then whatever the property name you want to use it.
+
+07:56.010 --> 08:01.200
+OK so hopefully you have a better understanding now of how objects actually work in javascript how to
+
+08:01.200 --> 08:03.840
+create methods inside of an object and how to use that.
+
+08:03.830 --> 08:06.730
+This keyword coming up next is an exercise.
+
+08:06.790 --> 08:09.690
+Everything we learned about javascript objects.
+
+08:09.690 --> 08:11.600
+Thanks everyone and I'll see you at the next lecture.

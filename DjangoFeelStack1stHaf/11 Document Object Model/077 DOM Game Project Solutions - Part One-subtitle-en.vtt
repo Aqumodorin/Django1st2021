@@ -1,0 +1,337 @@
+WEBVTT
+
+00:04.820 --> 00:09.050
+Hello everyone and welcome back in this lecture we're going to be coding out the solutions for the game
+
+00:09.050 --> 00:13.610
+project that tic tac toe project when the previous lecture Hopefully you had a chance to attempt it
+
+00:13.610 --> 00:14.190
+on your own.
+
+00:14.390 --> 00:16.450
+But if not feel free to code along with me.
+
+00:16.460 --> 00:19.720
+Right now I'm going to hop over to my editor and browser to get started.
+
+00:20.760 --> 00:27.270
+OK here I am at my editor and here's the browser and I have three files open and empty HVM file in MTC
+
+00:27.270 --> 00:32.550
+SS file and an empty javascript files are ready to really tackle the front end and see its capabilities.
+
+00:32.700 --> 00:34.620
+With this little project of ours.
+
+00:34.800 --> 00:39.910
+Let's start off by creating the HTML file and filling out the actual content that will style it and
+
+00:39.900 --> 00:46.730
+then will actually add the interactivity with javascript going to type HTL there just to set it up.
+
+00:46.740 --> 00:52.840
+We have tic tac toe and let's actually link our CSSA file.
+
+00:53.210 --> 00:57.840
+So I'm going to link right now to my CSSA file which I've just called.
+
+00:57.840 --> 00:59.730
+Game C Ss.
+
+00:59.910 --> 01:02.050
+And then I'm also going to link to bootstrap.
+
+01:02.100 --> 01:04.100
+That way I can use the jumbo translator.
+
+01:04.170 --> 01:11.100
+All you have to do to do that comes to get bootstrap But come in then I can just scroll down here and
+
+01:11.100 --> 01:14.800
+grab the latest comp. The minute vide see SS.
+
+01:14.940 --> 01:18.200
+Copy and paste that line into my file.
+
+01:18.200 --> 01:24.680
+Now let's check the we're ready to go by just putting a heading in here saying connected.
+
+01:25.020 --> 01:27.890
+Make sure that font looks good refresh or page.
+
+01:27.930 --> 01:31.550
+And here we have connected in Bootstrap So we know we're good to go.
+
+01:31.950 --> 01:36.370
+OK so far my links are OK and I also want to link to my script.
+
+01:36.420 --> 01:43.900
+Let's just do that over here at the bottom so all the way at the bottom going to call script.
+
+01:44.810 --> 01:53.290
+And we're going to make the source equal to my script which is called My script G-S will save that and
+
+01:53.290 --> 01:59.160
+to verify that's connected I'm going to do a console log that says connected save.
+
+01:59.170 --> 02:04.610
+That will refresh this page and then let's inspect B at the console.
+
+02:04.900 --> 02:07.880
+Expand this just so we can see it and it's connected.
+
+02:07.900 --> 02:09.160
+So we're good to go there.
+
+02:09.610 --> 02:10.640
+Fantastic.
+
+02:10.660 --> 02:15.360
+Now we need to create some HTL content to actually create the board.
+
+02:15.370 --> 02:19.660
+Let's comment this out and then coming back to main.
+
+02:20.020 --> 02:21.570
+Let's expand this.
+
+02:21.580 --> 02:27.100
+First thing you wanted to do is since we're dealing with bootstrap create a DIV tag that contains the
+
+02:27.100 --> 02:35.660
+class container so this will have the container class and then inside of this I'm going to create the
+
+02:35.660 --> 02:36.300
+jumbo from
+
+02:39.470 --> 02:48.310
+now we'll have a heading and say this jumbo tron says welcome to tic tac toe tic tac toe and we can
+
+02:48.310 --> 02:53.350
+put a paragraph in here if we want says get ready to play.
+
+02:55.950 --> 02:58.610
+Let's save this and refresh make sure it actually looks good.
+
+02:58.730 --> 02:59.150
+OK.
+
+02:59.210 --> 03:00.970
+Welcome to Gary to play.
+
+03:01.200 --> 03:03.030
+And then finally let's add a button.
+
+03:03.030 --> 03:09.420
+Remember we had that restart button so I will call a button tagged and then it will have the type button
+
+03:09.840 --> 03:16.120
+the name button is fine but let's give it a class and the class for you are going to just reference
+
+03:16.560 --> 03:17.730
+bootstrap for this.
+
+03:17.740 --> 03:23.320
+So I would expect you to have this memorized I would expect you to reference the documentation but the
+
+03:23.320 --> 03:25.570
+class I chose was between.
+
+03:25.780 --> 03:32.170
+And then I also added the beats in primary to it and then I wanted to make the button large so I added
+
+03:32.170 --> 03:34.150
+between LG.
+
+03:34.150 --> 03:38.290
+So basically what's happening here is this class tells it it's a bootstrap button.
+
+03:38.410 --> 03:42.820
+This tells it's a primary bootstrap button so that takes care of the coloring and this takes care of
+
+03:42.820 --> 03:44.680
+the sizing be at large.
+
+03:44.680 --> 03:45.700
+Let me save this.
+
+03:45.760 --> 03:49.370
+And let's also add what we want the button say.
+
+03:49.420 --> 03:52.430
+So let's have it say something like restart.
+
+03:52.690 --> 03:56.610
+Now we could put this on multiple lines if we wanted to keep it all on line.
+
+03:56.630 --> 04:01.490
+I'm pretty zoomed in right now but let's refresh and here we have restart.
+
+04:01.660 --> 04:02.430
+I can click on it.
+
+04:02.440 --> 04:05.420
+Nothing is happening but it's all working the way we want it to.
+
+04:05.440 --> 04:09.110
+So for now let's continue on.
+
+04:09.160 --> 04:13.540
+Something to think about at this stage is I will probably want to reference this button later on in
+
+04:13.540 --> 04:16.520
+my javascript since the only button on the page.
+
+04:16.760 --> 04:18.850
+Let's just give it an ID.
+
+04:18.880 --> 04:22.820
+We could also call it by its tag but I like calling things by their ID.
+
+04:22.960 --> 04:29.200
+So let's give it the ID B so I can call it later and we're going to do is add in the table that's going
+
+04:29.200 --> 04:30.680
+to represent our board.
+
+04:30.790 --> 04:34.560
+We're going to add in the table and then we'll have to style it to actually make it look like a board.
+
+04:34.840 --> 04:39.850
+So let's continue on that we're going to put this inside of the container.
+
+04:39.990 --> 04:42.920
+But outside of the Jumbotron.
+
+04:43.100 --> 04:45.000
+So let's expand that.
+
+04:45.000 --> 04:49.170
+So here we are now inside the container but outside the Jumbotron.
+
+04:49.260 --> 05:03.350
+I'm going to call a table and I'm going to say my table has a line equal to center and an inside of
+
+05:03.350 --> 05:03.790
+this.
+
+05:03.800 --> 05:09.420
+I have three table rows so say TR an inside it be true.
+
+05:09.440 --> 05:13.820
+There's going to be three cells so tiddy and we'll leave them blank for now.
+
+05:13.820 --> 05:18.490
+See the leave that one blank and then he leave that one blank.
+
+05:18.720 --> 05:20.940
+And now let's do this two more times.
+
+05:20.940 --> 05:22.200
+You can just copy and paste
+
+05:26.190 --> 05:31.020
+and if we save this we should have our table right here.
+
+05:31.150 --> 05:35.280
+You'll notice there's actually nothing showing up and that's because we have no styling attached to
+
+05:35.280 --> 05:40.170
+this table so let's come over to the CSSA script and actually get some styling.
+
+05:40.320 --> 05:46.290
+So we make sure that we're actually seeing this table I'm going to give styling to the actual table
+
+05:46.290 --> 05:55.260
+cells the T.D. And let's give it a height of 150 pixels and these values are pretty arbitrary.
+
+05:55.260 --> 06:02.950
+So you could have put whatever you want it also give it a width of 150 pixels so they're squares are
+
+06:02.960 --> 06:05.660
+going to text align center.
+
+06:05.660 --> 06:12.260
+And the reason for that is when I put an X or an O inside of the actual cell I wanted to be center aligned
+
+06:13.850 --> 06:15.250
+and then let's give it a border.
+
+06:15.260 --> 06:25.070
+This will allow us to see it will say five pixel solid black border and then let's give it a font size
+
+06:25.160 --> 06:26.260
+of 100 pixels.
+
+06:26.270 --> 06:30.900
+And again this font size refers to what I'm actually going to be putting X's and O's.
+
+06:30.950 --> 06:36.220
+So let's save this will refresh over here and now I see my tic tac toe board.
+
+06:36.290 --> 06:40.300
+Great and let's practice manually putting in an X over here.
+
+06:40.340 --> 06:43.260
+So let's put an X into the very first table cell.
+
+06:43.430 --> 06:49.300
+Save this refresh and there's my X and it's text the line centered which is exactly what we wanted.
+
+06:50.300 --> 06:54.760
+Great hopefully you're able to get this far with very few difficulties.
+
+06:54.770 --> 06:59.860
+I know it may look kind of daunting when you see just what the browser but on the page Tim LNC is a
+
+06:59.860 --> 07:00.260
+site.
+
+07:00.260 --> 07:04.070
+It's definitely everything that we've done before and it's pretty straightforward.
+
+07:04.840 --> 07:08.830
+Now it might not be so straightforward especially since we're just learning it is the actual javascript
+
+07:08.830 --> 07:14.780
+code to manipulate the document object model to play the game.
+
+07:14.830 --> 07:16.960
+So let's get started on that.
+
+07:17.970 --> 07:20.730
+I'm going to have a few sections.
+
+07:21.210 --> 07:22.910
+I'll have the restart game button.
+
+07:25.150 --> 07:33.380
+Then I'll have some sort of a section that grabs all the squares that I also want some sort of function
+
+07:33.380 --> 07:34.820
+that can clear all the squares
+
+07:37.480 --> 07:40.550
+and then I want to create a function that will check the square marker.
+
+07:40.570 --> 07:46.350
+So something like check the square markers or check if it's an X or no.
+
+07:46.840 --> 07:58.760
+And then finally I want some sort of for loop to add event listeners to all the squares.
+
+07:58.860 --> 08:04.520
+OK so those are the main task we have to do and our javascript code and I'm going to approach this in
+
+08:04.520 --> 08:05.320
+the next lecture.
+
+08:05.330 --> 08:10.310
+That way you can spend some time to review the TMLC assess in the next lecture will actually cut out
+
+08:10.340 --> 08:11.490
+all the stuff script.
+
+08:11.600 --> 08:13.470
+Thanks everyone and I'll see you there.

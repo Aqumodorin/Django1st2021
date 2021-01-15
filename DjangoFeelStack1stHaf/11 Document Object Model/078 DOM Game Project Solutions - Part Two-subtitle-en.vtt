@@ -1,0 +1,430 @@
+WEBVTT
+
+00:05.060 --> 00:06.150
+Welcome back everybody.
+
+00:06.200 --> 00:06.970
+I'm here right.
+
+00:07.010 --> 00:10.250
+We left off last time with the javascript file open.
+
+00:10.520 --> 00:14.730
+Again we defined the sections of code that we actually have to code out so let's get started with just
+
+00:14.750 --> 00:16.650
+the restart Game button.
+
+00:16.670 --> 00:23.090
+First off let's make the variable let's grab it from the document object model I'm going to say call
+
+00:23.090 --> 00:30.230
+it restart and it's going to be equal to the documents and then I will use queries selector on the document
+
+00:30.730 --> 00:34.880
+and I'm going to grab the tag that I made for it or excuse not the tag the ID.
+
+00:35.120 --> 00:41.840
+I could have also done a button Texas's Deely button on here but lushest do hash tag B.
+
+00:41.850 --> 00:45.490
+So if I look at my main file here I gave it the IDB.
+
+00:45.680 --> 00:47.260
+So that looks good.
+
+00:47.280 --> 00:56.210
+They don't want to grab all the squares to create a variable called squares and then offset that equal
+
+00:56.210 --> 01:02.460
+to documents query selector queries selector.
+
+01:02.490 --> 01:03.910
+Now let's have it the query selector.
+
+01:03.900 --> 01:11.100
+All because I want all the squares and that's going to be the same as all the table cells and something
+
+01:11.100 --> 01:13.500
+to note here is that I spelt squares wrong.
+
+01:13.500 --> 01:15.310
+So there we go.
+
+01:15.620 --> 01:15.860
+OK.
+
+01:15.870 --> 01:22.350
+So those are all squares and then I want to create a function that clears all the squares.
+
+01:22.370 --> 01:23.150
+So how do we do that.
+
+01:23.180 --> 01:25.490
+Well I'll say function.
+
+01:25.490 --> 01:33.530
+Now let's give this function the name clipboard and for this I'll have a for loop that goes for every
+
+01:33.620 --> 01:38.930
+cell or everything in the squares and then it just makes the content blank.
+
+01:39.050 --> 01:40.240
+So let me show what I mean by that.
+
+01:40.280 --> 01:48.800
+We'll say for and the array we're going to be playing with is the squares array.
+
+01:51.070 --> 01:53.140
+And then I can click to the activate that.
+
+01:53.140 --> 02:01.570
+So from I will zero all the way to I less than squares that length increasing I'm going to grab the
+
+02:01.570 --> 02:06.050
+current cell and then change its text content.
+
+02:08.110 --> 02:12.780
+To be blank and that's all I'm doing to clear the board.
+
+02:12.780 --> 02:19.520
+So what is actually doing will remember queery selector all is going to return all the table cells and
+
+02:19.880 --> 02:25.650
+that I have saved as squares and then we're going to have a function called clipboard that basically
+
+02:25.650 --> 02:29.390
+loops through everything in squares every element.
+
+02:29.640 --> 02:35.370
+And what is basically acting like an array is not quite a javascript or array but it's acting like one
+
+02:35.370 --> 02:41.310
+and then we can just say squares I that text contents and then set that equal to blank.
+
+02:41.390 --> 02:48.020
+Let's test to see that this clipboard function works by adding an event listener to restart remember
+
+02:48.020 --> 02:50.530
+restart is just our actual restart.
+
+02:50.720 --> 02:54.570
+So I will say restart at events.
+
+02:55.630 --> 02:56.200
+Listener
+
+02:59.260 --> 03:04.640
+and upon a click it's going to call the function clipboard.
+
+03:04.750 --> 03:10.300
+So let's save this in right now I have an X in there so I will refresh the page.
+
+03:10.450 --> 03:11.430
+It's blank right now.
+
+03:11.440 --> 03:14.050
+So if I click restart I'm not going to see any difference.
+
+03:14.260 --> 03:20.190
+So I will come back to my main page T.M. and add something to one of these cells.
+
+03:20.200 --> 03:22.100
+Let's give it an X.
+
+03:22.260 --> 03:23.330
+Refresh my page.
+
+03:23.340 --> 03:24.030
+I see that x.
+
+03:24.030 --> 03:27.240
+Now if I click restart it was cleared.
+
+03:27.240 --> 03:28.850
+So looks like everything's working.
+
+03:29.830 --> 03:35.470
+So I'm going to come back here and then clear this so we can refresh this page.
+
+03:35.500 --> 03:41.830
+So far we have a function that successfully loops through every cell in the table and clears it makes
+
+03:41.830 --> 03:44.740
+its text content nothing.
+
+03:44.830 --> 03:45.160
+All right.
+
+03:45.190 --> 03:50.920
+Now we've reached what's probably the most challenging part of this project which is getting the board
+
+03:50.920 --> 03:57.420
+to display X's and O's or blanks depending on if we click on a cell.
+
+03:57.430 --> 03:58.980
+So how can we actually do this.
+
+03:58.990 --> 04:04.180
+Well the way you could probably do it given what you know so far is to come back to this H.T. metafile
+
+04:04.570 --> 04:11.860
+give each cell a specific ID and then come back to javascript and add event listeners for each particular
+
+04:11.860 --> 04:19.150
+ID checking to see if it's blank X or O and then changing the marker depending on where it's been clicked.
+
+04:19.150 --> 04:20.630
+So that's one way of doing it.
+
+04:20.650 --> 04:27.190
+The official solutions have a way that uses the javascript this keyword that is used in a way we haven't
+
+04:27.190 --> 04:27.910
+seen before.
+
+04:27.970 --> 04:33.130
+So I'm going to show you first solution that you have the capability to come up with on your own.
+
+04:33.160 --> 04:34.760
+However it's repetitive.
+
+04:34.900 --> 04:39.610
+Then after that I'll show you the solution that's more advanced and uses this keyword.
+
+04:39.730 --> 04:42.070
+But it's a little cleaner and uses a for loop.
+
+04:42.100 --> 04:48.230
+So let's start off with the most basic solution we can think of and we'll just run it for one cell.
+
+04:48.310 --> 04:58.630
+I'm going to give this cell an ID of one and then coming back to my javascript going to make some new
+
+04:58.630 --> 05:07.840
+lines for myself and we're going to make a variable called cell 1 and have it be equal to the documents
+
+05:09.970 --> 05:16.520
+weary selector and then we'll give it the ID of one.
+
+05:16.590 --> 05:22.180
+And now we're going to say sell one we'll add an event listener to it.
+
+05:23.920 --> 05:26.620
+So there's our event listener and upon click
+
+05:30.830 --> 05:32.170
+we'll have it do something.
+
+05:32.170 --> 05:42.530
+So we'll say function and we'll grab someone and we'll say it's tecs content is going to be equal to
+
+05:43.510 --> 05:44.810
+X..
+
+05:44.990 --> 05:46.880
+So this is the most basic way we could do this.
+
+05:46.880 --> 05:49.910
+Let me refresh the page and make sure is actually working.
+
+05:49.910 --> 05:53.530
+So now so when I click on it it becomes x.
+
+05:53.570 --> 05:56.060
+If I hit restart then it gets blank.
+
+05:56.060 --> 05:59.280
+So right now if I click on it it only turns X once.
+
+05:59.300 --> 06:04.160
+So let's add the functionality where it cycles through blank X and 0.
+
+06:04.730 --> 06:07.850
+So we can add some logic here in order to make that happen.
+
+06:07.880 --> 06:16.190
+I'm going to say if sell one that text content is equal to blank.
+
+06:16.200 --> 06:27.740
+Remember that's how it starts off as then someone text content set that equal to x
+
+06:30.180 --> 06:31.000
+LCF
+
+06:33.490 --> 06:42.830
+cell one that text content is equal to X. Then I'm going to say.
+
+06:43.380 --> 06:52.330
+So one text content becomes equal to 0 and then else.
+
+06:52.330 --> 06:56.210
+Well we're going to be doing here is setting it back equal to blink.
+
+06:56.890 --> 07:04.740
+So I'll say so on text content is equal to blink.
+
+07:04.950 --> 07:10.200
+So this should effectively cycle through X's and O's and let's make sure we actually got the logic right
+
+07:10.200 --> 07:10.690
+here.
+
+07:11.940 --> 07:18.180
+If I see that the text content is blank I'm going to set the text content to X if when I click on it
+
+07:18.210 --> 07:20.610
+I see that the current text content is X..
+
+07:20.760 --> 07:28.920
+Well then Ill set it be set to zero or 0 and then if it's neither blank nor X then it must be 0.
+
+07:28.920 --> 07:31.450
+So I will cycle it back to being blank.
+
+07:31.920 --> 07:35.790
+OK let's save this and refresh see if it works.
+
+07:35.790 --> 07:37.550
+So here click on this right now.
+
+07:37.620 --> 07:38.160
+X.
+
+07:38.160 --> 07:40.140
+Click on it again it becomes 0.
+
+07:40.210 --> 07:42.200
+Looking at one more time and it's blank.
+
+07:42.420 --> 07:43.120
+Great.
+
+07:43.140 --> 07:48.330
+So this is what you have the capability and knowledge of doing right now technically then could have
+
+07:48.330 --> 07:54.910
+just copied and pasted this eight more times and changed cell one to cell to cell 3 cell 4 et cetera.
+
+07:55.140 --> 07:57.360
+And that's how you could solve this problem.
+
+07:57.360 --> 08:02.230
+OK so this is the solution you would have probably come up with and you would just copy and paste this
+
+08:02.490 --> 08:08.160
+maybe eight more times and that's one way of doing it without using the this keyword.
+
+08:08.160 --> 08:10.020
+And that's one of the most basic ways of doing it.
+
+08:10.020 --> 08:14.740
+However it really violates the dry principle of coding which is don't repeat yourself.
+
+08:14.790 --> 08:19.470
+So we're going to be doing is showing you how you can use the this keyword to do something really similar
+
+08:19.620 --> 08:22.650
+except not have it be repeated so often.
+
+08:22.710 --> 08:30.130
+So I'm going to create a function and I will call this function change marker and it's essentially going
+
+08:30.130 --> 08:33.100
+to be a very generic version of what we just wrote.
+
+08:33.160 --> 08:42.320
+I'm going to say if and then I'm going to use the this keyword text content is equal to x excuse me
+
+08:42.320 --> 08:52.210
+is equal to blank then we'll end up doing is saying this text content and there should have been triple
+
+08:52.210 --> 09:00.550
+equal sign and then we'll reset this to be X then we'll have an LCF and this is going to say if this
+
+09:00.820 --> 09:13.590
+text content is equal to x then I'm going to set this text content equal to 0 and then else if that's
+
+09:13.590 --> 09:22.330
+the case then I won't say this text content and set it back equal to being blank.
+
+09:22.340 --> 09:27.670
+All right so that's the most generic version of this and it's using this keyword and this is inside
+
+09:27.670 --> 09:32.570
+of a function which you haven't really seen before we've only seen this keyword inside a method inside
+
+09:32.570 --> 09:37.940
+an object but a function is pretty similar to a method so hopefully this is making sense to you so far
+
+09:38.210 --> 09:41.350
+especially since we just ran the more specific version of this.
+
+09:41.360 --> 09:43.540
+This is basically the generic version.
+
+09:43.670 --> 09:50.420
+So we need to do is add this as an event listener for all the squares.
+
+09:50.420 --> 09:52.550
+So I will say for.
+
+09:52.920 --> 10:04.270
+And then I will again loop through squares and then I'm going to say Dot add in events listener and
+
+10:04.270 --> 10:06.480
+upon click.
+
+10:06.510 --> 10:10.820
+I'm going to call change marker.
+
+10:11.060 --> 10:14.820
+And now let's refresh our page and see if this works.
+
+10:14.840 --> 10:16.340
+So it's working on the first one.
+
+10:16.700 --> 10:20.030
+And now I can see it's working on any of them.
+
+10:20.100 --> 10:23.550
+So this is the tic tac toe project and that's really all you have to do.
+
+10:23.550 --> 10:26.310
+And now when I click restart it gets cleared.
+
+10:26.430 --> 10:29.440
+That's the most generic version of solving that issue.
+
+10:29.490 --> 10:30.660
+X's and O's.
+
+10:30.750 --> 10:34.640
+Would I expect you to solve this on your own with this solution.
+
+10:34.740 --> 10:35.270
+Maybe.
+
+10:35.280 --> 10:36.060
+Probably not.
+
+10:36.060 --> 10:40.830
+It's a little more advanced and it's a little beyond the scope of what we covered in the sections of
+
+10:40.830 --> 10:46.330
+the course about javascript but don't worry in the next section we're going to be covering J.
+
+10:46.380 --> 10:51.750
+Queery which is going to give you the skills to naturally come up with a much smoother and better way
+
+10:52.020 --> 10:56.630
+of accessing document object model material or properties.
+
+10:56.800 --> 10:57.260
+OK.
+
+10:57.450 --> 10:59.040
+I hope you enjoy the project.
+
+10:59.040 --> 11:01.360
+Thanks everyone and I'll see you at the next lecture.

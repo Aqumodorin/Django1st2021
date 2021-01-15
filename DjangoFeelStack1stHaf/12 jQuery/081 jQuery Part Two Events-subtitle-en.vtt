@@ -1,0 +1,514 @@
+WEBVTT
+
+00:05.050 --> 00:07.020
+Hello everyone and welcome to part two.
+
+00:07.030 --> 00:12.600
+Jake queery events and this lecturer are going to be using the same H-2 him I'll file from the previous
+
+00:12.600 --> 00:13.150
+lecture.
+
+00:13.170 --> 00:18.270
+We're also going to be connecting it to a jazz file where we'll be using a query to work with events.
+
+00:18.450 --> 00:21.390
+Let's get started by hopping over to the editor in the browser.
+
+00:21.690 --> 00:28.050
+OK so we have the Tim L file from the previous lecture open here on the editor as well as linked to
+
+00:28.160 --> 00:29.610
+in the browser.
+
+00:29.610 --> 00:32.730
+Now we're going to be linking this to our own Javascript.
+
+00:32.760 --> 00:38.970
+So if we go all the way down here I've added a script tag with the source my script but Jesus just changed
+
+00:38.970 --> 00:44.080
+that to whatever dodgiest you have in the same directory as this HVM I'll file.
+
+00:44.370 --> 00:45.890
+Here's the empty that Jesus.
+
+00:45.900 --> 00:50.130
+And let's show you some basic event handling with Jake Query.
+
+00:50.160 --> 00:52.590
+First let's talk about clicks.
+
+00:52.680 --> 00:57.620
+Imagine you want to have the heading one here change when you click on it.
+
+00:58.010 --> 01:05.510
+Well you can do is say something like H-1 and then you have the event call.
+
+01:05.580 --> 01:11.910
+So that can be something like click and I going show you a link later on actually have it here open
+
+01:11.910 --> 01:17.070
+in my browser with all the different type of event methods you can call using a query.
+
+01:17.070 --> 01:19.280
+There are a ton of them available to you.
+
+01:19.290 --> 01:22.130
+We're going to be going over the most basic ones and the most useful ones.
+
+01:22.170 --> 01:24.090
+So that click is definitely one of those.
+
+01:24.380 --> 01:27.490
+And inside of this is where you pass in your function.
+
+01:27.570 --> 01:34.350
+They want to have executed when something it's clicked specifically having one element here.
+
+01:34.350 --> 01:42.170
+So we're going to let's just say we logged something first so there was a click we will save that and
+
+01:42.180 --> 01:49.120
+let's refresh this page and open up our console so we can actually see the log or me expand this a little
+
+01:49.120 --> 01:49.530
+bit.
+
+01:49.540 --> 01:55.050
+Here's a con. And I'm going to click on H-1 and I see there was a click.
+
+01:55.060 --> 01:55.420
+Perfect.
+
+01:55.420 --> 01:57.460
+So it's all working out.
+
+01:57.490 --> 01:59.930
+Now let's expand on this idea.
+
+02:00.160 --> 02:03.800
+Actually grabbing multiple elements.
+
+02:03.990 --> 02:07.070
+So there's only one heading one but what if I pass an ally.
+
+02:07.350 --> 02:13.530
+Well this is actually going to basically work automatically thanks to a query where if I say cancel
+
+02:13.530 --> 02:18.910
+that log any ally was clicked.
+
+02:19.560 --> 02:21.090
+Saved this.
+
+02:21.090 --> 02:24.830
+I refresh this page and click on any line item.
+
+02:25.080 --> 02:27.860
+You can see here that keeps getting repeated.
+
+02:28.090 --> 02:30.750
+Perfect.
+
+02:30.760 --> 02:35.950
+Now if you actually want to call methods or properties off whatever specific variable you're interacting
+
+02:35.950 --> 02:38.920
+with here you have to use the this keyword.
+
+02:38.920 --> 02:41.370
+Now let me show you an example of what that would look like.
+
+02:41.410 --> 02:44.770
+Imagine that I want to change the heading every time I click on it.
+
+02:45.130 --> 02:52.540
+Well what you can end up doing is you call dollar sign and imprint sees you pass in the this keyword
+
+02:53.230 --> 02:59.620
+and inside of an event call like this that this keyword is referring to whatever object you are currently
+
+02:59.860 --> 03:01.420
+performing that event on.
+
+03:01.420 --> 03:06.700
+So we have this and then the offer that you can call it just like the variables we saw in the previous
+
+03:06.700 --> 03:07.150
+lectures.
+
+03:07.180 --> 03:16.650
+If I want to change the text I just grab text and then say I was changed so I'll save that.
+
+03:16.750 --> 03:20.070
+And let's close this for now and refresh the page.
+
+03:20.100 --> 03:25.850
+I'm going to click on heading one here and we can see I was changed so again with Jake Query.
+
+03:26.030 --> 03:31.480
+You kind of have this funky keyboard with this but also in combination with the dollar sign.
+
+03:31.760 --> 03:36.950
+So if we have any event call instead of the function we want to actually affect what's going on here
+
+03:37.220 --> 03:43.290
+we have the dollar sign this and then dot in any of the previous methods we saw from the previous lecture.
+
+03:43.620 --> 03:44.110
+Okay.
+
+03:44.330 --> 03:49.640
+So that's the basics of clicks and there's also things like double clicks hover over mouseover.
+
+03:49.640 --> 03:50.930
+There's a lot of stuff like that.
+
+03:51.050 --> 03:54.740
+And if you want the complete reference they're all here and category events.
+
+03:54.740 --> 03:57.170
+For instance let's say we're looking for DoubleClick.
+
+03:57.230 --> 04:01.210
+Well it can expand this Z-Man.
+
+04:01.400 --> 04:06.450
+Let's say I'm looking for something to do if click or double click while I can start typing click.
+
+04:06.680 --> 04:11.810
+I see the event handler for click but I can keep searching and there I seen double click right below
+
+04:11.810 --> 04:13.880
+it with DBIL click.
+
+04:13.970 --> 04:19.310
+So that's what I would have to call that a click if I only wanted the event to listen for double click.
+
+04:19.310 --> 04:20.080
+All right.
+
+04:20.090 --> 04:26.330
+Now for events we are not just limited to things like clicks or mouse overs with just our mouse we can
+
+04:26.330 --> 04:31.310
+actually perform actions on our keyboard and that's known as a key press.
+
+04:31.310 --> 04:37.500
+Let's walk through a few examples of interacting the key press using Jake Query.
+
+04:37.600 --> 04:42.800
+I will use the dollar sign notation and grab the input tax.
+
+04:43.010 --> 04:48.670
+If we scroll down here we see we have to impot tags the text box right here and then submit.
+
+04:48.680 --> 04:56.180
+So I just want to grab the text one so I will say E Q 0 since it's the very first input that shows up
+
+04:56.180 --> 04:57.140
+on the page.
+
+04:57.230 --> 05:05.490
+And then I'm going to call a method he press on this and I will call a function to occur whenever I
+
+05:05.490 --> 05:08.590
+press a key inside of that text box.
+
+05:08.820 --> 05:18.340
+And what I'm going to have happen is I will change heading 3 I'm going to toggle it's class turn blue
+
+05:20.240 --> 05:28.470
+and let's save that I'll refresh my browser over here and now we'll see what happens as I begin to type
+
+05:28.920 --> 05:30.050
+in this box.
+
+05:30.710 --> 05:37.580
+You can see that the toggle class is toggling this turn blue on and off so again what's happening here.
+
+05:37.590 --> 05:44.730
+Well I'm grabbing all the input tags then indexing to grab the very first one is a text box and then
+
+05:44.730 --> 05:50.610
+assigning a key press method to it where every time I press a key inside the text box this function
+
+05:50.610 --> 05:52.110
+occurs in this function.
+
+05:52.310 --> 05:57.600
+Rab's the heading three tags toggles their class to be turned blue OK.
+
+05:57.880 --> 06:02.170
+Now we can actually grab an event object from this that has a ton of information.
+
+06:02.170 --> 06:05.980
+Now let me show you how we can do that inside of this function.
+
+06:05.980 --> 06:15.040
+I can input the special keyword events and I'm going to log this so I will say cancel dot log this event
+
+06:15.080 --> 06:19.330
+and you can see that it's highlighted to indicate that it's keyword.
+
+06:19.430 --> 06:21.960
+I'm going to refresh this page.
+
+06:22.380 --> 06:29.160
+And as I type you'll notice I get a console log and this is known as an event object and this event
+
+06:29.220 --> 06:33.570
+object has a ton of information on it which we're really not going to need to know.
+
+06:33.660 --> 06:40.450
+But if you scroll all the way down there's a which property here and if we click on that we see that
+
+06:40.510 --> 06:48.520
+which is equal to 97 and that corresponded with the letter a type B that I get a new object.
+
+06:48.520 --> 06:49.550
+Open it up.
+
+06:49.720 --> 06:50.580
+Click on a.
+
+06:50.690 --> 06:54.300
+And we see we have 98 by type the letter C.
+
+06:54.760 --> 06:57.430
+Open up the new event objects all the way down.
+
+06:57.490 --> 07:03.850
+I see I have ninety nine so there are actual number codes for every key on your keyboard which makes
+
+07:03.850 --> 07:10.510
+sense because maybe only one action to occur when I enter or press w or press an up and down arrow key
+
+07:11.110 --> 07:17.920
+which means we can actually specify events dot which to grab a particular code.
+
+07:18.790 --> 07:23.050
+So let's see that in action I'm going to say
+
+07:26.690 --> 07:28.490
+event which
+
+07:31.060 --> 07:36.300
+is equal to and I want to use the key code 13 which is the enter key.
+
+07:40.630 --> 07:42.700
+I will change heading 3
+
+07:46.320 --> 07:58.520
+Zuby toggle class turn blue and let's save this one to refresh the page.
+
+07:58.600 --> 08:00.880
+And now we should see that as I type stuff.
+
+08:00.910 --> 08:07.100
+Nothing really happens until I press enter which I know you can't see that the change occurs.
+
+08:07.100 --> 08:12.490
+So right now I'm just pressing enter on my keyboard and the changes occurring for any other key press.
+
+08:12.490 --> 08:13.460
+Nothing will happen.
+
+08:13.720 --> 08:17.260
+And that's how you can use the event object to grab information.
+
+08:17.410 --> 08:23.080
+And with key presses which will tell you a numeric code that corresponds to that key and you can just
+
+08:23.080 --> 08:28.290
+Google online for the numerical codes specific reason your keyboard.
+
+08:28.430 --> 08:30.110
+We're going to discuss two more things.
+
+08:30.140 --> 08:34.970
+And one is the method and the next one it will be effects and animations.
+
+08:35.000 --> 08:37.220
+But let's quickly show you what the method looks like.
+
+08:39.350 --> 08:47.150
+The method essentially acts like event at event listener from vanilla Javascript.
+
+08:47.150 --> 08:58.020
+So if I grab H-1 and say dot on I passen and events for instance let's passen double click
+
+09:01.380 --> 09:02.790
+and then I pass in the function
+
+09:05.800 --> 09:15.990
+and we can use a special this keyword to reference H-1 here I'll say this and we will toggle class to
+
+09:15.990 --> 09:18.350
+be turned blue.
+
+09:19.250 --> 09:20.660
+So it's happening here.
+
+09:20.870 --> 09:27.000
+I'm saying on DoubleClick call this function and this references the H-1.
+
+09:27.010 --> 09:34.010
+So if I refresh this page every time I double click on this it's going to toggle this on and off and
+
+09:34.040 --> 09:37.580
+my highlighting is making it seem a little weird because when your height when you double click something
+
+09:37.820 --> 09:39.210
+it also gets highlighted.
+
+09:39.230 --> 09:44.390
+Hopefully you can see when I'm trying to convey here and you can practice this on your computer to get
+
+09:44.390 --> 09:45.450
+a better idea of it.
+
+09:46.330 --> 09:46.710
+All right.
+
+09:46.780 --> 09:48.940
+So let's show one of my last example.
+
+09:48.940 --> 09:54.660
+This is basically just like an event listener so I can say something like mouse enter.
+
+09:55.700 --> 10:01.760
+Save this and this should actually be a lower Casey save that.
+
+10:02.020 --> 10:09.290
+And refresh our page and you'll see here as I mouse hovers over it suddenly turns into blue.
+
+10:09.560 --> 10:13.020
+And now I can talk with the class just by hovering off anon.
+
+10:13.090 --> 10:19.150
+So now I can just have a single call with toggle class instead of the dual calls we saw back when I
+
+10:19.150 --> 10:22.720
+was using vanilla javascript's OK.
+
+10:22.750 --> 10:26.380
+Finally let's talk about events and animations.
+
+10:26.380 --> 10:28.120
+Now you can go to API that J.
+
+10:28.120 --> 10:32.700
+Queried dot com categories slash effects to get more information about this.
+
+10:32.890 --> 10:38.450
+But basically you can have animations or effects occur.
+
+10:38.670 --> 10:41.530
+We'll show you some very common ones.
+
+10:41.670 --> 10:49.150
+I'm going to say input da e q and I'm going to grab the second input which we look back at the HDMI.
+
+10:49.200 --> 10:50.550
+It's the submit button.
+
+10:50.550 --> 10:53.120
+So I want something to happen when I click on submit.
+
+10:53.440 --> 10:58.130
+So I will say on click
+
+11:00.690 --> 11:01.230
+function
+
+11:04.640 --> 11:09.090
+and then I'm going to grab everything in the container class.
+
+11:10.770 --> 11:12.430
+Let's put this in quotes here.
+
+11:14.820 --> 11:17.460
+So grab everything in that container class.
+
+11:18.590 --> 11:26.250
+And say fade out and you can pass in a number here in milliseconds.
+
+11:26.250 --> 11:28.120
+So I like to refresh this.
+
+11:28.170 --> 11:28.990
+I hit submit.
+
+11:29.040 --> 11:30.740
+Let's close this before I do that.
+
+11:31.680 --> 11:34.470
+I'll eventually see everything fade out within 30 seconds.
+
+11:34.470 --> 11:36.040
+So what is actually going on here.
+
+11:36.210 --> 11:39.730
+Well this is just an animation that is available to update query.
+
+11:40.020 --> 11:49.390
+And basically it just fade out and you pasan a number of milliseconds that you want the fadeout to take.
+
+11:49.400 --> 11:56.120
+There are many many animations and effects available to you just to show you one more you can use slide
+
+11:56.120 --> 11:56.810
+up.
+
+11:56.810 --> 11:57.920
+I will save this.
+
+11:58.100 --> 11:59.630
+Let's refresh the page.
+
+11:59.630 --> 12:06.320
+And as I click Submit I can see everything starts to get slide up or basically a white and in order
+
+12:06.320 --> 12:09.500
+to get this back I just have to refresh.
+
+12:09.930 --> 12:10.330
+OK.
+
+12:10.370 --> 12:17.370
+So again there's a link in the notes or you can just go to a guide that just create icon slash category
+
+12:17.370 --> 12:21.970
+such effects to get the full list of all the effects available to here.
+
+12:22.040 --> 12:26.690
+We won't really be playing around these too much throughout the rest of the course but you may find
+
+12:26.750 --> 12:32.530
+when you're dealing with your own web site it may be fun to add in your own animation using Jake Weary.
+
+12:32.540 --> 12:33.230
+All right.
+
+12:33.230 --> 12:36.730
+So go ahead and check out the notes if you want to review anything we covered here.
+
+12:37.010 --> 12:42.460
+But hopefully you now realize that Shakeri makes your life really simple and a whole lot easier especially
+
+12:42.460 --> 12:43.870
+in working with the DOM.
+
+12:43.880 --> 12:47.330
+Coming up next we're going to have a Kinect for game project.
+
+12:47.340 --> 12:53.150
+We're actually going to make a working a fully working front and Web site that has a Kinect for game
+
+12:53.150 --> 12:53.860
+on it.
+
+12:53.900 --> 12:55.840
+Thanks everyone and I'll see in the next lecture.

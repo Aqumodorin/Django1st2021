@@ -1,0 +1,160 @@
+WEBVTT
+
+00:04.760 --> 00:09.120
+Hello everyone and welcome to part nine function exercises.
+
+00:09.120 --> 00:13.920
+Let's take a quick look at some of the function exercises that are here for you to answer the relative
+
+00:13.920 --> 00:19.530
+files are part 9 function exercises and part nine function exercises solutions that high.
+
+00:19.560 --> 00:22.160
+Let's open them up in the editor and see what they're all about.
+
+00:22.290 --> 00:22.590
+OK.
+
+00:22.590 --> 00:28.740
+Here we have part nine function exercises open and complete the tasks below by writing functions and
+
+00:28.740 --> 00:31.250
+keep in mind these problems are actually meant to be really tough.
+
+00:31.290 --> 00:36.360
+Even if you do know Python it's all about breaking the problem down into smaller logical steps and if
+
+00:36.360 --> 00:41.340
+you get stuck on this don't feel bad about having to take a peek at the solutions file or at the solutions
+
+00:41.340 --> 00:47.310
+lecture for the first problem you'll be given a list of integers and I want you to return true if the
+
+00:47.310 --> 00:51.280
+sequence of numbers 1 2 3 appears in the list somewhere.
+
+00:51.300 --> 00:55.950
+So for example in this first one here we have 1 two 3 in the center.
+
+00:55.950 --> 00:57.390
+So we return true.
+
+00:57.390 --> 00:58.670
+Here we don't have one two three.
+
+00:58.710 --> 00:59.880
+So we return false.
+
+00:59.880 --> 01:01.030
+Here we have 1 2 3.
+
+01:01.080 --> 01:07.830
+At the end to return true and just fill out this array check function and here we're actually using
+
+01:07.830 --> 01:08.580
+camel cases.
+
+01:08.580 --> 01:10.620
+We should be using snake case in Python.
+
+01:10.620 --> 01:12.480
+But don't worry about that too much slower.
+
+01:12.510 --> 01:18.540
+Either way with Problem 2 given the string we want to return a new string made of every other character
+
+01:18.540 --> 01:19.530
+starting with the first.
+
+01:19.530 --> 01:20.760
+So hello yields.
+
+01:20.800 --> 01:21.840
+H l o.
+
+01:22.080 --> 01:23.470
+Again some examples here.
+
+01:23.610 --> 01:27.980
+Hopefully you remember string slicing and indexing enough to make this an easy task for you.
+
+01:28.700 --> 01:30.570
+And now on to problem 3.
+
+01:30.800 --> 01:32.990
+Problem 3 is given two strings.
+
+01:32.990 --> 01:39.210
+I want you to return true if either of the strings appears at the very end of the other string and I
+
+01:39.200 --> 01:41.700
+want you to also ignore upper and lower case differences.
+
+01:41.700 --> 01:45.140
+So in other words the computation should not be case sensitive.
+
+01:45.350 --> 01:46.610
+And a quick hint slash.
+
+01:46.610 --> 01:47.140
+Note.
+
+01:47.210 --> 01:51.220
+You can use estat lower to return the lower case version of a string.
+
+01:51.230 --> 01:53.700
+So here we can see three examples that will yield true.
+
+01:53.990 --> 01:56.810
+I have high ABC and ABC.
+
+01:56.810 --> 02:00.910
+Note that ABC is at the end of the first drink so that returns true.
+
+02:01.130 --> 02:02.380
+Then I kind of have the opposite.
+
+02:02.420 --> 02:09.320
+ABC and hi ABC ABC is at the end of the second string here so that also returns true and then I have
+
+02:09.350 --> 02:15.800
+ABC and then ABC NBC ABC here Piers the end of this once that was hers true again.
+
+02:15.840 --> 02:23.720
+If either string is at the end of the other string you return true problem for is given a string return
+
+02:23.720 --> 02:27.800
+a string where for every character in the original There are two characters.
+
+02:28.010 --> 02:31.820
+So here we're kind of just doubling the characters in the string so you can check out these examples
+
+02:32.140 --> 02:33.440
+so get an idea of what I mean.
+
+02:35.320 --> 02:41.380
+Then problem 5 is probably the most difficult problem here but it's basically just read this problem
+
+02:41.380 --> 02:45.480
+statement carefully and then check out the actual examples here.
+
+02:45.550 --> 02:48.330
+So it's kind of a longer read but check it out.
+
+02:48.370 --> 02:50.470
+It's probably the trickier problem.
+
+02:50.470 --> 02:56.990
+There's two functions for it then problem 6 is a bit easier.
+
+02:56.990 --> 02:59.770
+It just says return the number of even integers in the given array.
+
+03:00.050 --> 03:06.110
+So this one should be pretty straightforward if you have an off list or an array of comany even integers
+
+03:06.110 --> 03:07.220
+are inside of it.
+
+03:07.480 --> 03:12.100
+OK thanks everyone and I'll see at the next lecture were actually be programming through solutions.

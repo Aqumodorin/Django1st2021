@@ -1,0 +1,490 @@
+WEBVTT
+
+00:05.090 --> 00:05.750
+Hello everyone.
+
+00:05.750 --> 00:11.500
+Welcome to part one of CSSA level 2 in this lecture we're going to be learning about Funt properties
+
+00:11.500 --> 00:14.830
+of CSA such as size weight text alignment etc..
+
+00:15.070 --> 00:20.110
+And then we're also going to learn how to download and change fonts when dealing with fonts.
+
+00:20.110 --> 00:25.840
+We have to keep in mind that not every OS has every font and if you use both a Windows computer and
+
+00:25.840 --> 00:31.480
+a Mac computer or a Linux computer often you'll notice that when you're actually trying to use a file
+
+00:31.480 --> 00:36.400
+that was created on Windows on a Mac or vice versa sometimes the fonts have to change in what we're
+
+00:36.400 --> 00:41.230
+going to be doing is exploring that relationship because sometimes we need to actually provide the font
+
+00:41.230 --> 00:45.530
+for our Web site because the default font isn't available on a certain OS.
+
+00:46.360 --> 00:51.820
+Because if this were going to be exploring a few links the first sort of link is about OS support for
+
+00:51.820 --> 00:56.740
+certain fonts with its operating system support so what fonts does Windows support what fonts do Mac
+
+00:56.740 --> 00:57.860
+support etc..
+
+00:58.000 --> 01:01.290
+And then the second set of links is actually going to cover how to download fonts.
+
+01:01.330 --> 01:03.010
+We'll be exploring two Web sites.
+
+01:03.050 --> 01:08.230
+Google font's site then another site to show you how you can download your own fonts from the internet
+
+01:08.410 --> 01:11.300
+or connect them using what's known as a CDN.
+
+01:11.800 --> 01:17.290
+Let's go ahead and start off just by showing some basic font properties see SS in the editor and then
+
+01:17.290 --> 01:22.210
+we'll hop over to the browser and check out how we can actually download fonts and check OS support
+
+01:22.260 --> 01:23.490
+person funds.
+
+01:23.520 --> 01:25.500
+I'm going to hop to the editor now.
+
+01:25.990 --> 01:32.920
+OK so here and my editor and I have two files open a part one Fahnestock CSSA file and a part 1 Fahnestock
+
+01:32.980 --> 01:34.300
+h tim L5.
+
+01:34.300 --> 01:37.960
+And if you're looking for the completed version of these files we can always check them out under the
+
+01:37.960 --> 01:39.550
+CSSA level 2 folder.
+
+01:39.550 --> 01:43.150
+Right now I have them blank and we'll be coding through for this lecture.
+
+01:43.150 --> 01:45.760
+Let me collapse that directory.
+
+01:45.780 --> 01:49.690
+Lotus I also have my browser open and it's linked to my team l file.
+
+01:49.960 --> 01:52.880
+When I first want to do is make some basic T.M..
+
+01:53.110 --> 01:57.140
+Hopefully by now you can actually do this quite quickly using Adams built in help.
+
+01:57.210 --> 02:05.530
+What I will do is add in a heading one here H-1 and I'll say something like heading 1 and then I'm going
+
+02:05.530 --> 02:08.510
+to add two paragraphs to this first paragraph.
+
+02:08.540 --> 02:10.100
+You're just going to be lordship summer.
+
+02:10.120 --> 02:12.700
+That's that essentially filler Latin text.
+
+02:12.700 --> 02:18.730
+And luckily I can just begin to type L O enter in it out of Madingley fills that in for me and I'll
+
+02:18.760 --> 02:23.890
+add in one more paragraph but this paragraph is going to have an ID so I can individually target it
+
+02:24.190 --> 02:25.440
+in the CSSA file.
+
+02:25.660 --> 02:33.150
+We'll say it is equal to two and then warm up some will save that and let's refresh over here to make
+
+02:33.150 --> 02:37.300
+sure that's working great we have heading 1 lordship some larm some.
+
+02:37.560 --> 02:42.040
+And then what I want to make sure I do is link my CSSA file to make it himself.
+
+02:42.250 --> 02:43.800
+Or that always happens in the head.
+
+02:43.890 --> 02:47.820
+So I will say link that can begin to type in link enter here.
+
+02:47.820 --> 02:53.390
+There really ship is a stylesheet and the H reference is going to be whatever I call that style sheet.
+
+02:53.400 --> 03:00.540
+So my case is called Part 1 underscore fonts and as I mentioned previously in another lecture it's a
+
+03:00.540 --> 03:05.750
+little unusual to have this sort of naming convention especially if a digit inside the SS file.
+
+03:05.820 --> 03:08.280
+But this is just so it matches up with the lecture notes.
+
+03:08.390 --> 03:08.840
+OK.
+
+03:09.150 --> 03:10.700
+So everything looks good here.
+
+03:10.710 --> 03:14.140
+Let's explore some of the basics of fonts with C.
+
+03:14.610 --> 03:17.550
+So let's imagine that I actually want to change the fonts.
+
+03:17.550 --> 03:19.890
+Right now it looks like it's in Times New Roman.
+
+03:19.890 --> 03:22.980
+That's essentially the default if I want to change it to another font.
+
+03:22.980 --> 03:31.610
+Maybe something like Arial I can start typing font family and that's going to allow me to then pasan
+
+03:31.650 --> 03:36.600
+a property of a different font so we can see that there are some defaults here.
+
+03:36.600 --> 03:38.460
+These are very basic.
+
+03:38.460 --> 03:44.110
+So let's show you one of the faults there if I just say cursive save this and then refresh over here.
+
+03:44.280 --> 03:51.920
+I can see now I have some default cursive it looks pretty ugly but it can also passen as a string.
+
+03:51.930 --> 03:58.070
+And that means that I'm wrapping it in either double quotes or single quotes a font name that I'm familiar
+
+03:58.070 --> 03:58.270
+with.
+
+03:58.270 --> 04:03.560
+Maybe I've worked with a text editor before you're familiar with some font called Aeriel Salome's save
+
+04:03.590 --> 04:05.650
+that refresh over here.
+
+04:05.770 --> 04:09.930
+Now I can see now it's in aerial versus Times New Roman.
+
+04:09.930 --> 04:10.180
+All right.
+
+04:10.190 --> 04:15.560
+So that's the basics of a font family but something we're going to have to keep in mind is not every
+
+04:15.560 --> 04:22.990
+font family is going to be defaulted on every OS so certain spots are really common between both Owasso
+
+04:23.030 --> 04:24.000
+such as Ariel.
+
+04:24.050 --> 04:27.630
+It's in like 99 percent of Macs a 99 percent of Windows.
+
+04:27.720 --> 04:33.710
+The other font families such as he'll that sukkah is really only existent on Macs and maybe like less
+
+04:33.710 --> 04:36.470
+than 10 percent of Windows computers have that font.
+
+04:36.500 --> 04:41.600
+And we'll be discussing some Web sites that can help you choose fonts that will be available on both
+
+04:41.630 --> 04:46.190
+OSes and later on we'll show you how to just download your own font so you can provide the font file
+
+04:46.190 --> 04:46.890
+yourself.
+
+04:47.960 --> 04:57.080
+OK let's talk a little bit more about font family so as I mentioned there are those basically default
+
+04:57.080 --> 05:02.290
+styles if I want something like monospace I can do that as well for that paragraph.
+
+05:02.290 --> 05:07.710
+So let me refresh this here and I can see this is all done in monospace.
+
+05:07.820 --> 05:10.800
+Let's say I want to change the actual font size.
+
+05:10.850 --> 05:18.310
+Well I can change the font size for everything in the body and the way I do that it's just a font size.
+
+05:18.380 --> 05:21.250
+And here I can passen pixels.
+
+05:21.290 --> 05:27.490
+So for instance I can say I want it to be 10 pixels in size refresh over here and I can see now it's
+
+05:27.490 --> 05:31.880
+in 10 pixels and size 100 pixels and size make it much larger.
+
+05:31.880 --> 05:33.290
+Now it's humongous.
+
+05:33.290 --> 05:40.760
+OK let's change it back to 10 pixels nexilis do 20 pixels and something to remember is I'm zoomed in
+
+05:40.760 --> 05:42.020
+here in my browser.
+
+05:42.050 --> 05:43.750
+So it may not look as large to you.
+
+05:43.760 --> 05:44.740
+So keep that in mind.
+
+05:46.470 --> 05:51.510
+Now something you're probably wondering at this point in time is well what if I don't know the pixels
+
+05:51.510 --> 05:53.460
+I want for the font size.
+
+05:53.460 --> 05:56.870
+What if I actually want stuff to have a relationship between each other.
+
+05:56.940 --> 06:02.520
+So maybe I want the second paragraph to be twice as large as the basic font size on the page.
+
+06:02.520 --> 06:09.350
+How do we actually define that and using pixels as I've shown here is actually not very common.
+
+06:09.360 --> 06:16.400
+What's more common is to use what is known as E-M values and values is a dynamic way of sizing things.
+
+06:16.410 --> 06:22.740
+So when you define the font size property in E-M is equal to the size of the font that applies to the
+
+06:22.740 --> 06:25.140
+parent of the element in question.
+
+06:25.380 --> 06:29.660
+And that basically means that if you haven't set the font size anywhere on the page.
+
+06:29.730 --> 06:35.330
+So let's say I delete this and I haven't set the font size anywhere so we can refresh here.
+
+06:35.340 --> 06:41.010
+That's the basic font size then the browser default is often 16 pixels.
+
+06:41.010 --> 06:48.410
+So by default then one E-M which would look like this one E-M would be equal to 16 pixels.
+
+06:48.420 --> 06:50.330
+This is the default right here.
+
+06:50.640 --> 06:57.030
+Which means if I tell another tag to be E-M then it'll be equal to 32 pixels.
+
+06:57.030 --> 06:57.900
+Double that.
+
+06:57.900 --> 07:04.980
+And then you can get a relationship or a ratio for various tags in your H T.M. what you'll usually do
+
+07:04.980 --> 07:08.650
+however is set a font size in the body element.
+
+07:08.910 --> 07:12.770
+So he go back here let's comment these out.
+
+07:13.320 --> 07:20.940
+Usually what you will end up doing is for the body element you will select a font size and you will
+
+07:20.940 --> 07:24.090
+have it be some sort of default font size that you choose.
+
+07:24.090 --> 07:29.310
+You can do the 16 pixels which is the same as as the browser default where nothing is fine but let's
+
+07:29.310 --> 07:35.580
+say font size is 20 pixels and then from there on the other elements that you want to assign you'll
+
+07:35.580 --> 07:42.690
+use E-M which is going to like to do a ratio of this which is basically a ratio of the desired element
+
+07:42.690 --> 07:47.500
+pixel value divided by that parent element which in this case is the body.
+
+07:47.520 --> 07:50.110
+So let's see just a quick example of this.
+
+07:50.280 --> 07:58.780
+I'm going to grab the number to remember that was the second paragraph the state ID and state its font
+
+07:58.780 --> 08:03.480
+size is equal to 2.0.
+
+08:03.900 --> 08:08.930
+E-M Let's save that will refresh over here.
+
+08:08.970 --> 08:14.970
+Now you can see that we have heading on the first paragraph and now the second paragraph is twice as
+
+08:14.970 --> 08:17.400
+large in font size as the first one.
+
+08:17.400 --> 08:22.980
+So what you're doing here is you're stating some default body font size and then from there you can
+
+08:22.980 --> 08:31.560
+actually call the ID font size as a ratio of it what you should avoid doing is trying to actually call
+
+08:31.620 --> 08:37.960
+something like H-1 and make it mimic the font size of a paragraph or vice versa.
+
+08:38.070 --> 08:42.990
+Trying to make a paragraph as large and as bold enough so that it looks like an H-1 a heading one that's
+
+08:42.990 --> 08:44.240
+really not the point of this.
+
+08:44.310 --> 08:48.870
+The point of this is that on your page if you have two elements of the same type but you want one to
+
+08:48.870 --> 08:53.970
+be a little larger a little smaller than the other one then you start calling them what you don't want
+
+08:53.970 --> 08:59.040
+to do is call E-M to the point where you should have just called heading one or heading to the very
+
+08:59.070 --> 08:59.570
+beginning.
+
+08:59.580 --> 09:06.930
+So keep that in mind and then what I want to show you now is font styles and font weights as well as
+
+09:06.930 --> 09:07.960
+text alignment.
+
+09:08.280 --> 09:17.080
+So if I call a paragraph here and say font style of paragraph and let me change just font size again
+
+09:17.080 --> 09:19.590
+to 1.0 that way everything's the same.
+
+09:20.020 --> 09:24.290
+OK looks good I'll say font style here.
+
+09:25.800 --> 09:32.970
+Is a tablet so I can save this and now when I refresh my page I can see that everything is italicize.
+
+09:32.970 --> 09:38.700
+So you can call font styles her basic things in that manner and you can also call things such as font
+
+09:38.700 --> 09:44.940
+weight and that can be things such as bold Lider normal 100 200 etc..
+
+09:45.030 --> 09:48.860
+Not every font is going to have every possible font weight.
+
+09:48.870 --> 09:51.450
+It really depends on what font you are and what font you use.
+
+09:51.480 --> 09:54.810
+And we'll be talking about that in a future lecture.
+
+09:54.810 --> 09:56.900
+But we have font weight is bold.
+
+09:56.960 --> 10:02.410
+So let's say that I make this both italic and bold in here I can see when I refresh.
+
+10:02.410 --> 10:04.930
+Now they're in bolds great.
+
+10:04.930 --> 10:07.660
+And finally I want to talk about text properties.
+
+10:07.660 --> 10:13.630
+So if we see one one of the properties you're going to be using all all the time is the text alignment
+
+10:13.630 --> 10:14.380
+property.
+
+10:14.770 --> 10:21.880
+And you can begin to write text dash and you'll see Adam trying to help you out with various text properties.
+
+10:21.940 --> 10:26.650
+We've already actually seen text decoration member that has stuff like underline over line line through
+
+10:26.920 --> 10:32.440
+what we want to do is talk about text align and text line basically allows you to send her something
+
+10:32.470 --> 10:34.810
+just the fight to the left to the right etc..
+
+10:34.810 --> 10:39.870
+So if I want to center heading 1 I just say text the line center on that added element.
+
+10:40.180 --> 10:48.390
+So I will save that refresh my page over here and I can see now heading 1 is aligned to be Center.
+
+10:48.550 --> 10:55.790
+Great OK we're talking a lot more about alignments and how alignments work with mobile devices when
+
+10:55.800 --> 10:57.510
+we talk about bootstrap.
+
+10:57.510 --> 11:02.280
+But for right now what I want you to get out of this lecture is the following that you can call font
+
+11:02.280 --> 11:05.600
+families have some awareness of that.
+
+11:05.610 --> 11:08.010
+Some fonts don't work on every OS.
+
+11:08.010 --> 11:11.770
+Now we'll be talking about that in the very next lecture as a continuation of the series.
+
+11:12.000 --> 11:17.700
+Then you can call font families for very basic things such as monospace or some of the other options
+
+11:17.700 --> 11:26.160
+if we take a look or things such as cursive or Sarah first answer if we can save that as well then for
+
+11:26.160 --> 11:31.990
+font size what I want you to make sure you get out of the picture is that you can call a pixel.
+
+11:32.000 --> 11:38.850
+But what you should probably do is call an E M based off the default for the body.
+
+11:39.070 --> 11:44.110
+Then you can call font styles and font weights as well as do text alignment.
+
+11:44.110 --> 11:44.860
+All right.
+
+11:44.860 --> 11:45.840
+Thanks everyone.
+
+11:45.860 --> 11:51.160
+In the next lecture we're going to be continuing this one discussion of fonts and talking about what
+
+11:51.160 --> 11:55.930
+fonts work with which OS how you can figure that out and how you can download your own font from the
+
+11:55.930 --> 11:57.970
+internet to use it for your web site.
+
+11:57.970 --> 11:59.770
+Thanks everyone and I'll see you at the next lecture.

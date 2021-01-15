@@ -1,0 +1,736 @@
+WEBVTT
+
+00:04.860 --> 00:09.450
+Hello everyone and welcome back in this lecture will be cutting through the solutions for the coffee
+
+00:09.450 --> 00:13.070
+lover bootstrap project that I explained in the previous lecture.
+
+00:13.080 --> 00:15.890
+Let's show her editor and browser and get started.
+
+00:15.900 --> 00:21.300
+OK so here you have my browser open just a quick reminder we're going to do is create this Jumbotron
+
+00:21.630 --> 00:23.640
+add some content to the Jumbotron.
+
+00:23.640 --> 00:24.960
+Have these two paragraphs here.
+
+00:24.960 --> 00:30.180
+These large sums add the pictures the coffees the thumbnail class and then make sure that we have the
+
+00:30.180 --> 00:30.960
+nav bar.
+
+00:31.080 --> 00:35.700
+And then if I click on the sign and it takes me to the form we also want to make sure that we get the
+
+00:35.700 --> 00:36.880
+grid system right.
+
+00:36.960 --> 00:42.540
+Or actually adding these thumbnails of the coffee pictures and we have the links to these coffee pictures
+
+00:42.540 --> 00:44.710
+right here on these links right here.
+
+00:44.850 --> 00:48.180
+So one two three takes it to images of coffee.
+
+00:48.210 --> 00:50.010
+OK let's get started.
+
+00:50.010 --> 00:52.990
+All right so I have my editor here open with my browser behind it.
+
+00:53.070 --> 00:57.990
+I've opened up a new project thirty's Tamil file so I'm going to just link to it now.
+
+00:58.920 --> 01:03.260
+So I've copied its full path and I'm going to paste it here into my browser.
+
+01:03.250 --> 01:04.820
+So right now it's blank.
+
+01:04.890 --> 01:07.260
+Let's add in CMH T.M. code.
+
+01:07.460 --> 01:09.380
+It's called the title of it Project.
+
+01:09.390 --> 01:11.100
+And let's also add the link.
+
+01:11.100 --> 01:14.430
+We're going to need for bootstrap itself.
+
+01:14.430 --> 01:20.400
+So I'm just going to copy and paste that from the Web site already have it open on another window on
+
+01:20.400 --> 01:26.420
+another screen so I save that and then let's add an just the heading here to make sure things working
+
+01:27.230 --> 01:28.510
+well stay connected.
+
+01:29.280 --> 01:32.430
+Refresh over here and I can see I'm connected.
+
+01:32.460 --> 01:33.350
+Great.
+
+01:33.390 --> 01:37.290
+So the first thing I want to take care of is probably the nav bar.
+
+01:37.290 --> 01:43.610
+So we know that's going to be just here on top of the page all we have to do for that is add an NAV.
+
+01:43.850 --> 01:52.710
+And remember we have a class here and it's going to be nav bar and I'm going to also add an nav bar
+
+01:52.740 --> 02:00.170
+dot or dash Inv. which is going to allow us to have that darker color here refreshed that I can say
+
+02:00.170 --> 02:05.230
+I have my nav bar Inv. doesn't have anything inside of it yet so let's add in those things.
+
+02:06.430 --> 02:08.600
+In our case it's just one other item.
+
+02:09.510 --> 02:20.060
+So we'll end up doing is putting an unordered list in there and we can give it the class nav bar dash
+
+02:20.140 --> 02:20.780
+Nev..
+
+02:20.810 --> 02:25.310
+And before that actually Nev. space for that.
+
+02:25.830 --> 02:33.560
+And then the list item I want to here is an anchor tag with an H reference of my Sign-Up page and I've
+
+02:33.570 --> 02:36.090
+called my Sign-Up page and I'm working right now.
+
+02:36.090 --> 02:44.410
+New underscore Sign-Up thought HTL and this is going to say seinen.
+
+02:44.610 --> 02:47.500
+Let's save that refresh.
+
+02:47.600 --> 02:51.660
+Now I can see here I have seinen but notice here I also have this welcome.
+
+02:51.690 --> 02:53.450
+So let's add that in as well.
+
+02:53.580 --> 02:56.280
+And that's going to be a brand.
+
+02:56.280 --> 02:58.300
+So let's put that in.
+
+02:58.370 --> 03:07.620
+Which means it's going to be underneath the nav tag or create a div and this one takes nav bar dash
+
+03:07.620 --> 03:08.490
+header.
+
+03:08.580 --> 03:10.450
+And again I don't expect you to memorize these.
+
+03:10.470 --> 03:16.220
+Just be able to reference the documentation for what you need and then we'll put an anchor tag here.
+
+03:16.410 --> 03:18.360
+The class that's going to have
+
+03:20.830 --> 03:31.510
+is the nav bar brand and the ATRA if we wanted to have just the hash tag and we'll say something like
+
+03:31.510 --> 03:38.810
+welcome let's refresh make sure it got in there and there's our welcome sign in if I click sign in it
+
+03:38.810 --> 03:40.630
+takes me to the new Sign-Up.
+
+03:40.670 --> 03:41.780
+All right.
+
+03:41.780 --> 03:44.260
+Looks like a nav bar is working as we want it to work.
+
+03:44.280 --> 03:46.280
+We come back here at the bootstrap project.
+
+03:46.340 --> 03:48.710
+It's a little bigger here than what we have here.
+
+03:49.460 --> 03:51.960
+That that's actually because I'm zoomed in on this page.
+
+03:51.970 --> 03:55.640
+Suffice zoom in on this page will get the same size.
+
+03:55.750 --> 04:01.190
+So you can see here I have the little plus thing if I just actually reset the default.
+
+04:01.330 --> 04:04.260
+I'll get the same size that I have on the screen.
+
+04:05.140 --> 04:09.810
+OK so now bars taken care of if I click sign then it takes me to that and you sign up page.
+
+04:09.860 --> 04:16.180
+Let's actually just copy and paste this code that we have so far and put it on the news sign up page.
+
+04:16.190 --> 04:18.630
+In fact I'm going to copy this entire page.
+
+04:18.860 --> 04:25.130
+Put it on my news sign up HTL page and then instead of taking it to sign in I'm going to change this
+
+04:25.140 --> 04:34.710
+to landing page and then have it take me to the original HMO which is new underscore project.
+
+04:35.040 --> 04:39.130
+We'll save that refresh over here.
+
+04:39.130 --> 04:44.730
+And now I have this link to the landing page on my sign up page and the note kicks in takes it to the
+
+04:44.730 --> 04:48.820
+landing page to see how it's changing it back and forth.
+
+04:48.850 --> 04:49.260
+OK.
+
+04:49.350 --> 04:50.150
+Great.
+
+04:50.160 --> 04:54.670
+So let's come back to our main new project buddy Tim Page.
+
+04:54.840 --> 04:55.950
+Check out the bootstrap project.
+
+04:55.950 --> 04:57.930
+We still need to add and this Jumbotron.
+
+04:58.020 --> 04:59.660
+So let's go ahead and do that.
+
+04:59.670 --> 05:05.460
+First thing I want to do is put it all in a container so I have that deal with the container class and
+
+05:05.460 --> 05:08.010
+then I'll end up doing is putting in the Jumbotron here.
+
+05:09.090 --> 05:11.790
+So say Divx put in the jumbotron
+
+05:14.660 --> 05:20.060
+and then we'll say H-1 coffee lover projects
+
+05:23.820 --> 05:29.910
+and then let's just add in some paragraphs of lordship some here just so we have a little bit of content
+
+05:30.210 --> 05:31.480
+on the page.
+
+05:31.620 --> 05:38.150
+We'll save that refresh our project and we can see here we have coffee lover project Lorem some larm
+
+05:38.280 --> 05:39.370
+some.
+
+05:39.570 --> 05:44.470
+So we come back to a bootstrap project we've created a general landing page for Jumbotron.
+
+05:44.510 --> 05:50.520
+We created an avatar on the page at least the other ASML we added two paragraphs and Lord of the Jumbotron.
+
+05:50.670 --> 05:55.440
+And next we used a grid system to add in the thumbnail pictures of coffee and we have all those links
+
+05:55.440 --> 05:57.790
+right here one two three four five six.
+
+05:58.020 --> 06:02.210
+So coming back down I'm going to need to add in those pictures.
+
+06:02.310 --> 06:03.570
+So how do actually do that.
+
+06:03.870 --> 06:09.000
+Well since I want to take advantage of the grid system for the resizing of that I want to make sure
+
+06:09.000 --> 06:11.680
+that it's in a container and then in a row.
+
+06:12.090 --> 06:16.010
+So create a new div have it be container.
+
+06:16.080 --> 06:20.160
+I could have also just put it in here in this container but sometimes it's nice to separate out your
+
+06:20.160 --> 06:21.040
+code this way.
+
+06:21.900 --> 06:31.760
+Put heading 2 and have it say pictures of coffee and then all manually code out the first actual row
+
+06:31.760 --> 06:34.210
+and then we'll just copy and paste for the rest of them.
+
+06:34.310 --> 06:40.750
+So the next thing I want is the row class and then here I'll make another div
+
+06:43.710 --> 06:47.540
+and let's put this all in one line I remember.
+
+06:47.580 --> 06:53.920
+I want it to be at least three columns of pictures across on the largest setting.
+
+06:53.940 --> 06:59.370
+So if I expand this I see three pictures across the largest setting and on the smallest setting it should
+
+06:59.370 --> 07:00.510
+just be two pictures.
+
+07:00.690 --> 07:07.000
+So you can see the pictures actually get smaller to adjust for that as I go on so expanding this again.
+
+07:07.780 --> 07:10.010
+Three and at the smallest it's going to be too.
+
+07:10.070 --> 07:11.130
+No matter how small it gets.
+
+07:11.140 --> 07:12.660
+It's always two pictures across.
+
+07:12.730 --> 07:18.110
+No matter how big it gets it's always three pictures across which means I want something like this.
+
+07:18.400 --> 07:21.730
+I won't call on large.
+
+07:21.730 --> 07:29.250
+I want each picture to take up four units out of those 12 units because four times three is 12.
+
+07:29.290 --> 07:34.890
+And then at the very smallest call extra small.
+
+07:34.890 --> 07:38.940
+I wanted to take six units so six times two is 12.
+
+07:39.420 --> 07:45.990
+And then the next thing I want to do is add in the thumbnail class and the thumbnail class allows us
+
+07:45.990 --> 07:50.880
+to actually make these pictures of the thumbnails and let's explore what that looks like in the documentation
+
+07:51.600 --> 07:52.880
+coming to get bootstrapped.
+
+07:52.890 --> 07:58.060
+Com I can click on the components and over here on the right hand side I'll see and look down that there
+
+07:58.070 --> 07:58.890
+is thumbnails.
+
+07:58.920 --> 08:03.750
+So clicking on that I see I can extend this Tripps grid system with the thumbnail component to easily
+
+08:03.750 --> 08:07.530
+display grids of images videos text and more.
+
+08:07.530 --> 08:13.710
+And this is kind of going to look like almost like Pinterest style photos and they show you an example
+
+08:13.710 --> 08:15.930
+here of what these actually look like.
+
+08:15.960 --> 08:20.910
+But the main thing to notice is that all we have to do is say class thumbnail and what thumbnail allows
+
+08:20.910 --> 08:25.780
+you to do is actually expand the call to the class on the outside.
+
+08:25.810 --> 08:30.940
+So by default these tropes thumbnails are designed to showcase linked images with some minimal required
+
+08:30.940 --> 08:35.800
+markup and then you can also put in custom content which we won't be doing here but you can see that
+
+08:35.800 --> 08:40.950
+I could even add in this little heading some paragraphs statements and some buttons as well.
+
+08:41.230 --> 08:43.930
+So those are two examples of what thumbnails look like.
+
+08:43.930 --> 08:48.170
+Basically all you had to do was add in the thumbnail class.
+
+08:48.330 --> 08:53.970
+So coming back to our project we're going to add in here a thumbnail and then we're going to add an
+
+08:53.970 --> 09:00.720
+image tag right here and we want to make sure that our source matches up to the coffee picture and all
+
+09:00.720 --> 09:06.640
+those coffee picture sources are available to here on the Bitstrips she can click on one of them and
+
+09:06.640 --> 09:10.000
+I'll take you to this link right here so I can just copy and paste this link.
+
+09:11.230 --> 09:13.510
+And then put it as the source of my image.
+
+09:14.360 --> 09:20.700
+Save this and then if I refresh my project I can begin to see the first picture of my coffee.
+
+09:20.720 --> 09:26.840
+So now instead of just repeating those steps over and over again I'm going to copy and paste all these
+
+09:26.840 --> 09:29.560
+from the solutions.
+
+09:29.590 --> 09:31.040
+It's basically just duplicate.
+
+09:31.150 --> 09:31.990
+Over and over again.
+
+09:31.990 --> 09:39.020
+So I copy and paste these Let's shift tab over and I can see here I have everything the same.
+
+09:39.150 --> 09:46.330
+Just linking two different images that I have on the solutions so let's save that refresh over here
+
+09:46.620 --> 09:51.100
+and I can say I have my pictures of coffee three across three at cross.
+
+09:51.100 --> 09:52.860
+Everything's looking good.
+
+09:52.930 --> 09:53.420
+OK.
+
+09:53.620 --> 09:59.370
+Now that's actually all I really needed for the project itself as far as the main sign up page.
+
+09:59.380 --> 10:04.750
+Delivering a check now is if I begin to decrease this it turns into two columns which we see it eventually
+
+10:04.770 --> 10:08.440
+that's great even as it gets smaller states too.
+
+10:08.500 --> 10:12.410
+Now I just need to fix the sign up page which is currently blank right now.
+
+10:12.520 --> 10:13.570
+So let's do that.
+
+10:14.600 --> 10:17.850
+Let me click open my new sign up page which is right here.
+
+10:17.990 --> 10:19.780
+New underscore sign up each T.M..
+
+10:19.850 --> 10:23.450
+It only has NEVER right now so we need to add in the forms.
+
+10:23.450 --> 10:26.430
+If we take a look at what the solutions looked like.
+
+10:26.440 --> 10:31.790
+So coming back here clicking on seinen I can see there was actually a large Jumbotron saying to log
+
+10:31.790 --> 10:33.580
+in and email password.
+
+10:33.770 --> 10:36.570
+So let's add that in to our sign up page.
+
+10:36.760 --> 10:38.980
+It's going to come outside of this.
+
+10:38.980 --> 10:47.100
+Now I've been going to say whoops div put in a container.
+
+10:47.600 --> 10:59.000
+Another day with the Jumbotron itself and then I'm going to just put it heading on log in and then the
+
+10:59.000 --> 11:07.290
+paragraph is going to say Enter your email and password.
+
+11:08.110 --> 11:09.310
+So let's save that.
+
+11:09.310 --> 11:12.850
+Make sure it actually registered a far site refresh.
+
+11:12.870 --> 11:13.180
+Great.
+
+11:13.180 --> 11:15.640
+So there's a log in and three email and password.
+
+11:15.640 --> 11:22.780
+Now it's time to just add in the form Selsey form and there's an action here in this study.
+
+11:22.780 --> 11:27.070
+Tim L. We really don't need to worry about any action because we're not actually going to lead anywhere
+
+11:27.460 --> 11:28.820
+and we don't need to worry about the method.
+
+11:28.900 --> 11:32.860
+If we wanted this to lead somewhere else to another page and the back end we could have filled that
+
+11:32.860 --> 11:33.180
+in.
+
+11:33.190 --> 11:34.880
+But we don't need to worry about that.
+
+11:34.930 --> 11:36.780
+The class however we do need to worry about.
+
+11:36.790 --> 11:44.520
+So we'll say form that group member that's the class we've been working with for bootstrap forms.
+
+11:44.860 --> 11:56.010
+And then I want to add in a label and an input first one is going to be my email and put.
+
+11:56.250 --> 12:05.030
+And we're going to give this class formed dash control member the two main classes we were working with
+
+12:05.030 --> 12:08.000
+and we were working with inputs and forms.
+
+12:08.000 --> 12:14.900
+It was Forum group and forum control and then the label I want for this is email and I want to make
+
+12:14.900 --> 12:21.540
+sure this has a name so we'll give it a name user E-M for user email and make sure we assign it the
+
+12:21.600 --> 12:22.900
+label user.
+
+12:22.920 --> 12:27.420
+E-M now we don't need actually give it a value.
+
+12:27.770 --> 12:36.460
+Instead let's give it a placeholder and we'll say email just looks a little nicer.
+
+12:36.480 --> 12:37.280
+Let's save that.
+
+12:37.270 --> 12:39.400
+Make sure it worked well refresh.
+
+12:39.720 --> 12:39.960
+Great.
+
+12:39.960 --> 12:42.720
+Here's our email but notice it's going all the way across.
+
+12:42.730 --> 12:49.200
+It's actually not in a container class which means I need to come back here and either put it back into
+
+12:49.200 --> 12:51.850
+this original container or create a new container.
+
+12:52.080 --> 12:54.340
+It's up to you depending how you want to organize your code.
+
+12:55.160 --> 12:57.290
+But I'll just put it in a new container.
+
+12:59.130 --> 13:06.000
+Well scrap this form put in that new container refresh and here we have it in a nice container.
+
+13:06.040 --> 13:08.300
+OK so we have our e-mail looking nice the container.
+
+13:08.310 --> 13:16.150
+Let's come back up here and actually add in to our form the password the checkbox and the submit button.
+
+13:16.230 --> 13:23.370
+So this will look really similar for the password so I can actually just copy this pasted in here and
+
+13:23.370 --> 13:25.590
+change the things I need to change.
+
+13:25.590 --> 13:32.730
+So for instance I want to change the actual label to say password and also change for instead of user
+
+13:32.810 --> 13:41.760
+E-M I'll say user pass which means I need to change this name over here to user pass and to change the
+
+13:41.760 --> 13:45.200
+type to password.
+
+13:45.220 --> 13:49.260
+I'll keep class form control the same and then placeholder.
+
+13:49.540 --> 13:53.260
+We're going to say password here.
+
+13:53.440 --> 13:56.000
+Let's save this refresh make sure it all worked.
+
+13:56.290 --> 13:57.940
+And there's our e-mail there's a password.
+
+13:57.940 --> 13:58.790
+Looking good.
+
+13:58.930 --> 14:00.650
+Now it's add that checkbox.
+
+14:00.650 --> 14:05.110
+Remember that checkbox just said something like keep me logged in.
+
+14:05.290 --> 14:18.240
+So I create a div and will give it the class checkbox we'll call a label will say it's for user check
+
+14:19.320 --> 14:23.300
+say keep me log.
+
+14:23.300 --> 14:33.080
+Then it doesn't matter if we capitalize everything and then I want the input to be a checkbox input
+
+14:33.080 --> 14:38.090
+with the name user check.
+
+14:38.210 --> 14:41.860
+Let's save that and see what we get when I refresh this.
+
+14:41.860 --> 14:47.300
+So it says keep me logged in but know that it's actually on top of my checkbox.
+
+14:47.360 --> 14:48.760
+So let's fix that.
+
+14:49.040 --> 14:55.100
+The way to fix that is by actually putting in my label wrapped around the input.
+
+14:55.100 --> 14:58.780
+So I'm going to grab this input over here.
+
+14:59.690 --> 15:03.560
+And make sure I call in the correct form.
+
+15:03.800 --> 15:08.350
+So I'm going to pass it in before the keep me logged in.
+
+15:08.360 --> 15:12.600
+So now let's save this refresh and I can see here.
+
+15:12.660 --> 15:17.190
+Now I have my check box before the actual label keep me logged in.
+
+15:17.190 --> 15:24.140
+So again the way I did that if I expand this window scroll to the left here is I called the label said
+
+15:24.240 --> 15:32.110
+input type and then had the techs keep me logged in and closed off that label then I just want to add
+
+15:32.110 --> 15:34.120
+in the submit button.
+
+15:34.180 --> 15:38.100
+So I will call button type is going to be submit.
+
+15:38.200 --> 15:39.660
+It could have also set input.
+
+15:39.790 --> 15:41.460
+It's up to you.
+
+15:41.890 --> 15:50.060
+And let's give it the class between between defaults and that's just something you can reference off
+
+15:50.090 --> 15:55.670
+documentation depending on what you want to look like you could have styled it as a success button or
+
+15:55.670 --> 15:59.930
+a primary really up to you if we refresh this.
+
+15:59.960 --> 16:03.910
+You can see now we have this button here Our it doesn't actually have anything in it.
+
+16:04.070 --> 16:10.020
+So let's add in something like submit save it refresh.
+
+16:10.160 --> 16:14.000
+And here we see submit and now are Web sites looking pretty good.
+
+16:14.000 --> 16:18.740
+So we'll come back to the landing page we see coffee lover project the pictures of the coffee company
+
+16:18.740 --> 16:19.660
+to sign in.
+
+16:19.700 --> 16:20.950
+We see a log in.
+
+16:21.110 --> 16:27.640
+I can put in an email and I can put in a password select to keep me locked in and submit.
+
+16:27.670 --> 16:30.170
+All right that's really all you have to do for this project.
+
+16:30.190 --> 16:35.290
+I know it can seem really intimidating at first when you see this version of the project the actual
+
+16:35.290 --> 16:36.340
+official one.
+
+16:36.550 --> 16:42.430
+So everything of the instructions but hopefully you saw from what we learned here in the solutions video
+
+16:42.430 --> 16:44.770
+that it's actually pretty straightforward.
+
+16:44.830 --> 16:49.210
+We didn't even reference the documentation that much for what we had to do a lot of it was just covered
+
+16:49.210 --> 16:49.930
+in the videos.
+
+16:49.930 --> 16:55.660
+Now I know some things such as remembering what these classes are such as forum group or forum control
+
+16:56.140 --> 17:00.130
+may seem tedious at this point in time but these are things we're going to be using often enough when
+
+17:00.130 --> 17:02.720
+you're working a bootstrap they'll actually remember them.
+
+17:02.920 --> 17:06.730
+And I know I keep saying that you'll reference the documentation a lot but even for simple things like
+
+17:06.730 --> 17:10.340
+this which is actually a pretty good looking landing page.
+
+17:10.480 --> 17:14.990
+You don't have the reference documentation that much with the mount of practice you're going to be getting
+
+17:14.990 --> 17:16.530
+of bootstrap in this course.
+
+17:16.730 --> 17:17.480
+OK.
+
+17:17.650 --> 17:19.210
+So I hope you enjoyed the project.
+
+17:19.210 --> 17:20.440
+I will see you at the next lecture.

@@ -1,0 +1,145 @@
+WEBVTT
+
+00:04.960 --> 00:06.990
+Hello everyone and welcome to part three.
+
+00:06.990 --> 00:09.530
+Your first javascript exercise.
+
+00:09.910 --> 00:12.250
+Let's get some practice of your new skills.
+
+00:12.250 --> 00:17.530
+You're going to be creating a very simple web site that takes an A waits in imperial pounds and converts
+
+00:17.530 --> 00:21.320
+it to kilogrammes the H-2A mail is already done.
+
+00:21.360 --> 00:27.120
+All your work will just be in the connected not just file and the files can be found under javascript.
+
+00:27.120 --> 00:32.350
+Level one folder and they're called Part 3 underscore exercise that each team L and part 3.
+
+00:32.370 --> 00:33.810
+J.S..
+
+00:34.080 --> 00:39.330
+So at the bottom of the html file is the connection to the solution that js file which is part 3 that
+
+00:39.330 --> 00:40.080
+js.
+
+00:40.260 --> 00:42.560
+Make sure to actually change that to your own.
+
+00:42.650 --> 00:44.630
+Yes file before you start.
+
+00:44.640 --> 00:49.040
+Let's quickly explore the HTML file and what the sexercise actually looks like.
+
+00:49.080 --> 00:54.790
+Going to hop over to the editor in browser now OK here you have my editor open as well as the browser
+
+00:54.810 --> 01:00.090
+connected to the H Tim L file and the instructions for the exercise are actually already embedded into
+
+01:00.090 --> 01:05.250
+this aist him file like image and you're going to be creating a weight metric converter taken a number
+
+01:05.250 --> 01:07.650
+in pounds and convert it to kilograms.
+
+01:08.160 --> 01:09.570
+And what you're going to be doing is.
+
+01:09.590 --> 01:16.350
+First you need to grab the Tamil file in all the way down at the bottom we have the script and the reason
+
+01:16.350 --> 01:22.840
+the script is at the bottom is because I want him to load before my script actually loads.
+
+01:23.070 --> 01:28.110
+So I have the script here and right now it's connected to my own script my script that G-S.
+
+01:28.260 --> 01:31.560
+But when you first open this file it's going to be connected to part 3.
+
+01:31.620 --> 01:33.270
+Yes that is the solution.
+
+01:33.270 --> 01:34.510
+Javascript file.
+
+01:34.620 --> 01:36.450
+So if you want you can run this.
+
+01:36.450 --> 01:39.790
+H TIM PAGE ONE time so you can see what the solution looks like.
+
+01:39.870 --> 01:44.340
+As far as its interaction with the Web site but make sure when you're actually programming your javascript
+
+01:44.580 --> 01:47.900
+you remember to change the source to your own solution.
+
+01:47.910 --> 01:53.940
+Ok so like I said you first want to actually change the script here so it links to your work.
+
+01:54.030 --> 01:57.670
+Then use javascript to accept a number and put in pounds.
+
+01:57.800 --> 02:02.490
+Then in your JIT javascript file convert this number to kilogrammes and the conversion from pounds to
+
+02:02.490 --> 02:03.900
+kilograms is right here.
+
+02:03.900 --> 02:10.920
+You multiply it by 0.4 5:4 and then afterwards report back in an alert that the way is now in kilogrammes
+
+02:11.010 --> 02:16.710
+and then log slash write conversion completed to the Consul's second Z here conversion complete in the
+
+02:16.710 --> 02:17.550
+console.
+
+02:17.550 --> 02:20.500
+Let me refresh the page and show you what this should all look like.
+
+02:20.550 --> 02:25.940
+Once you've come up with your solution a refresh and we see here it says what is the weight in pounds.
+
+02:25.950 --> 02:28.690
+So put in one hundred pounds.
+
+02:28.770 --> 02:30.990
+Click OK and then report back.
+
+02:30.990 --> 02:33.660
+That is forty five point four kilograms.
+
+02:33.810 --> 02:36.290
+OK and down here at the con..
+
+02:36.300 --> 02:39.220
+I see conversion completed has been logged.
+
+02:39.570 --> 02:40.170
+All right.
+
+02:40.170 --> 02:41.790
+This is a fairly simple exercise.
+
+02:41.790 --> 02:45.390
+It's actually just a few lines of javascript code that gets stuck on anything.
+
+02:45.390 --> 02:48.980
+Feel free to post the Kewney forums or just watch the next lecture.
+
+02:48.990 --> 02:50.730
+I will code through the solutions.
+
+02:50.730 --> 02:52.620
+Thanks everyone and I'll see at the next lecture.

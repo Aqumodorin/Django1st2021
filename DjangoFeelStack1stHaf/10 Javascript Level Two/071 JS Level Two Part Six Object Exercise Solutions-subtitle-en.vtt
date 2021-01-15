@@ -1,0 +1,163 @@
+WEBVTT
+
+00:04.520 --> 00:08.960
+Well everyone welcome back to Part 6 ogic exercise solutions.
+
+00:08.980 --> 00:12.880
+We're going to be cutting through the solutions for the previous exercises.
+
+00:12.880 --> 00:14.400
+Let's hop over and get started.
+
+00:16.400 --> 00:16.920
+OK.
+
+00:17.090 --> 00:25.250
+For the first problem we had to do was actually console log the length of this name so how can we do
+
+00:25.250 --> 00:25.580
+that.
+
+00:25.610 --> 00:32.780
+Well first we need to create a method called the method name lines and then when I'm going to do is
+
+00:32.780 --> 00:40.440
+call the function and then have the set of curly brackets here and I will console log.
+
+00:40.680 --> 00:50.230
+And then I'm going to say this guy name that link and we didn't see an exact example of this of calling
+
+00:50.350 --> 00:55.520
+another property off the initial key value pair property the Hopefully are able to figure this out.
+
+00:55.660 --> 00:59.760
+So again this refers back to employee or current object.
+
+00:59.770 --> 01:02.850
+Do we have a name which is this property right here.
+
+01:03.040 --> 01:07.690
+And then I want to grab the link to that name which I say with that length and that's how you grab the
+
+01:07.690 --> 01:10.410
+length off of this name.
+
+01:10.420 --> 01:16.560
+Let's go down to Problem number two and Problem number two we wanted to write a program that will create
+
+01:16.560 --> 01:21.780
+an alert in the browser of each of the object values and the key value pairs.
+
+01:21.780 --> 01:23.780
+So for example it should alert.
+
+01:23.820 --> 01:29.370
+My name is John Smith job as programmer age is 31.
+
+01:29.510 --> 01:41.300
+So I'll call this method report we call the function won't have a name and then I say alerts and I'm
+
+01:41.300 --> 01:48.600
+going to say name is in loans concatenate everything we need we want this done name.
+
+01:48.910 --> 02:01.970
+And then I also want to concatenate Khama job is and then I want to say this job and then I'm going
+
+02:01.970 --> 02:12.350
+to concatenate with comma ages and then concatenate that with this dot age and that's all you had to
+
+02:12.350 --> 02:13.130
+do for this one.
+
+02:13.130 --> 02:15.020
+It's basically a bunch of this calls.
+
+02:15.020 --> 02:20.360
+So again this employee and then grabbed the actual properties name job and age and concatenate that
+
+02:20.420 --> 02:22.730
+all into a single alert call.
+
+02:23.270 --> 02:23.860
+All right.
+
+02:24.020 --> 02:25.280
+Finally the last problem.
+
+02:25.310 --> 02:30.930
+Problem number three which was add a method called last name that prints out the employee's last name
+
+02:30.970 --> 02:32.120
+the con..
+
+02:32.210 --> 02:36.500
+This is a little bit trickier because you had to figure out how to split a string to an array in order
+
+02:36.500 --> 02:38.940
+to just grab this right here.
+
+02:39.380 --> 02:40.930
+Let's show you how we can do that.
+
+02:41.020 --> 02:49.740
+You were able to figure it out or create a method called last name type in function and then going to
+
+02:49.740 --> 02:58.360
+do is say cancel the log and I will grab this name and we had to do was you had to figure out you can
+
+02:58.360 --> 03:06.220
+call that split on a string and then as a parameter to that split method you can passen whatever you
+
+03:06.220 --> 03:07.040
+want to split on.
+
+03:07.090 --> 03:12.370
+And I want to split on a blank space here between the first and last name and then after that that returns
+
+03:12.370 --> 03:13.110
+an array.
+
+03:13.320 --> 03:17.440
+So index for the second item in the array which is the last name.
+
+03:17.530 --> 03:22.270
+Index 1 and that's how you can create a method that prints out the employee's last name.
+
+03:22.480 --> 03:24.390
+So again just to quickly review this one.
+
+03:24.640 --> 03:30.580
+This becomes the actual object we're in right now called the Data named property and that's the string
+
+03:30.590 --> 03:32.060
+John Smith.
+
+03:32.140 --> 03:37.780
+I'm going to take John Smith and then call split and I pass in an empty string here.
+
+03:37.780 --> 03:43.450
+Well it's not empty space there because I want to split on the space and that returns an array of two
+
+03:43.450 --> 03:43.870
+items.
+
+03:43.870 --> 03:48.940
+The first name and the last name John and Smith and I want to grab the second item index one which is
+
+03:48.940 --> 03:50.610
+Smith and that's the last name.
+
+03:50.990 --> 03:52.930
+OK hopefully you enjoyed those.
+
+03:52.930 --> 03:56.620
+And you were able to figure them all out if you had a little bit of trouble with them.
+
+03:56.620 --> 03:57.660
+Don't worry about it too much.
+
+03:57.670 --> 04:00.820
+We'll get more practice later on the course.
+
+04:00.820 --> 04:02.850
+Thanks everyone and I'll see you at the next section.

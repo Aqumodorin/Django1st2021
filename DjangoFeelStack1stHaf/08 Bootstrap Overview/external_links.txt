@@ -1,0 +1,2 @@
+- b'Slides-for-Bootstrap-Section-You-can-ignore-the-Command-Line-slides-'
+- b'https://docs.google.com/presentation/d/1WBBbXcHSMdspQR2_lwUOaCAdQ_Vn4F9oc57gZOVr_wk/edit?usp=sharing'

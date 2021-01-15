@@ -1,0 +1,271 @@
+WEBVTT
+
+00:05.050 --> 00:09.840
+Hello everyone and welcome back to Part 9 javascript level 1 project.
+
+00:09.940 --> 00:14.200
+So we've completed all the normal lectures for dropped script level 1 and now it's time to actually
+
+00:14.200 --> 00:16.140
+do a project for this project.
+
+00:16.150 --> 00:20.550
+You'll be creating a simple web site that asks the visitor questions using javascript and the prompt
+
+00:20.570 --> 00:22.480
+function that we worked with earlier.
+
+00:23.290 --> 00:27.280
+However through all of these questions you're going to be secretly checking to see if there is a spy
+
+00:27.280 --> 00:31.060
+present and the spy is going to answer the questions in a very particular way.
+
+00:32.260 --> 00:36.380
+Behind the scenes are going to be using javascript to check for certain correct answers to questions.
+
+00:36.520 --> 00:41.110
+And if you find the spy do the correct answers you're going to leave them a secret message in the console
+
+00:41.110 --> 00:42.000
+for them to check.
+
+00:42.910 --> 00:43.380
+OK.
+
+00:43.440 --> 00:48.790
+You're going to be needing to check the part 9 underscore J s underscore project but a team file has
+
+00:48.830 --> 00:51.330
+the full instructions and the full correct answers.
+
+00:51.360 --> 00:55.230
+An example solution of the job secrets file is located under Part 9.
+
+00:55.280 --> 00:56.110
+Yes.
+
+00:56.120 --> 00:59.820
+So remember to link to your own dot script before getting started.
+
+00:59.820 --> 01:03.230
+So again you're only going to be editing a javascript file.
+
+01:03.270 --> 01:06.110
+You won't actually be touching any Timo.
+
+01:06.270 --> 01:10.520
+All right let's briefly explore the instruction page and see an example of what it should look like.
+
+01:10.650 --> 01:14.230
+After you're done with it and what hop over to the editor room browser now.
+
+01:14.700 --> 01:21.020
+OK here you have the actual HTML document open in my editor and also it links to the javascript filed
+
+01:21.020 --> 01:24.360
+a contains the solutions and this is what it looks like over here in the browser.
+
+01:24.390 --> 01:30.130
+So again just quickly to point out if you scroll all the way down on the part 9 javascript project body
+
+01:30.150 --> 01:33.830
+smell page right here under the script connection.
+
+01:33.950 --> 01:37.460
+It will connect to the solution script so it'll actually connect to part 9.
+
+01:37.460 --> 01:41.970
+But yes that's what you can connect it to if you want to see what an example solution looks like in
+
+01:41.970 --> 01:42.810
+your browser.
+
+01:42.900 --> 01:47.130
+But I recommend that once you're done dealing with that you change the source to your own javascript
+
+01:47.130 --> 01:52.470
+file so you can play around with working through the solution again everything you're doing is just
+
+01:52.500 --> 01:53.560
+in a javascript file.
+
+01:53.580 --> 01:56.350
+You won't actually be editing and he watched him for this.
+
+01:56.370 --> 02:01.260
+So let me show you what he actually asked him ilks like I've linked to here in my browser and going
+
+02:01.260 --> 02:04.400
+to zoom in a little bit so we can read it together.
+
+02:04.440 --> 02:07.950
+But here we have the welcome to part 9 your javascript level 1 project.
+
+02:08.100 --> 02:12.210
+And like I mentioned for this project you're going to be building a generic web site that just seems
+
+02:12.210 --> 02:17.340
+to ask some mundane questions that normal users but secretly you are looking for a spy and anyone visiting
+
+02:17.340 --> 02:22.380
+your web site is going to be asked a series of questions but only the spy is going to give you specific
+
+02:22.380 --> 02:23.730
+answers that you expect.
+
+02:23.790 --> 02:28.050
+And if all the questions are answered correctly you're going to post a secret message in the Council
+
+02:28.050 --> 02:29.170
+for the spy to read.
+
+02:29.340 --> 02:32.740
+So it's up to you what ever the secret messages be going to use cancel that log.
+
+02:32.880 --> 02:34.530
+If the answer the questions correctly.
+
+02:34.650 --> 02:37.230
+So here are the four conditions you're going to be checking for the spy.
+
+02:37.560 --> 02:41.860
+So the spy has the same first letter of her first name and her last name.
+
+02:41.910 --> 02:47.850
+So for example someone could be named Jose Johnson and J and J match.
+
+02:47.850 --> 02:50.000
+So that's the first letter and last letter.
+
+02:50.070 --> 02:53.010
+So that's a correct condition for the spy.
+
+02:53.130 --> 02:57.660
+The spy is also between the age of 20 and 30 exclusive of 20 at 30.
+
+02:57.660 --> 03:00.810
+So for example a 26 year old spy works.
+
+03:01.050 --> 03:04.590
+Then the spy is also at least 170 centimeters tall.
+
+03:04.590 --> 03:07.070
+Here we have 175 centimeters.
+
+03:07.290 --> 03:09.670
+And the spy has a pet name that ends with the letter Y.
+
+03:09.930 --> 03:13.280
+And in this case a pet name of Sammy would work.
+
+03:13.320 --> 03:16.140
+So you're going to ask the spy for their first name last name.
+
+03:16.140 --> 03:17.000
+What is their age.
+
+03:17.020 --> 03:20.100
+What is what is their height in centimeters and what is their pet name.
+
+03:20.100 --> 03:24.060
+And if the answer we think correctly according to these conditions so you're going to check these conditions
+
+03:24.060 --> 03:26.430
+using everything you learned about control flow.
+
+03:26.580 --> 03:31.920
+You will log a secret message to the consul and then they can inspect the page look at the consul and
+
+03:31.920 --> 03:34.070
+see if you left them anything.
+
+03:34.080 --> 03:34.770
+All right.
+
+03:34.770 --> 03:40.170
+So again we're just using javascript here and you can prompt for the information in any order you want
+
+03:40.350 --> 03:44.240
+and you can even do things like separate the first name prompt from the last name prompt.
+
+03:44.250 --> 03:48.210
+They'll probably make your life a little easier but all we're doing is just checking to see if these
+
+03:48.240 --> 03:49.940
+four conditions are true.
+
+03:50.040 --> 03:52.660
+This one this one this one and this one.
+
+03:52.740 --> 03:55.980
+So let's actually refresh this page and see what happens.
+
+03:56.000 --> 04:00.510
+Well this actually looks like we're going to refresh and it says Hello and welcome please and to your
+
+04:00.510 --> 04:03.340
+first name we'll say Jose.
+
+04:03.670 --> 04:07.130
+And your last name will see Johnson.
+
+04:07.160 --> 04:08.310
+How old are you.
+
+04:08.330 --> 04:09.810
+We'll say 26.
+
+04:10.220 --> 04:13.930
+We'll say we're 175 centimeters in the net.
+
+04:14.000 --> 04:15.520
+The name of our pet is Sammy.
+
+04:15.540 --> 04:16.870
+Oh OK.
+
+04:16.950 --> 04:18.460
+Thank you so much for the information.
+
+04:18.560 --> 04:19.460
+OK.
+
+04:19.460 --> 04:21.460
+And that's it it looks like nothing happened.
+
+04:21.620 --> 04:29.450
+But if I inspect and go to my counsel it says Welcome comrade you've passed us by test and exam and
+
+04:29.450 --> 04:30.710
+we are going to be doing.
+
+04:30.900 --> 04:34.620
+Let's refresh page and make sure that if I just put garbage.
+
+04:34.620 --> 04:46.460
+So let's say my name is Andy will I am 42 and 10 centimeters tall.
+
+04:46.680 --> 04:51.720
+My name or my pet is I don't know said OK.
+
+04:51.790 --> 04:53.890
+And it says sorry nothing to see here.
+
+04:55.140 --> 04:55.430
+OK.
+
+04:55.490 --> 04:59.220
+Hopefully you get an idea of what this project's actually getting at in the next lecture.
+
+04:59.240 --> 05:02.370
+I'll be coding out some solutions in the script file.
+
+05:02.600 --> 05:03.230
+Thanks everyone.
+
+05:03.230 --> 05:04.240
+Hope you enjoy the project.
+
+05:04.250 --> 05:05.220
+I'll see you at the next lecture.

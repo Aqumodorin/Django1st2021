@@ -1,0 +1,619 @@
+WEBVTT
+
+00:04.900 --> 00:13.870
+Welcome to party functions functions in Python UCD death or death keyword and you're defining a function.
+
+00:14.080 --> 00:19.140
+We'll also talk a bit more about some useful methods for various Python objects which will behave basically
+
+00:19.140 --> 00:21.870
+as functions you can call off the object.
+
+00:21.870 --> 00:24.660
+Let's get started by copying over to our editor.
+
+00:24.660 --> 00:25.140
+All right.
+
+00:25.140 --> 00:30.660
+So remember that a function formally is a useful device to group together a set of statements so that
+
+00:30.680 --> 00:35.610
+it can be run more than once and it can also let us specify parameters that can serve as inputs to the
+
+00:35.610 --> 00:36.030
+function.
+
+00:36.060 --> 00:40.410
+But on a more fundamental level they basically allow us to not have to repeatedly write the same code
+
+00:40.470 --> 00:42.270
+over and over and over again.
+
+00:42.660 --> 00:49.740
+So we're going to do is start with the DTMF keyboard and you can actually just enter here the F and
+
+00:49.740 --> 00:54.210
+then you can have the NAMEER function and Python uses camel case.
+
+00:54.210 --> 00:57.140
+So are seized me snake case for function names.
+
+00:57.300 --> 00:59.970
+Unlike javascript which uses camel case.
+
+00:59.970 --> 01:06.420
+So if you want your function you say my underscore F-you and C or whatever you want your function name
+
+01:06.420 --> 01:06.850
+to be.
+
+01:06.870 --> 01:09.870
+But with the word separated out with an underscore.
+
+01:09.870 --> 01:14.260
+And then if you want a parameter you can have something that looks like this pram one if you want any
+
+01:14.280 --> 01:15.300
+default value for it.
+
+01:15.300 --> 01:20.030
+You can say equals 2 and then input some default value.
+
+01:20.260 --> 01:25.150
+Then you can put in a colon here and you see now we have an indented block and anything inside of this
+
+01:25.390 --> 01:28.820
+belongs to the function it belongs to the scope of that function.
+
+01:28.900 --> 01:38.620
+And then I can say something like Prince my first Python function will save this.
+
+01:38.700 --> 01:44.010
+Note that if I run the scripts we shouldn't expect anything to happen which nothing does happen because
+
+01:44.010 --> 01:47.670
+I've only defined the function if I actually want to call it later on in my code.
+
+01:47.760 --> 01:55.560
+I say my phunk close parentheses and we have my first Python function.
+
+01:55.570 --> 01:57.090
+Great.
+
+01:57.330 --> 02:04.240
+If I want to use the parameter there I could have also said something like the format harams one save
+
+02:04.240 --> 02:07.190
+it and then let's include that over here.
+
+02:08.690 --> 02:09.670
+Save that.
+
+02:09.680 --> 02:10.460
+Run this.
+
+02:10.460 --> 02:11.230
+And we see.
+
+02:11.330 --> 02:16.480
+Whoops forgot to actually call it my phunk rerun.
+
+02:16.730 --> 02:21.290
+And here it says my first Python function and then default whatever the default value for that parameter
+
+02:21.290 --> 02:22.170
+was.
+
+02:22.280 --> 02:29.250
+If we want our function to have a docstring And that's just the documentation string you type a set
+
+02:29.340 --> 02:30.330
+of three quotes.
+
+02:30.350 --> 02:33.960
+Usually they're double quotes but it can work for single quotes as well.
+
+02:33.960 --> 02:37.220
+And then another set and then anything inside here.
+
+02:37.440 --> 02:41.350
+This is the docstring.
+
+02:41.600 --> 02:48.330
+So you probably noticed as we were typing in methods and functions if we ever saw the help here LCN
+
+02:48.410 --> 02:53.210
+for instance which was the length function you get a little output here that says it returns a number
+
+02:53.210 --> 02:56.450
+of items of sequence or a collection.
+
+02:56.450 --> 02:59.590
+Now we might be wondering how to actually get that information.
+
+02:59.600 --> 03:01.420
+How do I know what this function does.
+
+03:01.430 --> 03:03.020
+Well that is the docstring.
+
+03:03.310 --> 03:12.650
+So now our own function going to save this and then let's say my underscore phunk you should notice.
+
+03:12.650 --> 03:16.570
+Now this is the docstring display here in Python.
+
+03:16.580 --> 03:23.360
+Basically we'll go over the function check if there's a docstring immediately below as a multi-line
+
+03:23.380 --> 03:29.240
+comment and you can do a multi-line comment with these sets of three quotes meaning anything inside
+
+03:29.540 --> 03:33.260
+these sets of three quotes is part of the comments.
+
+03:33.260 --> 03:39.670
+Now again if I check my func here I see this is docstring and then these various lines that I wrote.
+
+03:39.830 --> 03:40.670
+So keep that in mind.
+
+03:40.700 --> 03:45.260
+It's always good to document your functions especially if you're going to be using them a lot or especially
+
+03:45.260 --> 03:48.790
+if someone else is going to be reading your code just the right thing to do.
+
+03:50.460 --> 03:54.890
+Now let's quickly go over the difference between printing something in the function and the return keyword
+
+03:54.900 --> 03:56.320
+of a function.
+
+03:56.340 --> 03:58.110
+So let's make a quick example.
+
+03:58.910 --> 04:00.590
+A classic helo function.
+
+04:02.360 --> 04:03.840
+And then we'll say Prince.
+
+04:03.860 --> 04:05.720
+And it just prints hello.
+
+04:05.960 --> 04:07.710
+We save that if we want to call it.
+
+04:07.750 --> 04:10.120
+Whoops forgot to call it later on in our code.
+
+04:10.130 --> 04:15.530
+All you have to do is make sure you're lined up outside of the scope of the function call.
+
+04:15.530 --> 04:17.810
+Hello will say this.
+
+04:18.020 --> 04:20.490
+Run this code and here we have hello.
+
+04:20.500 --> 04:22.610
+So again indentation is very important.
+
+04:22.610 --> 04:27.470
+Make sure you didn't accidentally do something like this while you're coding now.
+
+04:27.550 --> 04:33.460
+Let's the first example is gone to example too which will instead of just printing the hello it's going
+
+04:33.460 --> 04:34.560
+to return Hello.
+
+04:34.630 --> 04:40.590
+So we'll get rid of these princes and just say return the string Hello.
+
+04:40.720 --> 04:44.730
+So enough I call hello and I run this I don't get anything out.
+
+04:44.950 --> 04:49.720
+And that's because it was just returning Hello wasn't actually printing it so I can say something like
+
+04:49.720 --> 04:53.200
+result is equal to hello being called.
+
+04:53.200 --> 04:54.780
+And then I can print out that result
+
+04:57.710 --> 05:01.090
+we'll save this run the code and oh I see it.
+
+05:01.110 --> 05:02.070
+Hello is the output.
+
+05:02.090 --> 05:04.810
+And this is the way you're going to see most functions work.
+
+05:04.810 --> 05:12.100
+It will actually return an object for you to save as a variable and use later on now quick Now again
+
+05:12.130 --> 05:17.880
+if you're coming to Python from a different language that is not dynamic programming.
+
+05:18.190 --> 05:22.960
+You may have to be careful when you're defining a function as far as what inputs you expect.
+
+05:22.960 --> 05:28.480
+So let's imagine I create a function that adds two numbers together and hopefully this example looks
+
+05:28.480 --> 05:36.480
+a little familiar to you and it takes in someone numb to colon and then it returns number plus them
+
+05:36.490 --> 05:41.330
+to what you probably expect the user to do is something like this.
+
+05:42.700 --> 05:45.860
+Results is equal to add.
+
+05:46.210 --> 05:48.660
+And then let's say two and three.
+
+05:48.880 --> 05:58.630
+And then if I print out my results save it we run this and I get five but Python will work for a lot
+
+05:58.630 --> 05:59.250
+of things.
+
+05:59.320 --> 06:08.290
+So if I actually input two strings here or let's say even worse for some reason my inputs were strings
+
+06:08.410 --> 06:13.750
+instead of being numbers we can save that run this and it outputs 23 instead of 5.
+
+06:13.750 --> 06:16.770
+So it's kind of a more realistic error you might get in your code.
+
+06:16.790 --> 06:22.450
+Let's say you asked for a form input with Django and it returned it back as a string and you were expecting
+
+06:22.450 --> 06:23.330
+a number.
+
+06:23.360 --> 06:25.510
+This kind of error could easily occur.
+
+06:25.540 --> 06:31.120
+So you you may want to do is actually check for types and you can check for a Python type using the
+
+06:31.120 --> 06:33.400
+type keyword.
+
+06:33.430 --> 06:43.400
+So if you say something like Prince type of results I will save this.
+
+06:43.470 --> 06:44.280
+Let's run it.
+
+06:45.080 --> 06:53.030
+I get it's class as TR which means it's part of the string class and and if I make these back into integers
+
+06:54.530 --> 06:59.120
+save this and run this again I get class I.A..
+
+06:59.210 --> 07:03.700
+So sometimes you'll probably want to have a check that says something like this.
+
+07:07.430 --> 07:19.340
+Type of name one is equal to type of name two is equal to type of 10 right.
+
+07:19.400 --> 07:21.080
+And then we'll have the colon here
+
+07:24.240 --> 07:32.780
+return number 1 plus them to and Elisei else return.
+
+07:32.830 --> 07:36.120
+Sorry I need integers.
+
+07:38.980 --> 07:40.730
+So now let's see how this works.
+
+07:40.750 --> 07:56.660
+If I save this and run just prints results save that career my council run Python notes I get five out.
+
+07:56.820 --> 08:05.790
+Now if I type in two and three save that run this says Sorry I need integers.
+
+08:05.790 --> 08:10.220
+Again this is a very simple way to test if type inputs are correct.
+
+08:10.350 --> 08:15.210
+We'll discuss much more formal methods such as checking for actual exceptions and errors and doing unit
+
+08:15.210 --> 08:17.570
+testing later on the course right now.
+
+08:17.580 --> 08:22.860
+Just keep this in mind that you may get different types than you expected and that Python can still
+
+08:22.860 --> 08:30.870
+deal with them now let's briefly discuss what is known as a land expression and often you will always
+
+08:30.870 --> 08:33.800
+need a full blown function like we've defined here.
+
+08:33.810 --> 08:39.000
+You may just want to use a function just one time which means you didn't really need to define it more
+
+08:39.000 --> 08:40.840
+than the one time you used it.
+
+08:40.920 --> 08:47.280
+And in some of these cases it makes more sense to use what is known as a lambda expression and it looks
+
+08:47.280 --> 08:51.780
+like this lambda expression.
+
+08:51.780 --> 08:56.970
+So to actually get the full idea of one we would use a land expression we need to use or introduce a
+
+08:56.970 --> 09:00.330
+function that accepts other functions as input parameters.
+
+09:00.330 --> 09:03.510
+So in this case we'll introduce the filter function.
+
+09:03.540 --> 09:09.240
+So let's start by introducing how the filter function works what it would look like a normal function
+
+09:09.440 --> 09:10.970
+as accepted as the input.
+
+09:11.070 --> 09:14.420
+And then what it would look like with lambda except that as the input.
+
+09:14.550 --> 09:25.430
+So I will create my list and set it equal to 1 2 3 4 5 6 7 8 and then I'm going to create a function
+
+09:25.430 --> 09:29.550
+called even bool.
+
+09:29.550 --> 09:31.250
+Now let's do it in camel.
+
+09:31.350 --> 09:32.620
+Or a snake casing.
+
+09:33.180 --> 09:42.420
+It accepts a number and then it says Return numb maade to equal to zero.
+
+09:42.420 --> 09:43.980
+So what does that actually mean.
+
+09:43.980 --> 09:49.280
+It means it's going to return true if the number is even or false if the number is odd.
+
+09:50.720 --> 09:56.930
+And then let's show you how you can use the filter function the filter function takes in two arguments
+
+09:57.050 --> 09:58.550
+and we can see him down here.
+
+09:58.550 --> 10:01.630
+It takes in a function and then a sequence.
+
+10:01.820 --> 10:07.400
+And what it does it returns those items of sequence for which the function item is true if the function
+
+10:07.400 --> 10:07.850
+has none.
+
+10:07.860 --> 10:14.460
+And it turns the items that are true so let's try this I'm going to first pass on my function which
+
+10:14.460 --> 10:25.060
+was even bool and then I'm going to pass and my sequence which is my list and let's do save this as
+
+10:25.060 --> 10:34.180
+a result called evens and then print out evens cast it as a list.
+
+10:34.290 --> 10:40.910
+We will save this for the council and then run Python that notes that pi.
+
+10:41.390 --> 10:43.300
+And then here I have 2 4 6 8.
+
+10:43.310 --> 10:50.240
+So I have now all the even numbers from this list and this is again just filtering out wherever even
+
+10:50.240 --> 10:52.470
+bool return true on my list.
+
+10:52.520 --> 10:57.680
+And then we have to cast it as a list because if we did it we would otherwise get a little generator
+
+10:57.680 --> 11:00.630
+object so I save that and run this again.
+
+11:00.680 --> 11:05.450
+I get this thing it says filter object and that's because like I mentioned for range this is actually
+
+11:05.450 --> 11:11.020
+a generator and it will actually create the list unless you specifically ask it to.
+
+11:11.030 --> 11:11.650
+All right.
+
+11:11.810 --> 11:14.900
+So now I'll show you how we can do that with a land expression.
+
+11:15.080 --> 11:20.440
+So you land the expression is basically a breakdown of this function or of any function really.
+
+11:20.450 --> 11:25.370
+So let's break down this function into a land expression and land the expression is pretty much always
+
+11:25.370 --> 11:26.470
+on one line.
+
+11:26.810 --> 11:30.000
+So first thing you need to do is take care of the input.
+
+11:30.020 --> 11:32.110
+So a land expression has no name.
+
+11:32.240 --> 11:35.250
+Which is why it's also sometimes called an anonymous function.
+
+11:37.200 --> 11:41.090
+So I place all that with just land numb.
+
+11:41.100 --> 11:49.260
+So again I replace the f the name of the function and any input such as lambda and then the input itself
+
+11:49.560 --> 11:56.470
+and then we say Colan we get rid of this return key word.
+
+11:56.710 --> 11:58.490
+And now we have a land expression.
+
+11:58.600 --> 12:02.080
+This is the land expression version of the even bhool function.
+
+12:02.080 --> 12:02.670
+We just made.
+
+12:02.680 --> 12:06.130
+So I will cut that out and then paste it here.
+
+12:06.430 --> 12:10.720
+And this is a typical use case for lambda we don't actually want to define an entire function.
+
+12:10.870 --> 12:14.900
+If we were only going to use it once inside of another function.
+
+12:14.920 --> 12:16.660
+Now let's actually run this.
+
+12:17.010 --> 12:18.760
+And we see that it works the same way.
+
+12:18.760 --> 12:25.180
+And if we cast this as a list before we run this out in the print CCR run it again.
+
+12:26.050 --> 12:29.060
+You can see here now you have 2 4 6 8 right.
+
+12:29.080 --> 12:31.710
+So that is all working the same as it did before.
+
+12:32.600 --> 12:36.800
+So those Arlanda expressions will see them later on the course so if you don't fully understand them
+
+12:36.800 --> 12:39.740
+yet don't worry we'll get plenty of more practice with them.
+
+12:40.550 --> 12:45.800
+Finally I want to show you just some useful methods that you may not be familiar with for all these
+
+12:45.800 --> 12:48.280
+various basic data types so we've learned about.
+
+12:48.620 --> 12:57.500
+So first string some nice methods that we've already discussed are lower which lower cases everything
+
+12:58.490 --> 13:06.230
+upper which upper cases everything and then split which splits up on whatever you want to be a list.
+
+13:06.230 --> 13:11.480
+So let me show you a more realistic example of where you may encounter that split.
+
+13:11.750 --> 13:13.700
+Let's say we're trying to make a Twitter clone.
+
+13:13.730 --> 13:26.920
+So I say tweet and I say Go sports hash tag sports and I'm only looking for things that are on the hash
+
+13:26.920 --> 13:35.540
+tag if I know there's only one hashtag somewhere in the actual tweet that I can say split on hashtag
+
+13:36.820 --> 13:42.040
+and later on we'll have a entire section on regular expressions which are going to allow us to do much
+
+13:42.040 --> 13:45.010
+better searching through text than what I'm showing here.
+
+13:45.280 --> 13:54.880
+But let's do that well say as the split and I'm going to say this as a result and let's run Python.
+
+13:54.910 --> 13:56.950
+Up high and chips.
+
+13:57.170 --> 14:00.420
+This should be Esti split should be split.
+
+14:00.530 --> 14:03.220
+Save it now run it again.
+
+14:03.420 --> 14:06.390
+And we don't get anything back because I didn't print out the result.
+
+14:07.190 --> 14:08.070
+Save it.
+
+14:08.300 --> 14:11.680
+Run it and here it says Go sports comma sports.
+
+14:11.690 --> 14:13.910
+So I know sports here is the actual hash tag.
+
+14:13.920 --> 14:20.150
+So if I want to just that was under the hash tag then I could say one there and I get out sports and
+
+14:20.150 --> 14:25.080
+that's the way you would probably more realistically use the Split method off of a string.
+
+14:29.060 --> 14:31.650
+Then I want to quickly mention the in operator.
+
+14:31.670 --> 14:35.480
+It's not a method it's just something that's really useful if you ever want to know if something is
+
+14:35.540 --> 14:37.040
+in a sequence.
+
+14:37.040 --> 14:40.550
+For example if I want to know is X in the list.
+
+14:40.580 --> 14:41.800
+One two three.
+
+14:41.810 --> 14:46.840
+All you do is use the keyword in to solve that and this or turn a boolean.
+
+14:47.050 --> 14:50.160
+So I can print out the result of this entire thing.
+
+14:52.800 --> 14:56.320
+Run the code and it says false x is not in 1 to 3.
+
+14:56.490 --> 15:01.350
+But now if I add X to this save it run it again I get back.
+
+15:01.350 --> 15:02.320
+True.
+
+15:02.620 --> 15:03.260
+OK.
+
+15:03.360 --> 15:09.230
+There are a lot more examples of functions and various other things in the actual lecture notes so check
+
+15:09.230 --> 15:14.850
+out Part 8 underscore functions up PI for fully commented code with a lot more examples if you feel
+
+15:14.850 --> 15:15.990
+like you need more.
+
+15:15.990 --> 15:17.970
+Thanks everyone and I'll see you at the next lecture.

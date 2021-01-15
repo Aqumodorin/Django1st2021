@@ -1,0 +1,271 @@
+WEBVTT
+
+00:04.870 --> 00:10.900
+Hello everyone and welcome to part two object oriented programming object oriented programming as a
+
+00:10.900 --> 00:13.660
+way to use Python to create our own objects.
+
+00:13.660 --> 00:17.500
+And sometimes it can be a point of great confusion for beginners and mainly because it's often just
+
+00:17.500 --> 00:18.420
+talk poorly.
+
+00:18.520 --> 00:23.380
+You're kind of just thrown into object oriented programming taught a few keywords and expect to understand
+
+00:23.410 --> 00:25.100
+everything all at once.
+
+00:25.270 --> 00:30.010
+We're going to try our best to save you from any confusion by systematically building up and showing
+
+00:30.010 --> 00:33.340
+you slowly the thought process behind object oriented programming.
+
+00:33.430 --> 00:35.070
+Otherwise known as O.P..
+
+00:35.080 --> 00:37.030
+And why would even need to use it.
+
+00:37.090 --> 00:38.580
+We will use it quite a bit for Django.
+
+00:38.620 --> 00:41.120
+So let's get started by showing you the basics.
+
+00:41.140 --> 00:43.420
+This is going to be a single dot PI file.
+
+00:43.450 --> 00:48.300
+For the notes part two object oriented programming that PI that is going to be multiple video lectures.
+
+00:48.310 --> 00:49.070
+So keep that in mind.
+
+00:49.090 --> 00:51.280
+We're going to break it into understandable steps.
+
+00:51.280 --> 00:52.930
+Let's go to the editor now.
+
+00:52.930 --> 00:57.960
+All right let's start off by trying to understand the fundamental idea behind object oriented programming.
+
+00:57.970 --> 00:59.580
+Why would we even want to use it.
+
+00:59.860 --> 01:04.330
+Well hopefully remember when we were first learning about basic data types and basic structures I could
+
+01:04.330 --> 01:08.700
+do something like this say my list is equal to one to three.
+
+01:08.950 --> 01:14.860
+And then when I said my list dot notice that I get a bunch of methods here a appends count extend pop
+
+01:14.860 --> 01:15.920
+or move etc..
+
+01:16.060 --> 01:19.880
+So there's a lot of methods available to me on this object.
+
+01:20.080 --> 01:30.020
+And then I could say append the four here save this and then do something like Prince my list.
+
+01:30.400 --> 01:37.170
+I save this run Python notes that pi or whatever file you have and I get one two three four.
+
+01:37.210 --> 01:40.050
+Now the idea behind object oriented programming is this.
+
+01:40.060 --> 01:45.980
+So far we have the capability to create a very simple function or even a very complex function.
+
+01:46.090 --> 01:50.950
+What we don't yet know how to do is build something like a list object.
+
+01:50.950 --> 01:56.440
+We don't know yet how can you build an object and then have methods inside of it or attributes inside
+
+01:56.440 --> 01:59.700
+of it that you can use to affect the object itself.
+
+01:59.770 --> 02:02.100
+And that's the whole idea of object oriented programming.
+
+02:02.290 --> 02:05.530
+How are we able to actually create our own objects in Python.
+
+02:05.530 --> 02:11.670
+We know how to use the built in objects in Python but we don't know how to actually build our own.
+
+02:11.670 --> 02:16.620
+The first step on your journey of learning about object oriented programming is to realize that in Python
+
+02:16.800 --> 02:23.430
+everything is an object and you can check an object type by saying type and then passing in an object
+
+02:23.430 --> 02:23.950
+itself.
+
+02:24.030 --> 02:29.610
+So for example if I pass in a list here I don't have to save it as a variable I can just say type and
+
+02:29.610 --> 02:32.130
+let's print out that type.
+
+02:32.160 --> 02:40.580
+So say print type here it tells me it's of the class list and class is going to be one of the key words
+
+02:40.580 --> 02:41.040
+we use.
+
+02:41.050 --> 02:43.530
+We're actually learning about object oriented programming.
+
+02:43.850 --> 02:50.540
+So here I know that this is type list and I don't even actually have to have anything inside of it.
+
+02:50.540 --> 02:52.100
+It can just be an empty list.
+
+02:52.160 --> 02:59.270
+I can run this in a class list and if I replace this just to be Quincy's remember that's how we define
+
+02:59.270 --> 03:00.160
+a tuple.
+
+03:00.170 --> 03:05.850
+So if I save this and run this it says class tuple and we can see this for a variety of things.
+
+03:05.870 --> 03:12.280
+Let's say pasan a number type McDermitt princes or bals there and I run this.
+
+03:12.280 --> 03:14.950
+They'll say class I.A. or class Integer.
+
+03:15.250 --> 03:16.910
+Make this twenty point zero.
+
+03:16.990 --> 03:18.290
+Save this.
+
+03:18.370 --> 03:20.620
+Run this and it says class floating point.
+
+03:20.620 --> 03:25.220
+So what we want to know is how can we create our own classes in order to create our own object.
+
+03:25.210 --> 03:28.900
+So we keep seeing this keyword class and we want to know how can we use it.
+
+03:28.900 --> 03:34.880
+So let's actually show you so now that we understand everything in Python is an object we can use the
+
+03:34.880 --> 03:39.280
+class keyword and the user defined objects are created using this keyword.
+
+03:39.320 --> 03:44.480
+The class is essentially a blueprint that defines the nature of a future object and from classes we
+
+03:44.480 --> 03:50.780
+can then construct instances of that class an instance is just a specific object created for a particular
+
+03:50.780 --> 03:51.800
+class.
+
+03:51.800 --> 03:58.010
+So for example previously we created the object my list that was an instance of a list object.
+
+03:58.040 --> 04:00.080
+Let's see how we can actually use class.
+
+04:00.080 --> 04:02.000
+First off we start with the class keyword.
+
+04:02.000 --> 04:05.980
+And if you hit enter here you'll get class auto completed for you.
+
+04:06.020 --> 04:09.890
+Let's create a sample class and note the syntax highlighting here.
+
+04:09.950 --> 04:12.990
+And by convention class names are always capitalized.
+
+04:13.070 --> 04:15.980
+That way you know whether you're calling a class or a function.
+
+04:15.980 --> 04:17.870
+Functions are lowercase.
+
+04:17.930 --> 04:20.480
+Classes are a start of an uppercase.
+
+04:20.480 --> 04:22.030
+Now we have close parentheses.
+
+04:23.130 --> 04:24.350
+Colon.
+
+04:24.560 --> 04:26.570
+And then what goes here in your class.
+
+04:26.570 --> 04:30.010
+Right now I'm going to use the pass keyword to not do anything.
+
+04:30.020 --> 04:31.610
+We'll just say pass.
+
+04:31.670 --> 04:33.840
+So I'm going to save the.
+
+04:34.020 --> 04:37.310
+And then over here I will say x is equal to.
+
+04:37.850 --> 04:44.970
+And I will say sample close princes and then I'm going to print the type of x.
+
+04:44.970 --> 04:46.410
+Save this.
+
+04:46.410 --> 04:47.370
+Let's run it.
+
+04:47.940 --> 04:53.850
+And here it says class maned that sample and we'll discuss what main is in a future lecture.
+
+04:53.850 --> 04:58.710
+Right now we can see that I'm getting a very similar result to what I saw previously with the builtin
+
+04:58.740 --> 04:59.490
+classes.
+
+04:59.650 --> 05:05.850
+I've now created in my own class my own object called sample all using the class keyword.
+
+05:05.850 --> 05:06.210
+All right.
+
+05:06.210 --> 05:07.400
+That's it for this lecture.
+
+05:07.440 --> 05:12.540
+So far all I want you to understand is that everything in Python is an object and we can create our
+
+05:12.600 --> 05:19.350
+own objects using the class keyword and we can check with the type built in function what the actual
+
+05:19.350 --> 05:21.230
+class is coming up next.
+
+05:21.240 --> 05:26.280
+We're going to learn how to add attributes and methods to a class and we're going to start right where
+
+05:26.280 --> 05:26.850
+we left off.
+
+05:26.850 --> 05:28.860
+In this video I'll see you at the next lecture.

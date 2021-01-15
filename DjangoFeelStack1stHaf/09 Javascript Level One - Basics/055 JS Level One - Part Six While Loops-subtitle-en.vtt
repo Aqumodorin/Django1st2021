@@ -1,0 +1,397 @@
+WEBVTT
+
+00:04.960 --> 00:11.810
+Hello everyone and welcome to part six while loops so let's learn a bit about while loops and javascript's
+
+00:12.020 --> 00:13.340
+and loops in general.
+
+00:13.370 --> 00:18.920
+Allow us to automatically repeat blocks of code and the while loop will continually execute code as
+
+00:18.920 --> 00:20.740
+long as condition remains true.
+
+00:21.040 --> 00:25.070
+And like I mentioned for the previous lecture if you're already familiar five loops from another programming
+
+00:25.070 --> 00:30.230
+language you may just want to check the notes for this lecture and just reference the syntax changes
+
+00:30.230 --> 00:30.950
+yourself.
+
+00:31.990 --> 00:35.450
+OK in case you're new to a WHILE loop Let's see what it actually looks like.
+
+00:35.470 --> 00:37.330
+So in Javascript the while loop looks like this.
+
+00:37.330 --> 00:42.970
+You say the keyword while and then print sees you have some sort of condition and then inside the curly
+
+00:42.970 --> 00:48.550
+brackets you execute some code and that code is going to be continually executed while that condition
+
+00:48.550 --> 00:54.280
+is true and something to be careful with while loops is if you have a condition that will always remain
+
+00:54.280 --> 01:00.250
+true no matter what the that while loop will execute forever and that may lead to buggy code because
+
+01:00.250 --> 01:04.080
+your while loop just never breaks it always stays running forever.
+
+01:04.510 --> 01:06.100
+OK let's see some actual examples.
+
+01:06.100 --> 01:11.470
+And we're also going to learn about a few key words such as the break word which will break out of a
+
+01:11.470 --> 01:13.720
+top level block of code.
+
+01:13.720 --> 01:15.650
+Let's jump to her editor to get started.
+
+01:15.950 --> 01:22.490
+OK so just like last time I have an HMO I'll script that's connected to my javascript this my script
+
+01:22.490 --> 01:27.260
+that Jap's and that in turn has HDMI connected to this browser.
+
+01:27.550 --> 01:35.190
+So let's get started with a very simple while example going to create a variable called X and set it
+
+01:35.190 --> 01:36.510
+equal to zero.
+
+01:36.920 --> 01:39.830
+And then I can begin typing while enter.
+
+01:40.050 --> 01:42.260
+Adam helps me out the rest of the context.
+
+01:42.420 --> 01:46.890
+So I say a while x is less than 5.
+
+01:46.900 --> 01:48.670
+That's the condition I want.
+
+01:48.670 --> 01:50.630
+I'm going to perform some action.
+
+01:50.800 --> 02:03.760
+I will log x is currently and then I'm going to say plus X here so that prints out and then I'm also
+
+02:03.760 --> 02:18.330
+going to log x is still less than 5 adding one to X and then finally to make sure this doesn't run forever.
+
+02:18.330 --> 02:23.130
+I'm going to say x is equal to x plus 1.
+
+02:23.130 --> 02:26.460
+So before we run this let's break down what's actually happening here.
+
+02:26.460 --> 02:28.360
+I start off with X equals zero.
+
+02:28.380 --> 02:31.770
+This is outside this while loop than inside this while loop.
+
+02:31.770 --> 02:38.180
+I'll say while X is less than 5 I want you to execute this block of code in the first block of code
+
+02:38.180 --> 02:42.870
+or the first line of code on line 4 says just X is currently and then whatever the current number of
+
+02:42.870 --> 02:46.900
+x's and then as long as X is still less than 5.
+
+02:46.900 --> 02:47.810
+My condition.
+
+02:47.810 --> 02:48.930
+I'll also log.
+
+02:49.090 --> 02:50.450
+X is still less than 5.
+
+02:50.490 --> 02:53.670
+Adding one to X and then finally on line 7.
+
+02:53.670 --> 02:55.690
+I'll say x is equal to x plus 1.
+
+02:55.710 --> 03:03.230
+So I re-assign X to the current X plus 1 and also show you later on some syntax to have a shortcut.
+
+03:03.270 --> 03:09.660
+Doing this sort of operation will save that and let's run a browser or a refresher browser page here
+
+03:10.230 --> 03:11.010
+and see what we get.
+
+03:11.010 --> 03:12.070
+So we get a lot of output.
+
+03:12.120 --> 03:14.310
+Let's expand this and see what's happening here.
+
+03:14.580 --> 03:16.020
+So I get X is currently zero.
+
+03:16.020 --> 03:17.010
+That makes sense.
+
+03:17.010 --> 03:18.200
+So it's still less than 5.
+
+03:18.230 --> 03:23.260
+Add 1 2 x x currently 1 and this keeps going all the way until it prints out.
+
+03:23.400 --> 03:24.860
+X is currently 4.
+
+03:25.200 --> 03:27.420
+Which makes sense if X is currently 4.
+
+03:27.420 --> 03:28.150
+I would log.
+
+03:28.220 --> 03:30.780
+X is still less than 5 adding 1 to x.
+
+03:30.870 --> 03:38.270
+And note that once I add 1 to X then X becomes 5 and 5 is no longer less than 5 it's equal to 5.
+
+03:38.340 --> 03:40.160
+So the while loop stops operating.
+
+03:40.200 --> 03:45.830
+Which is why we never see X is currently fired and that's the very basics of how a while loop works.
+
+03:46.150 --> 03:53.370
+OK now let's add in some manual brake conditions which will exit out of the loop and it's going to use
+
+03:53.370 --> 03:55.120
+the keyword break.
+
+03:55.140 --> 03:58.690
+So right now I start with variable x is equal to zero.
+
+03:58.740 --> 04:07.500
+I'll say while X is less than 5 and I'm going to cancel again log x is currently X and then here I'm
+
+04:07.500 --> 04:10.140
+going to add in some control flow with an if statement
+
+04:13.210 --> 04:30.250
+and I will say if x is equal to 3 I'm going to log x is equal to three and that's all different now.
+
+04:30.280 --> 04:32.480
+So let's run this code again and see what happens.
+
+04:35.070 --> 04:38.450
+So looks like very much the same code 0 1 2 3.
+
+04:38.460 --> 04:44.730
+Except when X is currently 3 before I say X is less than 5 I get this big announcement x is equal to
+
+04:44.730 --> 04:45.680
+3.
+
+04:45.690 --> 04:51.450
+Now let's actually try to break the while loop on this certain condition and then we can do that is
+
+04:51.510 --> 04:55.910
+by adding in the special key word break.
+
+04:56.160 --> 04:58.310
+And this will break out of the top level loop.
+
+04:58.320 --> 05:04.980
+It's in basically what says what this is saying is if x is equal to three log this and then break out
+
+05:04.980 --> 05:08.290
+of the top level loop you find this key word in.
+
+05:08.370 --> 05:09.690
+And it happens to be this while.
+
+05:09.780 --> 05:16.160
+So let's save this expand this and refresh the page.
+
+05:16.160 --> 05:20.430
+And now we see when I refresh it stops at this as x is equal to three line.
+
+05:20.570 --> 05:24.530
+So it says x is equal to 3 and then it breaks out of that while loop.
+
+05:24.530 --> 05:30.110
+And that's how we can use the keyword break to essentially prematurely break out of a while loop so
+
+05:30.110 --> 05:34.500
+that we don't have to wait until this condition is actually meant to be false.
+
+05:34.640 --> 05:36.840
+And that's really all there is to the While loop.
+
+05:36.950 --> 05:38.500
+We'll use it later on in the course.
+
+05:38.510 --> 05:45.140
+But as a quick exercise I want you to do this right a while loop that prints out only the even numbers
+
+05:45.140 --> 05:46.650
+from 1 to 10.
+
+05:47.000 --> 05:51.480
+So again just to clarify what I want you to do right now.
+
+05:51.510 --> 05:59.950
+All right in here as a comments write a while loop prints out only the even numbers from 1 to 10.
+
+05:59.990 --> 06:05.860
+OK so positivity You see if you can do it on your own and then I'm going to write out the solution for
+
+06:05.860 --> 06:06.890
+this question.
+
+06:07.000 --> 06:11.300
+Just write a while loop that prints out only the even numbers from 1 to 10.
+
+06:11.300 --> 06:13.680
+OK so let's get started with this.
+
+06:14.720 --> 06:17.790
+I'm going to clear everything I have here my editor.
+
+06:17.900 --> 06:23.700
+Hopefully you were able to actually do this yourself or at least attempt it yourself.
+
+06:23.990 --> 06:25.380
+But everything is clear.
+
+06:25.400 --> 06:26.430
+So let's try it out.
+
+06:26.600 --> 06:27.020
+OK.
+
+06:27.020 --> 06:30.270
+So let's see how we can attempt to solve this problem.
+
+06:30.290 --> 06:36.010
+First thing I'm going to do is create a variable called numb and started off equal to 1.
+
+06:36.160 --> 06:40.410
+Then I'm going to create my while loop and I want to go from numbers 1 to 10.
+
+06:40.480 --> 06:48.770
+So I will say while my number is less than 11 and let's just start off with a very simple example I
+
+06:48.770 --> 06:57.070
+will log the number and then say num is equal to nonplus 1 saved this.
+
+06:57.100 --> 06:58.480
+And let's see if this works.
+
+06:58.560 --> 07:04.940
+Refresh the page and here I get all the numbers from 1 to 10 but the assignment is to only print out
+
+07:04.940 --> 07:05.830
+these even numbers.
+
+07:05.840 --> 07:11.300
+So I need some sort of method to check the numbers even and hopefully you remember from the number or
+
+07:11.300 --> 07:18.390
+the very basics of javascript lecture the very first javascript lecture we touch you the maade operator.
+
+07:18.530 --> 07:28.920
+So I'm going to say if numb model 2 is equal to zero then I can do something and I know that the number
+
+07:28.920 --> 07:29.440
+is even.
+
+07:29.470 --> 07:33.040
+So I will walk that number.
+
+07:33.040 --> 07:34.310
+So what does that actually mean.
+
+07:34.330 --> 07:37.220
+Well remember that model checks for remainder.
+
+07:37.390 --> 07:42.650
+And I know if the number divided by two leaves the remainder equal to zero.
+
+07:42.700 --> 07:44.030
+And that number is even.
+
+07:44.200 --> 07:46.230
+So Six divided by two has no remainder.
+
+07:46.240 --> 07:48.770
+Eight divided by two is the remainder etc..
+
+07:49.000 --> 07:49.750
+OK.
+
+07:50.170 --> 07:52.990
+And then lastly I want to make sure this doesn't run forever.
+
+07:53.230 --> 08:01.860
+So outside of that if I'm going to say Num. is equal to 1 so let's say that and see if our first page
+
+08:01.860 --> 08:03.150
+it works.
+
+08:03.150 --> 08:05.750
+And there we have it two four six eight 10.
+
+08:05.910 --> 08:09.970
+And those are all the even numbers from 1 to 10 Using a while loop.
+
+08:10.020 --> 08:10.770
+Take your time.
+
+08:10.800 --> 08:16.220
+This was a little confusing for you and some key things to remember here is this Ma'at operator.
+
+08:16.260 --> 08:21.150
+This is a really common way to check of the numbers even and also key to this is to remember to increase
+
+08:21.150 --> 08:25.370
+the number and to remember to increase the number outside of the if statement.
+
+08:25.500 --> 08:29.820
+If you only had it inside of this statement that would cause problems because you would only be adding
+
+08:29.830 --> 08:31.390
+one if the number was even.
+
+08:31.470 --> 08:37.050
+You want to do it on the odd numbers and you can tell if something is within the block using these clearly
+
+08:37.050 --> 08:40.680
+brackets as indicators and indentation for javascript.
+
+08:40.710 --> 08:44.970
+Doesn't matter a whole lot although you should try to keep code readable and clean later on when we
+
+08:44.970 --> 08:48.670
+talk about Python indentation is going to be a huge aspect of it.
+
+08:48.860 --> 08:49.560
+OK.
+
+08:49.650 --> 08:52.520
+So thanks everyone and I will see you at the next lecture.
+
+08:52.530 --> 08:54.930
+We're going to begin to discuss for loops.
+
+08:54.990 --> 08:55.950
+I'll see you there.

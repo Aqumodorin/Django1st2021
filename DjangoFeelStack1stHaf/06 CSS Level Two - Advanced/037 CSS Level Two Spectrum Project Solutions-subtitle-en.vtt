@@ -1,0 +1,379 @@
+WEBVTT
+
+00:05.020 --> 00:09.970
+Hello everyone and welcome back in this lecture we're going to be going over an example solution to
+
+00:09.970 --> 00:11.480
+the Spectrum project.
+
+00:11.530 --> 00:17.410
+Remember your solution may not look exactly like mine as far as sizing and color choice but the overall
+
+00:17.410 --> 00:22.690
+ideas hopefully similar enough that you can follow along these solutions and reflect back on your own
+
+00:22.690 --> 00:23.500
+work.
+
+00:23.500 --> 00:26.090
+Let's jump to our editor in browser to get started.
+
+00:26.340 --> 00:26.700
+OK.
+
+00:26.710 --> 00:28.810
+So here I am with my editor open.
+
+00:28.810 --> 00:32.770
+I have two files project thought CSSA and product thought HMO.
+
+00:32.800 --> 00:34.320
+They're empty right now.
+
+00:34.330 --> 00:38.770
+Here is what we're trying to recreate something that looks similar to this with our own color palette
+
+00:38.770 --> 00:40.980
+choice and our own custom font choice.
+
+00:40.990 --> 00:43.940
+And right now I have this project thought to.
+
+00:44.050 --> 00:47.320
+Just refreshed it so that it's clean and there's nothing there.
+
+00:47.320 --> 00:50.890
+Let's get started by working on the Tim elf.
+
+00:50.940 --> 00:56.850
+The first thing I'm going to do is just type H T.M. and we'll call the title of this project and we
+
+00:56.850 --> 01:00.540
+also want to make sure that it's linked to our actual sheet.
+
+01:00.600 --> 01:05.910
+In our case such is called Project that the SS and that's all we have to pass since it's in the same
+
+01:05.910 --> 01:06.920
+directory.
+
+01:07.540 --> 01:17.980
+And then for the body itself I'm going to give a Heading 1 and we'll call it my spectrum project and
+
+01:17.980 --> 01:20.740
+then let's make a table.
+
+01:20.740 --> 01:21.890
+So we'll make a table.
+
+01:21.940 --> 01:23.980
+It's going to have one table row.
+
+01:24.130 --> 01:28.750
+And if we look back at what the solution looks like remember we have one table row with essentially
+
+01:28.750 --> 01:29.820
+five cells.
+
+01:30.070 --> 01:37.330
+So I would call t d and i will copy and paste that for more times so that my total is five and if I
+
+01:37.330 --> 01:44.050
+want to actually reference stuff here it might be useful to give the table a class that I can reference
+
+01:44.050 --> 01:44.440
+later.
+
+01:44.440 --> 01:52.750
+So let's give it the class something like art and for the table cells let's give them each an individual
+
+01:52.750 --> 01:53.670
+ID.
+
+01:53.710 --> 02:00.010
+That way I can assign them each individual color and we may not use that class but it's just there in
+
+02:00.010 --> 02:01.760
+case we need it later.
+
+02:01.810 --> 02:04.450
+The idea is we will definitely use though.
+
+02:04.900 --> 02:06.600
+So we'll give each of these our own ID
+
+02:10.940 --> 02:12.200
+and we'll label this five.
+
+02:12.200 --> 02:18.020
+So let's save that come back to project that each team will refresh and I see my spectrum project.
+
+02:18.170 --> 02:20.480
+But the thing is all my table cells are empty.
+
+02:20.480 --> 02:26.690
+So let's come to CSX and assign them overall something to make sure that stuff is working.
+
+02:26.930 --> 02:30.980
+So let's give them all a background color of black.
+
+02:30.980 --> 02:33.110
+And if I refresh this I won't see much.
+
+02:33.200 --> 02:37.380
+I see essentially five little tiny cells there you may not even see them on your screen.
+
+02:37.400 --> 02:40.390
+So what I have to do is expand the size of these.
+
+02:40.460 --> 02:45.540
+So let's continue doing that with something like giving these table cells a height.
+
+02:45.700 --> 02:50.000
+Now let's give them a height of 200 pixels with such a colon
+
+02:53.060 --> 02:55.210
+save that refresh.
+
+02:55.230 --> 02:57.700
+And now you can see there a good height.
+
+02:57.860 --> 03:02.900
+All right the next thing I want to do is actually give these table cells a with as well so let's do
+
+03:02.900 --> 03:03.490
+that.
+
+03:03.560 --> 03:06.590
+Let's give it something like 100 pixels that should be fine.
+
+03:06.590 --> 03:12.620
+And then refresh over here in I can see my spectrum project is starting to look similar to what I have
+
+03:12.620 --> 03:12.900
+here.
+
+03:12.950 --> 03:17.840
+We can measure off the size of the height and the with if we want to make it larger.
+
+03:17.840 --> 03:21.460
+So if we want to just expand this a little bit so it's a little nicer.
+
+03:21.470 --> 03:22.820
+There we go.
+
+03:23.180 --> 03:31.180
+And what I want to do also is start to grab the heading one and text the line to be Center.
+
+03:31.240 --> 03:32.660
+Let's refresh this.
+
+03:32.740 --> 03:38.440
+And now we're getting to really think of something that looks like closer to a spectrum project.
+
+03:38.440 --> 03:43.530
+Something else we noticed here is that the table itself isn't centered.
+
+03:43.630 --> 03:47.270
+So let's try to use the margin on auto to do that.
+
+03:47.560 --> 03:53.590
+So I can use that class I used earlier or I could also just call table itself since it happens to be
+
+03:53.590 --> 03:54.700
+the only table there.
+
+03:55.670 --> 04:04.690
+And we'll just call auto save that and now I have a centered margin here or the margin is the outside
+
+04:04.900 --> 04:06.720
+the very outside of the box model.
+
+04:07.490 --> 04:08.970
+So let's review what we've done.
+
+04:09.140 --> 04:11.520
+We've been able to create our table cells.
+
+04:11.870 --> 04:18.090
+We have the art class here which allows us to just grab if we go back to the page C.M. that entire table.
+
+04:18.110 --> 04:22.130
+So I could have also just called Table but I wanted to be a little more specific in case we have multiple
+
+04:22.130 --> 04:28.460
+tables here and use margin auto to center it and have also text the line center that heading 1.
+
+04:28.550 --> 04:30.210
+So everything looks good here.
+
+04:30.470 --> 04:35.930
+Now what I'm going to do is come to this coolers CO and actually grab some of these hex codes.
+
+04:35.930 --> 04:42.470
+I went ahead and just grabbed a basically a random color palette and I'm going to copy and paste these
+
+04:42.470 --> 04:46.010
+text codes so let's copy each of these.
+
+04:46.010 --> 04:50.170
+So there's my first one there's my second one
+
+04:52.990 --> 04:53.500
+third
+
+04:56.440 --> 05:03.740
+fourth and let's grab the fifth one and we have to make sure each of these starts with that hash tag.
+
+05:05.960 --> 05:06.930
+There we go.
+
+05:07.370 --> 05:11.660
+So those are my hex colors and the way I can assign these is by calling the ID's.
+
+05:11.660 --> 05:17.150
+Remember we gave each individual table cell in ID and eventually will be able to get rid of this background
+
+05:17.150 --> 05:18.350
+color black.
+
+05:18.380 --> 05:19.430
+So let's do that.
+
+05:19.700 --> 05:20.500
+Let's go.
+
+05:20.510 --> 05:28.200
+Hash tag 1 and we'll call the background color for it to be the very first
+
+05:32.100 --> 05:38.880
+let's refresh this now we can see we beginning to override some of these the colors because if remember
+
+05:38.880 --> 05:41.070
+about CSSA specificity.
+
+05:41.070 --> 05:48.170
+The ID is going to be in the hierarchy or above the hierarchy of just a normal element call.
+
+05:48.180 --> 05:53.140
+So it's called background color again let's keep doing this for the rest of them.
+
+05:54.440 --> 05:59.310
+And if you want you can basically fast forward through this because I'm just repeating myself here.
+
+06:01.060 --> 06:03.820
+So let's copy that excuse me
+
+06:08.930 --> 06:14.280
+semi colon and we're gonna do that two more times for the for class.
+
+06:14.280 --> 06:15.480
+Give it a background color
+
+06:19.270 --> 06:26.570
+and let's do that again for five class or five Id excuse me I should have been saying Id not class.
+
+06:26.780 --> 06:28.460
+And then let's paste in these colors here
+
+06:31.730 --> 06:34.730
+copy and paste that color there.
+
+06:34.760 --> 06:35.100
+All right.
+
+06:35.100 --> 06:36.210
+So let me save that.
+
+06:36.240 --> 06:37.190
+Refresh this.
+
+06:37.230 --> 06:40.390
+And now I can see my spectrum project is looking pretty good.
+
+06:40.440 --> 06:43.860
+I have the colors lined up and they're overwriting this tiddy call.
+
+06:43.860 --> 06:49.380
+In fact I can just delete that save this and I'll still look the same.
+
+06:49.380 --> 06:54.440
+Now I want to affect the spacing in between these if we look at Spectrum 5.
+
+06:54.510 --> 06:57.850
+There's a little more spacing here in between these actual table cells.
+
+06:57.930 --> 07:04.400
+So to do that what I can do is mess around with the box model and remember the important part that box
+
+07:04.400 --> 07:05.750
+model is the actual border.
+
+07:05.780 --> 07:10.580
+So quick way to do this would just be to get each table cell a white border.
+
+07:10.710 --> 07:19.260
+So I'll say something like border and give them each let's say six pixel solid white border.
+
+07:19.320 --> 07:20.990
+Save that and refresh.
+
+07:21.180 --> 07:24.780
+In here we get the nice spacing out that I was looking for.
+
+07:24.840 --> 07:28.670
+And finally I want to add my own custom font to the Heading 1.
+
+07:28.920 --> 07:33.940
+So I already have Google fonts opened here and I wanted to just scroll down to a random one.
+
+07:34.290 --> 07:36.230
+Let's say something that's.
+
+07:36.300 --> 07:38.100
+This one looks nice is Anton.
+
+07:38.220 --> 07:42.330
+So we'll add that the family selected will open it up here.
+
+07:42.600 --> 07:53.150
+I will copy this as a link into my m l file save it come to project C Ss and copy the font family call
+
+07:54.630 --> 07:57.170
+and put it under H-1.
+
+07:57.270 --> 08:02.460
+So now when I refresh project I can see my spectrum project now has that new font and that's really
+
+08:02.460 --> 08:04.260
+all you have to do for this project.
+
+08:04.320 --> 08:09.680
+Again hopefully you have enough practice with the box model so you can play around with this.
+
+08:09.690 --> 08:13.440
+You didn't have to do it with the border you could have messed around with the margin and padding as
+
+08:13.440 --> 08:14.970
+well but it's really up to you.
+
+08:14.970 --> 08:19.230
+There were multiple multiple solutions to getting something to look like this.
+
+08:19.260 --> 08:22.280
+So do not worry if your solution did not follow mine exactly.
+
+08:22.290 --> 08:25.650
+There are multiple ways to get something that looks like this.
+
+08:25.650 --> 08:29.010
+If you have any questions feel free to post them to the Kewney forums.
+
+08:29.160 --> 08:33.900
+Hopefully at a fun time recreating something you just saw the front end and you could recreate it using
+
+08:33.930 --> 08:35.760
+H TMLC SS on the back.
+
+08:35.760 --> 08:38.500
+And thanks everyone and I'll see at the next lecture.

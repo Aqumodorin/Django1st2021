@@ -1,0 +1,178 @@
+WEBVTT
+
+00:04.900 --> 00:08.980
+Hello everyone and welcome to part two connecting javascript.
+
+00:09.400 --> 00:11.520
+We learned quite a bit in the last lecture.
+
+00:11.530 --> 00:16.090
+So let's take a little bit of a break and just show you how you can connect a javascript file which
+
+00:16.090 --> 00:19.890
+is a genius extension file to an h l File.
+
+00:20.080 --> 00:22.300
+We're going to open up Adam and the browser for this.
+
+00:22.300 --> 00:24.300
+So let's hop over to them now.
+
+00:24.580 --> 00:30.980
+OK so here we have Adam text editor open and in the Adam text editor I have two files and empty HTL
+
+00:31.000 --> 00:38.980
+files called example that Tim L and a file called my script dot Jess which is also empty at this time.
+
+00:38.980 --> 00:46.240
+So what I will begin doing is typing out each team just so we get some basic h tim L here in the Heading
+
+00:46.240 --> 00:51.160
+1 and say something like welcome to your bank.
+
+00:51.850 --> 00:55.960
+Let's save that and check that it's connected to our browser by refreshing the page.
+
+00:55.960 --> 00:57.990
+And here we see welcome to your bank.
+
+00:58.000 --> 01:02.520
+Now let's show you how you can actually connect a javascript file for each HTML file.
+
+01:02.710 --> 01:05.200
+And this works with the script tag.
+
+01:05.200 --> 01:12.580
+So up here we can type script inside of the script tag the open tag and looing to write S or C for source
+
+01:13.030 --> 01:18.280
+and then actually input the source of my scripts and those scores from my script.
+
+01:18.280 --> 01:27.970
+It's just my script that jacks in it goes in quotes and then we have a close in tanks so it looks like
+
+01:28.120 --> 01:29.090
+this.
+
+01:29.440 --> 01:35.740
+And you can actually use ATOM to automate this so if I begin to type script here and hit enter you'll
+
+01:35.740 --> 01:37.660
+actually get this auto pop up here.
+
+01:37.660 --> 01:40.030
+You don't have to really worry about type at this point in time.
+
+01:40.240 --> 01:43.430
+So you could just use that as well for the autocomplete.
+
+01:43.450 --> 01:48.660
+But basically we're looking for here is just a script that where the first open secret tag has the R
+
+01:48.700 --> 01:54.470
+C or the source and pointing to your doc js file and right now these are both in the same directory.
+
+01:54.490 --> 01:56.980
+So all I have to do is provide the name.
+
+01:57.010 --> 02:03.120
+Now it's actually add some stuff to the Jazz file so we can clarify and check that it's actually working.
+
+02:03.130 --> 02:09.640
+So the very first thing I want to do here is in this javascript file I'll put an alert that says Welcome
+
+02:09.640 --> 02:10.980
+to your bank
+
+02:13.860 --> 02:20.050
+and I will save that and let's refresh this page and we should now upon refreshing see an alert that
+
+02:20.050 --> 02:24.840
+says This page says Welcome to your bank and we'll hit OK and no.
+
+02:24.850 --> 02:30.830
+Over here in the H Tim L that I'm calling my script before I'm calling anything else in the body.
+
+02:30.910 --> 02:36.280
+So the reason that this appeared blank for a second is because I was calling my script before I called
+
+02:36.280 --> 02:42.400
+anything in my body and we'll discuss later on what script placement and where it should go has an effect
+
+02:42.520 --> 02:43.090
+on your age.
+
+02:43.090 --> 02:47.560
+Tim L. But let's continue on with this javascript file.
+
+02:47.770 --> 02:49.600
+We'll continue on to her big example.
+
+02:49.660 --> 02:54.590
+And going to create a variable called the posit.
+
+02:54.610 --> 03:03.250
+And that's going to be a prompt saying how much would you like to deposit today.
+
+03:03.680 --> 03:08.170
+Questionmark and then let's say alerts
+
+03:10.850 --> 03:18.970
+you of the posited and then we're going to concatenate the actual deposit amount
+
+03:21.900 --> 03:24.430
+and then I'm also going to do a console log.
+
+03:24.570 --> 03:29.490
+So I will say cancel that log and we'll put something like.
+
+03:29.610 --> 03:39.910
+You are a cool person so let's save that refresh our page to reload this javascript and now it says
+
+03:39.910 --> 03:41.270
+Welcome to your bank.
+
+03:41.320 --> 03:42.420
+OK.
+
+03:42.490 --> 03:45.200
+And then it says how much would you like to deposit today.
+
+03:45.610 --> 03:46.900
+Let's put in 100.
+
+03:46.930 --> 03:47.840
+Click OK.
+
+03:47.890 --> 03:48.580
+We get an alert.
+
+03:48.610 --> 03:51.010
+It says you've deposited 100.
+
+03:51.040 --> 03:52.680
+Now we also had that console log.
+
+03:52.780 --> 03:58.940
+So I can check by right clicking saying inspect and here on the console.
+
+03:58.990 --> 04:01.630
+I see you are a cool person.
+
+04:01.630 --> 04:02.140
+Great.
+
+04:02.320 --> 04:07.020
+So that's really all there is as far as connecting a javascript file to NHT mail file.
+
+04:07.030 --> 04:10.930
+Again the main thing I want you to get out of this is that there's a script tag and you can connect
+
+04:10.930 --> 04:15.780
+it to your javascript source and then whatever javascript you have here will be uploaded.
+
+04:15.790 --> 04:20.160
+Whenever you refresh the page or when you actually just visit the page for the first time.
+
+04:20.200 --> 04:22.880
+All right thanks everyone and I'll see you at the next lecture.

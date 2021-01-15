@@ -1,0 +1,2 @@
+- b'Python-Level-One-Slides'
+- b'https://docs.google.com/presentation/d/1_4dy_HLwIHdM0noXDdhYieRE-GWigoh9P0dyp8Wn4A4/edit?usp=sharing'

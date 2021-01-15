@@ -1,0 +1,148 @@
+WEBVTT
+
+00:04.890 --> 00:06.900
+Hello everyone and welcome back to Part 10.
+
+00:06.900 --> 00:09.010
+Simple game project.
+
+00:09.090 --> 00:13.980
+So we've learned enough python for actually create a simple command line game to finish off Python level
+
+00:13.980 --> 00:14.800
+1.
+
+00:14.880 --> 00:19.830
+Let's discuss the rules of the game and then show you an example run through of a finished game.
+
+00:19.980 --> 00:25.650
+The computer will think of a three digit number that has no repeating digits like three four six or
+
+00:25.830 --> 00:26.900
+seven to one.
+
+00:26.940 --> 00:30.180
+So again no repeating digits and it's just a three digit number.
+
+00:30.480 --> 00:36.160
+Then you're going to enter at the command line in input of your own guess of what three digit number
+
+00:36.180 --> 00:37.910
+the computer's thinking of.
+
+00:38.040 --> 00:43.290
+Then the computer will give you back some clues which will Taqwa a little bit based off these clues
+
+00:43.470 --> 00:48.000
+you're going to guess again and you'll keep doing it until you actually break the code with a full match
+
+00:48.210 --> 00:53.970
+three digits up your guess to the three digits that the computer originally guessed.
+
+00:53.980 --> 00:57.800
+So the possible clues are this based off your guess.
+
+00:57.880 --> 01:03.250
+The computer will say close if you've guessed the correct number but in the wrong position it will then
+
+01:03.280 --> 01:05.530
+also add a clue of match.
+
+01:05.530 --> 01:09.230
+If you've guessed the correct number in the correct position and then it will return.
+
+01:09.250 --> 01:09.780
+No.
+
+01:09.880 --> 01:12.110
+If you haven't guessed any of the numbers correctly.
+
+01:12.310 --> 01:15.730
+So we can get multiple clues back and that's possible.
+
+01:15.730 --> 01:16.230
+We'll show you.
+
+01:16.230 --> 01:20.850
+Now a quick run through of the game but you're going to need to look up a few things on your own to
+
+01:20.860 --> 01:22.150
+complete the project.
+
+01:22.150 --> 01:25.040
+There are hints for you left in this particular file.
+
+01:25.090 --> 01:27.090
+Part 10 simple games up PI.
+
+01:27.100 --> 01:33.400
+We haven't actually told you how to get input from a user but the hint is in part 10 simple game.
+
+01:33.460 --> 01:35.270
+Why do you get stuck on anything though.
+
+01:35.290 --> 01:36.880
+Feel free to post the Q&amp;A forums.
+
+01:36.880 --> 01:39.760
+I'm always happy to help out or to check out these solutions.
+
+01:39.860 --> 01:41.910
+Pi or the solutions lecture.
+
+01:42.010 --> 01:45.210
+OK so let's see what this actually looks like.
+
+01:45.220 --> 01:50.390
+So here I've copied and pasted the solutions to the notes the PI file have opened.
+
+01:50.440 --> 01:55.450
+So when I say Python most up-I they'll say something like welcome Codebreaker Let's see if you can guess
+
+01:55.450 --> 01:56.620
+my three digit number.
+
+01:56.620 --> 01:57.700
+The code has been generated.
+
+01:57.700 --> 01:59.690
+Please get a three digit number.
+
+01:59.710 --> 02:00.580
+What is your guess.
+
+02:00.580 --> 02:06.380
+I'll get something simple like four five six enter it and it says there is a match somewhere.
+
+02:06.410 --> 02:12.020
+So I know either 4 is in the correct position 5 is in the correct position or 6 is in the correct position.
+
+02:12.020 --> 02:15.360
+So I can swap some of them out to double check this.
+
+02:15.380 --> 02:18.580
+So let's say four to three and I get a match.
+
+02:18.580 --> 02:26.120
+So I'm going to guess that four is the first number let's confirm that by saying for instance 4 7 8
+
+02:26.580 --> 02:30.020
+and now I get a match again meaning 4 is definitely the first number.
+
+02:30.110 --> 02:34.370
+And then you just keep guessing the number over and over again until you've actually broken the code
+
+02:34.810 --> 02:35.430
+again.
+
+02:35.500 --> 02:41.210
+The three possible clues are no close match and you can get multiple clues based off your numbers position.
+
+02:41.210 --> 02:42.010
+Thanks everyone.
+
+02:42.050 --> 02:46.250
+If you have any questions of this feel free to post the Kewney forums and I'll see at the next lecture
+
+02:46.370 --> 02:48.530
+relict through an example solution.

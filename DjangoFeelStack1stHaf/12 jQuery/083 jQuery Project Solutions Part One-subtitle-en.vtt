@@ -1,0 +1,265 @@
+WEBVTT
+
+00:04.960 --> 00:09.940
+Hello everyone and welcome back to the solution lecture part one for the front and PROJECT.
+
+00:10.070 --> 00:13.280
+We're going to be cutting through the solution for the connect for game.
+
+00:13.420 --> 00:15.730
+Let's get started by hopping over to our editor.
+
+00:15.910 --> 00:16.300
+OK.
+
+00:16.330 --> 00:22.630
+So to get this project started I have three files in HTL file a CSSA file and a javascript's File.
+
+00:22.630 --> 00:25.990
+We're going to start off with the HTL then we'll Stylo some CSSA.
+
+00:26.110 --> 00:29.950
+And then finally the majority of our time is going to be spent coding through the logic we have.
+
+00:29.940 --> 00:32.020
+Jake Query and Javascript.
+
+00:32.020 --> 00:33.460
+Let's get started with the HMO.
+
+00:33.580 --> 00:36.120
+So the smell is actually quite straightforward.
+
+00:36.130 --> 00:38.660
+First we just do the basic aist him all call.
+
+00:38.980 --> 00:42.300
+We can give it the title K'NEX for save that.
+
+00:42.490 --> 00:48.920
+And then I want to link to bootstrap as well as my own CSSA file.
+
+00:48.950 --> 00:56.480
+So let's start with my C Ss which is I have it just being called game that C Ss let me save that and
+
+00:56.480 --> 01:02.390
+I'm going to copy and paste the Cdn link for bootstrap and you can just copy and paste this yourself
+
+01:02.420 --> 01:07.030
+either from the notes or from Boots get bootstrap dot com.
+
+01:07.070 --> 01:13.610
+So there's a C and for bootstrap lets make sure everything's working just by saying hello in the heading
+
+01:13.610 --> 01:15.620
+and refreshing our age Tim Page.
+
+01:15.830 --> 01:19.260
+OK it looks like it's connected networking.
+
+01:19.280 --> 01:25.190
+Let's start by putting everything into a div container so that we keep it organized and centered on
+
+01:25.190 --> 01:26.070
+the page.
+
+01:26.910 --> 01:34.880
+And I will make sure that it's completely aligned centered by saying a line center as a parameter in
+
+01:34.880 --> 01:50.080
+that div and all have one say welcome to Connect for all have heading to say something like connect
+
+01:50.080 --> 01:56.100
+4 chips to win and then H-3 will say
+
+01:59.000 --> 02:04.190
+let's start or want to delete this refresh.
+
+02:04.270 --> 02:05.470
+Make sure everything is working.
+
+02:05.470 --> 02:07.710
+Looks like it's good.
+
+02:07.880 --> 02:13.740
+Now the task we have to accomplish is actually constructing the table that's going to be connect 4.
+
+02:13.770 --> 02:17.450
+So what I am going to do and you don't have to do it this way there's many ways you can bill at this
+
+02:17.450 --> 02:22.810
+table to create a table row with each table cell.
+
+02:22.870 --> 02:27.580
+What's containing a button inside of it.
+
+02:29.620 --> 02:34.620
+And then something else going to do is make sure I call table here.
+
+02:34.630 --> 02:43.590
+Let's put this row back and say that table and then let's give this table a class equal to board so
+
+02:43.590 --> 02:44.950
+we can reference it later.
+
+02:45.030 --> 02:50.770
+Although this will be just the only table tagging RHC mail we could just use the table tags or reference
+
+02:50.760 --> 02:54.540
+it later on who will give it a class so it makes a little more sense.
+
+02:54.540 --> 02:56.120
+And then finally type button.
+
+02:56.160 --> 02:57.990
+We don't need a name for this button.
+
+02:58.650 --> 03:00.550
+And the button itself can be blank.
+
+03:00.610 --> 03:05.280
+So the idea is we're going to be clicking buttons on and off we'll have them change color to depict
+
+03:05.350 --> 03:08.250
+whether the chip is inside of that area or not.
+
+03:09.220 --> 03:17.790
+And we need to add a couple more cells to this row so we can just copy and paste this.
+
+03:17.790 --> 03:18.720
+There we go.
+
+03:18.750 --> 03:20.650
+So let's save that.
+
+03:20.730 --> 03:23.290
+It's going to be seven cells per row.
+
+03:23.670 --> 03:32.370
+And then I can just copy and paste this row and then continue on and connect four has six total rows.
+
+03:32.490 --> 03:34.910
+So I need to do this five more times.
+
+03:37.010 --> 03:43.570
+Let's make sure that's one row to row three row for row five row six row I believe.
+
+03:43.890 --> 03:49.400
+But let's actually make sure of this by refreshing our page here I can see a little table it's kind
+
+03:49.400 --> 03:54.470
+of messed up and that's because it's actually not inside of our container class.
+
+03:54.470 --> 03:58.270
+Let's bring this div all the way down here.
+
+03:59.260 --> 04:01.510
+Save this refresh.
+
+04:01.780 --> 04:10.200
+Now I can see I have a seven cell across and the rows and six rows total grape.
+
+04:10.200 --> 04:19.270
+Finally I want to T.M. connect my script so I'm going to call scripts and I will connect this to the
+
+04:19.290 --> 04:21.810
+can say source.
+
+04:21.860 --> 04:25.330
+I actually don't need to specify the type for now.
+
+04:25.610 --> 04:29.490
+We'll call it my script that just that's what my empty files called right now.
+
+04:29.780 --> 04:32.390
+And then I also want to connect it to a query.
+
+04:32.390 --> 04:35.830
+So again we just copy and paste to see the end point to do that here.
+
+04:35.870 --> 04:40.570
+You can either do it from the notes or from code that just queried dot com.
+
+04:40.720 --> 04:43.080
+So we have our east T.M. all set up.
+
+04:43.180 --> 04:47.170
+We're going to do now is style a little bit so that these buttons actually make sense.
+
+04:47.170 --> 04:50.620
+You can see here it can kind of click on these buttons right now but it's way too small.
+
+04:51.540 --> 05:00.200
+OK so to start off to see SS I'm going to call the board and then every button within that.
+
+05:00.400 --> 05:12.500
+And then let's give them all a whiff of 100 pixels about the Kallen and a height of 100 pixels going
+
+05:12.500 --> 05:14.560
+to save this.
+
+05:14.600 --> 05:18.460
+And here we can see we're starting to get something that looks quite a bit nicer.
+
+05:18.460 --> 05:22.270
+So if I zoom out a little bit here we now have our connect four board.
+
+05:22.290 --> 05:28.970
+Let's keep styling it a little more let's give them all the background color that's gray.
+
+05:29.160 --> 05:31.770
+Right now they have a bit of a fade to them.
+
+05:32.130 --> 05:34.780
+So if we refresh we can see they're all gray now.
+
+05:35.190 --> 05:36.960
+We'll give them a bit of a margin.
+
+05:37.200 --> 05:43.440
+So we have a little space in between them save that come appear refresh.
+
+05:43.470 --> 05:44.730
+That's nice.
+
+05:44.730 --> 05:46.050
+And let's make them round.
+
+05:46.110 --> 05:52.710
+So to make them round we use border radius and we can just set this to be at 50 percent and that should
+
+05:52.710 --> 05:55.310
+make them circles OK.
+
+05:55.440 --> 06:00.240
+And then we get this kind of a weird effect over here when we click and the way to get rid of that is
+
+06:00.240 --> 06:07.720
+by giving them a border will give them a four pixel solid black border.
+
+06:07.720 --> 06:09.810
+Save refresh.
+
+06:10.090 --> 06:13.230
+And here we can see our board is now complete.
+
+06:13.300 --> 06:13.850
+OK.
+
+06:14.080 --> 06:17.360
+So our HTL is done and our CSSA is done.
+
+06:17.380 --> 06:20.020
+Everything looks to be styled correctly.
+
+06:20.020 --> 06:25.180
+Coming up next we're going to be doing is dealing with the majority of our code which is all happening
+
+06:25.390 --> 06:27.010
+on the javascript's side.
+
+06:27.100 --> 06:29.240
+Thanks everyone and I'll see you in the next lecture.
+
+06:29.240 --> 06:30.910
+We're going to pick up right where we left off.

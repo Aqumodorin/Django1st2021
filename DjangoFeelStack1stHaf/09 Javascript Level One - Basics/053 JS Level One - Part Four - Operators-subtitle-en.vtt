@@ -1,0 +1,547 @@
+WEBVTT
+
+00:04.760 --> 00:09.560
+Hello everyone and welcome to part four of javascript level 1 operators.
+
+00:09.980 --> 00:14.900
+It's time to learn about comparison and logical operators with javascript and these operators are going
+
+00:14.900 --> 00:18.420
+to allow us to begin to add logic to our Javascript code.
+
+00:18.680 --> 00:23.450
+And as a quick note there are also five optional quick exercises at the end of this lecture and you
+
+00:23.450 --> 00:29.690
+can find them under the part for underscore operators thought JS file that's under the javascript level
+
+00:29.690 --> 00:30.830
+one folder.
+
+00:30.850 --> 00:34.060
+OK let's hop to our consul and get started.
+
+00:34.190 --> 00:39.410
+OK so here you have the editor open as well as my browser and I have the consul open in my browser.
+
+00:39.590 --> 00:45.200
+Remember you can always just right click inspect and then go over to the consul in on the left hand
+
+00:45.200 --> 00:47.280
+side and the actual course notes open.
+
+00:47.480 --> 00:51.930
+So we're going to be doing as quickly reviewing booleans remember they're all lowercase.
+
+00:51.950 --> 00:54.890
+It's just true and false.
+
+00:55.010 --> 00:59.780
+And what we want to do is start off of comparison operators and comparison operators allow us to compare
+
+00:59.780 --> 01:01.630
+two items and return a boolean.
+
+01:01.730 --> 01:06.530
+And I want you to pay special attention to what happens when we actually reach equality and we test
+
+01:06.530 --> 01:09.060
+if something's equal or not.
+
+01:09.110 --> 01:12.620
+So I'll start off the simple ones which are things such as greater then.
+
+01:12.830 --> 01:15.210
+So if I check is three greater than two.
+
+01:15.440 --> 01:18.100
+Well that's true is to greater than three.
+
+01:18.260 --> 01:19.230
+That's false.
+
+01:19.310 --> 01:23.100
+So that's greater then there is also less then so one less than two.
+
+01:23.310 --> 01:24.960
+There's greater than or equal to.
+
+01:25.250 --> 01:27.620
+So is two greater than 2.
+
+01:27.650 --> 01:31.060
+Well that's false but is too greater than or equal to two.
+
+01:31.130 --> 01:32.270
+That's true.
+
+01:32.270 --> 01:33.500
+So there's greater than or equal to.
+
+01:33.500 --> 01:36.300
+And there's also less than or equal to.
+
+01:36.410 --> 01:40.290
+So we can see here let me clear my consulate's come back up here.
+
+01:40.640 --> 01:45.990
+And now what I want to do is take a little bit of time to discuss equality and its special quirk.
+
+01:46.160 --> 01:51.970
+So let's say I ask is two equals equals two.
+
+01:52.430 --> 01:54.200
+All that returns true.
+
+01:54.200 --> 01:59.660
+And typically in a lot of languages this would be how you test for equality and this would also work
+
+01:59.660 --> 02:01.160
+for things such as strings.
+
+02:01.190 --> 02:10.860
+So if I have something like use or as a string and check equals equals user then it returns true.
+
+02:10.860 --> 02:13.810
+But here's where it gets a little strange.
+
+02:13.860 --> 02:17.150
+Let's say I have a string called two.
+
+02:17.640 --> 02:21.570
+And I say equals equals two and I want to see if this is true enough.
+
+02:21.810 --> 02:27.180
+If I hit enter on this javascript unlike a lot of other programming languages is actually going to report
+
+02:27.210 --> 02:28.770
+that this is true.
+
+02:28.920 --> 02:31.390
+And usually you do not want this to be true.
+
+02:31.410 --> 02:37.590
+You do not want a string to be equal to the actual number two.
+
+02:37.590 --> 02:40.140
+So how do we actually take care of the situation.
+
+02:40.140 --> 02:44.120
+What will you end up doing is just adding another equal sign there.
+
+02:44.430 --> 02:45.340
+So you report back.
+
+02:45.360 --> 02:47.420
+Equals equals equals 2.
+
+02:47.820 --> 02:49.480
+And this will be now false.
+
+02:49.530 --> 02:57.230
+So if you want to check equality of not just the actual number here what its saying but of actual type
+
+02:58.220 --> 03:04.290
+you want to use triple equal sign OK so let's take a little bit of time to discuss the real differences
+
+03:04.290 --> 03:10.700
+between the triple equal sign which returns false and the equal sign which returns true in this situation.
+
+03:10.770 --> 03:17.310
+And what's happening when you only use two equal signs is javascript is using what's known as type coercion
+
+03:17.640 --> 03:22.910
+which basically means it's trying its best to convert both of the objects to similar data types who
+
+03:22.910 --> 03:24.850
+actually perform the comparison.
+
+03:25.080 --> 03:31.110
+And a lot of times you don't actually want that you want to compare two objects based not just on what
+
+03:31.110 --> 03:36.080
+they represent to a user but what they actually represent in the data type space.
+
+03:36.120 --> 03:41.680
+So one is a strange one is a number they shouldn't be the same as the way you do that is you add in
+
+03:41.940 --> 03:48.600
+that extra equal scient have three equal signs there and you actually do the same thing with inequality.
+
+03:48.600 --> 03:52.770
+So if you want to check inequality not just the value but also data type.
+
+03:52.950 --> 03:54.150
+You do this.
+
+03:54.570 --> 03:58.610
+So I want to check is five not equals.
+
+04:00.220 --> 04:03.600
+So 5 the string that ends up being true.
+
+04:03.610 --> 04:05.710
+So I add that equal sign there.
+
+04:05.830 --> 04:11.540
+If I only used one equal sign here then I would have gotten a false.
+
+04:11.940 --> 04:16.590
+So remember for most use cases we want to add in that extra equal sign.
+
+04:16.590 --> 04:22.980
+So we want three equal signs to test for equality and then an exclamation mark two equal signs to test
+
+04:22.980 --> 04:24.180
+for inequality.
+
+04:24.180 --> 04:31.620
+So here this is saying that the digit 5 is truly not equal to the string fine if I only use one of these
+
+04:32.010 --> 04:32.750
+in this case.
+
+04:32.760 --> 04:34.650
+So I don't have that extra equal sign.
+
+04:34.790 --> 04:41.400
+I'll say something like that digit is actually not not equal to 5 and it's a little weird because there's
+
+04:41.400 --> 04:43.090
+a double negative here.
+
+04:43.170 --> 04:45.050
+Falsely an equal.
+
+04:45.050 --> 04:46.770
+So just to clarify.
+
+04:47.520 --> 04:53.350
+You'll always want to use the triple equal signs and then exclamation mark to equal signs for inequality.
+
+04:53.350 --> 04:53.970
+OK.
+
+04:54.070 --> 04:58.660
+So we always want to check for equality inequality not just the value but also of type.
+
+04:58.660 --> 05:01.250
+So let's talk about a few more situations.
+
+05:01.450 --> 05:06.670
+It's really common in programming languages for 0 and 1 to be substitutes for true and false.
+
+05:06.680 --> 05:08.310
+And let me show you what I mean by that.
+
+05:08.470 --> 05:14.130
+I'm going to clear this and we can actually scroll down the notes and see what I'm talking about here.
+
+05:14.230 --> 05:25.640
+If I say true is equal equal to one I actually get true back and if I check as true equals equals equals
+
+05:25.640 --> 05:28.560
+to one I get a false back.
+
+05:28.570 --> 05:34.630
+So this is just a quick note that a lot of times we can see one as far as the type coercion and how
+
+05:34.630 --> 05:37.900
+javascript's trying to get types to compared to each other.
+
+05:37.930 --> 05:45.130
+I could have also used one to kind of act as true and the same goes for zero and false so false equals
+
+05:45.130 --> 05:47.270
+equals zero that returns true.
+
+05:47.440 --> 05:52.530
+But if I'm checking not just for value but also for data type then I get false here.
+
+05:53.270 --> 05:53.600
+OK.
+
+05:53.660 --> 05:59.390
+So that's a little bit of a quirky behavior if you haven't seen this before in other programming languages.
+
+05:59.390 --> 06:06.890
+And there's also a little bit of a weird behavior for null undefined and and a n values.
+
+06:06.950 --> 06:15.980
+So if I check there's no equals equals undefined I end up getting true which is a little bit strange.
+
+06:16.870 --> 06:20.010
+And if I use triple equal signs I get false.
+
+06:20.050 --> 06:22.310
+So that's just something to keep in mind.
+
+06:22.740 --> 06:29.950
+And if I say is any then equals equals to any n actually a false there.
+
+06:29.980 --> 06:34.030
+Which is kind of weird behavior and we'll be talking a lot more about that later on.
+
+06:34.030 --> 06:39.440
+But I do want you to be aware of there's some funky behavior when you're checking for equality and you're
+
+06:39.460 --> 06:45.060
+just doing comparison operators with these null undefined and any values.
+
+06:45.100 --> 06:46.180
+So keep that in mind.
+
+06:46.210 --> 06:47.610
+We'll touch on this later on.
+
+06:47.650 --> 06:50.020
+But this is just something for you to be aware of.
+
+06:50.890 --> 06:55.540
+To begin with all of our problems won't even deal if null are on the find values so don't worry about
+
+06:55.540 --> 06:56.460
+it too much right now.
+
+06:56.590 --> 07:02.130
+Let's clear that out and let's begin talking about logical operators logical operators.
+
+07:02.170 --> 07:05.300
+Just allow us to combine multiple comparison operators.
+
+07:05.560 --> 07:17.700
+So let's say we wanted to know if one is equal to 1 and we also wanted to know if two is equal to two.
+
+07:18.080 --> 07:24.620
+Well how can I combine both for those typically you would use an AND operator and in the case of Javascript
+
+07:24.980 --> 07:31.380
+the and operator uses to ampersands which is a symbol right here.
+
+07:31.400 --> 07:36.040
+So here I can check is 1 equal to 1 and is 2 equal to 2.
+
+07:36.140 --> 07:38.030
+In that case they're both true.
+
+07:38.060 --> 07:43.520
+So in order for this to return true both of these statements have to be true and actually actually tack
+
+07:43.520 --> 07:46.100
+on more than that.
+
+07:46.100 --> 08:01.860
+So I could say is one triple equals to one and is two equal to two end is one equal to two and this
+
+08:01.860 --> 08:07.710
+returns false because while these first two were true this last one was false and because they're all
+
+08:07.740 --> 08:13.710
+ans they all have to be true then we clear the screen here.
+
+08:13.720 --> 08:20.410
+We can also use or operators and or operators are written with what's known as the pipe operator and
+
+08:20.410 --> 08:23.650
+they only need one condition to be true to return true.
+
+08:23.650 --> 08:26.740
+So for instance is one equal to two
+
+08:29.700 --> 08:36.550
+or looks like that pipe operator usually find it above the enter or shift key on your keyboard and you
+
+08:36.590 --> 08:40.210
+just do shift backslash.
+
+08:40.360 --> 08:42.250
+So you actually get that pipe operator.
+
+08:42.310 --> 08:48.820
+What we see is one equal to two or is one equal to 1.
+
+08:48.820 --> 08:52.230
+And that's true because only one of these conditions had to be true.
+
+08:52.360 --> 08:56.950
+And then we also have the not operator so not operator.
+
+08:57.000 --> 08:59.750
+That's not as common to use no pun intended there.
+
+08:59.760 --> 09:01.470
+But let's also check it out.
+
+09:01.470 --> 09:04.490
+It's basically a way of checking the opposite of a condition.
+
+09:04.920 --> 09:10.870
+So for instance put this in parentheses following a check is 1 equal to 1.
+
+09:11.130 --> 09:12.320
+Well that's true.
+
+09:12.450 --> 09:15.400
+What if I want to check if the opposite is true.
+
+09:15.630 --> 09:20.600
+Well then I can add an exclamation point in front of this to check.
+
+09:20.630 --> 09:26.210
+So this exclamation mark will return the opposite of whatever is in here and the opposite of true is
+
+09:26.210 --> 09:26.670
+false.
+
+09:26.670 --> 09:28.900
+When I hit enter I should be false there.
+
+09:29.030 --> 09:31.950
+So again it's basically a way of checking the opposite of a condition.
+
+09:32.120 --> 09:34.250
+And you can also stack these.
+
+09:34.550 --> 09:35.150
+So you can do.
+
+09:35.150 --> 09:37.590
+Exclamation mark exclamation mark.
+
+09:37.730 --> 09:40.200
+One equals equals one.
+
+09:40.370 --> 09:45.770
+But this is definitely not that common to use and hopefully you never see just a bunch of exclamation
+
+09:45.770 --> 09:51.260
+marks like this because really this kind of makes no sense and this is just bad code but it is functional
+
+09:51.260 --> 09:51.910
+code.
+
+09:52.260 --> 09:52.970
+OK.
+
+09:53.150 --> 09:59.000
+So that's really all there is to discuss about comparison operators and logical operators for the most
+
+09:59.000 --> 09:59.300
+part.
+
+09:59.300 --> 10:00.500
+They're pretty straightforward.
+
+10:00.500 --> 10:05.640
+The only things I really want you to pay attention to is the use of this triple equal sign versus just
+
+10:05.640 --> 10:07.150
+the double equal sign.
+
+10:07.760 --> 10:12.140
+And I want you throughout the course to be extra vigilant about that especially when you're working
+
+10:12.140 --> 10:13.160
+of Javascript.
+
+10:13.340 --> 10:18.680
+And I also want you to be aware of this kind of weird behavior with no undefined and any and we don't
+
+10:18.680 --> 10:22.100
+run into this that often throughout this course but I do want you to be aware of it.
+
+10:23.050 --> 10:27.700
+And then scrolling back down all the way to the bottom of the notes we have some exercise here.
+
+10:27.700 --> 10:30.540
+So let me just expand this and show you.
+
+10:30.570 --> 10:31.890
+So here are a few.
+
+10:32.080 --> 10:37.410
+There's five quick exercise questions for you on what I want you to do is knowing that x is equal to
+
+10:37.410 --> 10:39.980
+1 in y is equal to 2.
+
+10:40.200 --> 10:43.360
+Mentally evaluate these expressions right here.
+
+10:43.380 --> 10:46.000
+So there's five expressions for you to mentally evaluate them.
+
+10:46.020 --> 10:50.790
+Once you think you know the answer in your head just copy and paste this line to the consul to actually
+
+10:50.790 --> 10:52.190
+see if you're correct.
+
+10:52.200 --> 10:56.000
+So let's do the first one together and then all it should do the other four on your own.
+
+10:56.040 --> 11:02.850
+So if x is equal to 1 and Y is equal to 2 we'll see what we have here on this left hand side I see is
+
+11:02.850 --> 11:07.330
+the string two equals equals to the number two.
+
+11:07.350 --> 11:12.690
+What we learned previously that doubles equal sign instead of triple equal sign will only check for
+
+11:12.690 --> 11:14.400
+the value not the actual data type.
+
+11:14.400 --> 11:17.130
+So I know this side is true.
+
+11:17.130 --> 11:23.450
+And then I say end is X triple equals to 1 so that's checking both for value and data type.
+
+11:23.610 --> 11:26.690
+Well I know that the number one is equal to the number one.
+
+11:26.730 --> 11:32.550
+So I believe that exercise one should return true since both sides of this and statement are true.
+
+11:32.550 --> 11:33.280
+Let's check it out.
+
+11:33.280 --> 11:39.690
+I'm going to copy this and paste it into my Consul so I have those two variables.
+
+11:39.690 --> 11:41.510
+And let's copy and paste this line.
+
+11:42.350 --> 11:44.300
+Put it into my console.
+
+11:44.300 --> 11:45.300
+It looks like I was correct.
+
+11:45.320 --> 11:45.620
+We got.
+
+11:45.620 --> 11:46.440
+True.
+
+11:46.490 --> 11:46.830
+OK.
+
+11:46.850 --> 11:48.230
+So it's basically all I want you to do.
+
+11:48.230 --> 11:54.360
+Mentally violate the other four here and you can check your own solutions against the console commands.
+
+11:54.650 --> 11:55.280
+OK.
+
+11:55.400 --> 11:56.120
+Thanks everyone.
+
+11:56.120 --> 11:58.610
+Do you have any questions feel free to post the Kewney forums.
+
+11:58.730 --> 11:59.940
+I'll see you at the next lecture.

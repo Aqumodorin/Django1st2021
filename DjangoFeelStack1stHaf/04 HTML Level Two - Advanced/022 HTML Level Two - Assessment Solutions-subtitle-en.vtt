@@ -1,0 +1,514 @@
+WEBVTT
+
+00:05.050 --> 00:10.310
+Hello everyone and welcome back to the solutions lecture for the TMI level 2 assessment.
+
+00:10.570 --> 00:12.970
+Let's get started by jumping straight to the editor.
+
+00:12.970 --> 00:16.980
+All right so here I have the editor and the course Sign-Up page opened.
+
+00:16.990 --> 00:19.060
+I am just going to start straight from scratch.
+
+00:19.060 --> 00:21.750
+But remember this is what we're trying to recreate here.
+
+00:21.760 --> 00:23.000
+H t m l.
+
+00:23.080 --> 00:30.040
+So the first thing I want to do is just call him I'll give this some sort of title we'll just say Course
+
+00:30.090 --> 00:33.010
+Sign-Up and then let's start off with the body.
+
+00:33.040 --> 00:40.510
+So here we can see there's some sort of heading one and we will say of course sign Sign-Up page to match
+
+00:40.510 --> 00:41.180
+that.
+
+00:41.320 --> 00:46.730
+And then we have what appears to be a paragraph to it then heading to reading three That's fine and
+
+00:46.750 --> 00:47.780
+we'll say please no
+
+00:50.520 --> 00:58.450
+we'll say all text fields required just to save us some time and then we start with the real business
+
+00:58.450 --> 00:59.840
+which is the form.
+
+01:00.160 --> 01:05.070
+So I'll call the form right now and we will remove class action in a post.
+
+01:05.080 --> 01:10.250
+There was a bonus on the action which we'll cover in just a little bit towards the end.
+
+01:10.280 --> 01:12.490
+Let's start off with the basic form.
+
+01:12.580 --> 01:15.790
+First thing you wanted to do is the inputs.
+
+01:15.790 --> 01:22.730
+So we have a first name and put in a last name and put Let's grab those inputs the first name is just
+
+01:22.730 --> 01:24.110
+a text input.
+
+01:24.130 --> 01:31.910
+It has no value but it does have a placeholder so let's put that in here or put it placeholder in that
+
+01:31.910 --> 01:36.140
+says first name and then let's just label this.
+
+01:36.230 --> 01:37.560
+We'll give it a label.
+
+01:38.670 --> 01:41.330
+And we'll say it's for F am.
+
+01:41.400 --> 01:51.150
+Her first name and we'll give the input an ID of FM and then let's come back up here and give it the
+
+01:51.150 --> 01:54.370
+label first name Colin.
+
+01:54.530 --> 01:54.860
+All right.
+
+01:54.870 --> 02:00.010
+Now we're going to do a very similar thing for the last name so let's do that as well.
+
+02:00.390 --> 02:06.220
+Let's copy this and paste it.
+
+02:06.290 --> 02:13.190
+Let's make this last name let's come up here and change this to Elham for last name.
+
+02:13.230 --> 02:15.010
+It looks like I actually wrote them and sort of.
+
+02:15.030 --> 02:24.090
+And so let's change those on both of these l n and F and first name last name and then the placeholder
+
+02:24.090 --> 02:27.060
+here sort of first name is going to say last name.
+
+02:27.990 --> 02:31.180
+All right so so far we have an extra t there.
+
+02:31.180 --> 02:35.580
+So far we have the first two inputs for the first name and the last name.
+
+02:35.620 --> 02:38.410
+Let's save this and make sure we're connected.
+
+02:38.470 --> 02:40.420
+Make sure things are working correctly.
+
+02:40.420 --> 02:42.480
+I will repeat that.
+
+02:42.580 --> 02:48.040
+Enter Elix are good to go here of course sign a page of text textfield are required first name and last
+
+02:48.070 --> 02:50.800
+names to remember is that they're all required.
+
+02:50.800 --> 02:58.980
+Which means I need to add one more parameter here in my input which is just the required keyword and
+
+02:58.980 --> 03:00.870
+I need to do the same thing here required.
+
+03:01.050 --> 03:03.280
+You can see that Adam is already ready to help me out.
+
+03:03.280 --> 03:04.030
+Now you just need to.
+
+03:04.080 --> 03:05.250
+You could say it equals two.
+
+03:05.250 --> 03:07.510
+True but that's all I really need here.
+
+03:07.920 --> 03:08.700
+OK.
+
+03:08.700 --> 03:12.450
+Then up next we want the email that we had earlier.
+
+03:12.450 --> 03:18.460
+So again I will say input this time I'll say e-mail and I will give the placeholder.
+
+03:18.470 --> 03:24.800
+Now let's just say the placeholder is user at gmail dot com or something like that.
+
+03:24.930 --> 03:32.020
+Can't remember quite what it was but we'll put a label here and we'll say this label is for the let's
+
+03:32.020 --> 03:43.310
+say email Rowse call it male so we don't confuse it with the type and give it an ID of male and then
+
+03:43.310 --> 03:49.610
+for the label we will say email and then finally we also want a password.
+
+03:50.070 --> 03:57.970
+So again I will make a label here will say it's for pass call password there.
+
+03:59.530 --> 04:06.040
+And then create the input for it input and you notice it's because a lot faster when using Adam's really
+
+04:06.040 --> 04:08.930
+helpful auto complete.
+
+04:09.020 --> 04:12.310
+So we will say password and no placeholder there.
+
+04:14.060 --> 04:15.850
+Let's save this and see what it looks like.
+
+04:15.860 --> 04:23.380
+So far we're probably going to change something that we have a bit of a basically no gap between first
+
+04:23.380 --> 04:25.710
+name last name email and password.
+
+04:25.780 --> 04:31.210
+So one quick fix we can do that since we don't know styling it is to just in-between first name and
+
+04:31.210 --> 04:37.780
+last name add some paragraph tags to insert another block there and we can just keep them blanks and
+
+04:37.780 --> 04:38.940
+I want to refresh this.
+
+04:38.980 --> 04:42.330
+We get a little empty block there later on when we learn about CSSA.
+
+04:42.370 --> 04:47.440
+We're going to learn how we can actually call styling for buffers and margins et cetera.
+
+04:48.190 --> 04:51.000
+Right now we can just use this little cheat.
+
+04:51.070 --> 04:51.470
+OK.
+
+04:51.580 --> 04:55.970
+So you have all the text fields and let's make sure we have them all required.
+
+04:56.050 --> 04:59.270
+So we still need to add those to the last two we just created.
+
+04:59.380 --> 05:07.980
+So it required and then down here we also want to add in required and you don't need to say equals in
+
+05:07.980 --> 05:11.120
+our case we can just say required there.
+
+05:11.250 --> 05:17.850
+Then up next we want to get if some radio buttons ask for over the age of 18 yes or no has put a paragraph
+
+05:17.850 --> 05:21.670
+in here saying Are you over 18.
+
+05:21.690 --> 05:31.030
+Question mark will need two inputs and they're both going to be radio is going to be input.
+
+05:31.030 --> 05:32.650
+Call it radio.
+
+05:32.820 --> 05:40.780
+And remember if you want to be linked to share the same name so we'll call them both over asking if
+
+05:40.780 --> 05:47.070
+they're over 18 and let's give them a label.
+
+05:47.310 --> 06:01.890
+So say label for Y is yes and then give the first one an ID of Y and then so we can recognize it later.
+
+06:02.110 --> 06:09.290
+Let's give it a value of yes and let's give this one a value of no and give it a label.
+
+06:09.580 --> 06:14.200
+And the reason for that is later on whenever they select I can reference the value there.
+
+06:14.380 --> 06:23.380
+So we'll put in a label here for an ID equal to an.
+
+06:23.630 --> 06:25.910
+And then here it's going to be no.
+
+06:25.910 --> 06:29.700
+So let's say that make sure everything's working correctly for us.
+
+06:29.750 --> 06:33.990
+Or your routine let's make sure they're linked together and looks like that's working just fine.
+
+06:34.010 --> 06:34.840
+All right.
+
+06:34.910 --> 06:36.520
+Can even expand this a little bit.
+
+06:36.860 --> 06:41.700
+And Dallas check out the last thing we needed to do which was a drop them.
+
+06:41.700 --> 06:44.240
+You have a credit card or PayPal.
+
+06:44.280 --> 06:55.090
+So let's just say you have a card or Paypal question mark or remember the dropdown doesn't use an input
+
+06:55.090 --> 06:55.420
+tag.
+
+06:55.420 --> 06:57.990
+Instead it uses a selects tag.
+
+06:58.060 --> 07:02.940
+So we have selects we can give it a class but we don't worry about that and also give it a name which
+
+07:02.940 --> 07:09.760
+is give it a simple name we'll say payments and then finally inside of this we have the option tags
+
+07:10.840 --> 07:18.240
+so option one will say this is the value of CC and we'll give it the actual name on each T.M. credit
+
+07:18.240 --> 07:22.500
+card or excuse me not really a name but what it's actually going to display.
+
+07:23.660 --> 07:32.250
+And then the next option value here will say Peepy for Paypal and then PayPal there.
+
+07:32.360 --> 07:33.290
+So let's save that.
+
+07:33.290 --> 07:36.020
+Make sure it's working when I refresh this.
+
+07:36.020 --> 07:37.790
+Do you have a credit card or PayPal.
+
+07:37.880 --> 07:39.560
+Here we can select them perfect.
+
+07:39.680 --> 07:47.180
+And when I actually click Submit I'll get back evaluate either CC or Peepy for payment x.
+
+07:47.240 --> 07:53.360
+Finally let's use that paragraph trick again and put the submit button.
+
+07:53.540 --> 07:57.710
+So put submit and the value will give it is
+
+08:01.040 --> 08:08.270
+and let's save this now let's confirm that it all worked or fresh This will put in a first name and
+
+08:08.270 --> 08:09.530
+the last name.
+
+08:09.830 --> 08:17.990
+But in some e-mail it's just made up and that's a password over 18 credit card to sign up.
+
+08:18.010 --> 08:20.320
+Which should just basically refresh the page.
+
+08:20.320 --> 08:25.120
+And if we look over here on the your elf expand this I see the options that I wanted.
+
+08:25.120 --> 08:25.740
+Perfect.
+
+08:27.780 --> 08:32.010
+So what we can do now is to expand on this.
+
+08:32.010 --> 08:38.460
+You could add values so you could give password a value an email a value if you wanted to show up here
+
+08:38.460 --> 08:42.480
+that you are after clicking submit but that doesn't help us too much right now because they don't know
+
+08:42.480 --> 08:45.690
+how to use stuff on the back end to actually grab those values.
+
+08:45.690 --> 08:47.200
+So we'll leave it there for now.
+
+08:47.290 --> 08:53.250
+What I want to address is the actual bonus question which was how can you make this Sign-Up link to
+
+08:53.250 --> 08:55.550
+another page or another HMO file.
+
+08:55.550 --> 08:59.150
+And remember we can do that through inaction.
+
+08:59.230 --> 09:00.620
+So I will call action here.
+
+09:01.590 --> 09:08.550
+And what I will do is I will creates by bring back might the rectory with control or command backslash
+
+09:09.220 --> 09:11.070
+or create a new file here.
+
+09:11.670 --> 09:17.740
+Now I will say thank you not HMO and here it's just going to be an HTML file.
+
+09:19.560 --> 09:23.000
+With one headings saying thank you.
+
+09:23.120 --> 09:25.040
+We all say that.
+
+09:25.130 --> 09:27.690
+And then the action is going to take us to that.
+
+09:27.770 --> 09:29.310
+Thank you.
+
+09:29.620 --> 09:35.720
+Timo and the message will be get save that.
+
+09:35.890 --> 09:39.760
+So looks really similar to what we should earlier when we actually lead to the Facebook page.
+
+09:39.760 --> 09:44.980
+Then instead now the action is linked to a local aged him and make sure it's in the same directory that
+
+09:44.980 --> 09:47.270
+we don't have the pass and the whole file path you just pass.
+
+09:47.280 --> 09:48.680
+Thank you ladies T.M..
+
+09:48.760 --> 09:54.540
+So I will save that refreshed this Allen and make sure I refresh that correctly.
+
+09:56.810 --> 09:57.300
+Enter.
+
+09:57.340 --> 09:57.610
+OK.
+
+09:57.630 --> 09:59.100
+Course sign up page.
+
+09:59.150 --> 10:00.840
+Let's zoom out a little bit.
+
+10:00.890 --> 10:02.930
+So it's still OK.
+
+10:03.130 --> 10:09.500
+I'll put it the same information as last time Protea some made up e-mail address made up password over
+
+10:09.500 --> 10:15.320
+18 credit card Sign-Up and it takes us to think Page hopefully you're able to figure out that bonus
+
+10:15.320 --> 10:16.190
+as well.
+
+10:16.640 --> 10:21.740
+But what I really want you to see is now we're actually ready to almost level up to understanding how
+
+10:21.740 --> 10:26.390
+we can link pages together and that's going to be a really big part of creating that web application.
+
+10:26.390 --> 10:32.750
+How pages linked to each other and how your whole web application is designed to interact with itself.
+
+10:32.750 --> 10:33.350
+All right.
+
+10:33.350 --> 10:39.640
+So let's just quickly review everything we just did by grabbing this guy and expanding it.
+
+10:39.770 --> 10:43.330
+So we had to do is created that heading one just a paragraph.
+
+10:43.340 --> 10:48.740
+We had the form and if you did the bonus you wanted to select action and method to some other HVM l
+
+10:48.920 --> 10:52.490
+page you had or if you wanted to just another web site.
+
+10:52.550 --> 10:55.670
+Remember for the Web site need a passen HTP cetera.
+
+10:55.760 --> 10:57.970
+Otherwise I'll start looking in the local namespace.
+
+10:58.250 --> 11:04.190
+Which means on your computer then we want to use labels we have the input for these tax number we had
+
+11:04.190 --> 11:05.940
+to make sure they were all required.
+
+11:06.110 --> 11:10.910
+We had the first name last name had the placeholders mixture that required this little trick or the
+
+11:10.910 --> 11:11.720
+paragraph.
+
+11:11.720 --> 11:14.060
+Don't worry if you didn't get that yet you don't need it.
+
+11:14.060 --> 11:17.650
+Later on we actually learned about C Ss So if you were having difficult do that.
+
+11:17.690 --> 11:18.620
+Don't sweat it.
+
+11:18.680 --> 11:25.820
+It's kind of a trick then coming up next we had to have this e-mail label password.
+
+11:25.820 --> 11:26.810
+Again it was required.
+
+11:26.810 --> 11:28.150
+Are you over 18.
+
+11:28.160 --> 11:32.690
+The trick here is when you're dealing with radio buttons and you want them to be linked together make
+
+11:32.690 --> 11:33.740
+sure they have the same name.
+
+11:33.740 --> 11:39.440
+In this case it was over and over and assigning values to the text fields wasn't really necessary for
+
+11:39.530 --> 11:42.880
+our use case but obviously you will have to assign values to them.
+
+11:42.980 --> 11:44.980
+Where are we dealing a full web application.
+
+11:45.140 --> 11:46.310
+So keep that in mind.
+
+11:46.580 --> 11:51.770
+Then finally we have this dropdown menu of Carter Pay-Pal and that's the select tag with the option
+
+11:51.770 --> 11:54.600
+tag and then we had the submit button.
+
+11:54.830 --> 11:55.440
+OK.
+
+11:55.550 --> 11:57.220
+Hope you enjoyed that assessment exercise.
+
+11:57.260 --> 12:00.790
+And you basically know enough HTL now to continue on with the rest of the course.
+
+12:00.980 --> 12:03.200
+Thanks everyone and I will see you at the next section.

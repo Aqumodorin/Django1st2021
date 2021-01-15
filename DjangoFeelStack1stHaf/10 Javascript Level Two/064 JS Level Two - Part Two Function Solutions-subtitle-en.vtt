@@ -1,0 +1,547 @@
+WEBVTT
+
+00:04.960 --> 00:09.870
+Hello everyone and welcome to the solutions lecture the function exercises from Part 2.
+
+00:09.940 --> 00:12.750
+We're going to hop over to the editor and get started.
+
+00:13.030 --> 00:16.240
+OK here I am at the javascript file.
+
+00:16.350 --> 00:21.330
+And let's start off with Problem number one which is actually quite simple but it may be a little tricky.
+
+00:21.340 --> 00:24.140
+First you can do all in one line.
+
+00:24.220 --> 00:25.780
+So let's see how we can do this.
+
+00:26.690 --> 00:32.240
+The basic question here is we want to write a function called sleep then that takes into boolean parameters
+
+00:32.570 --> 00:34.380
+weekday and vacation.
+
+00:34.550 --> 00:40.130
+And if the parameter week is true it means it's a weekday and if the parameter vacation is true it means
+
+00:40.130 --> 00:45.680
+we're on vacation and we want to sleep in if we're on vacation or it's on a weekday.
+
+00:46.010 --> 00:48.200
+So let's see how we can do that.
+
+00:48.850 --> 00:54.640
+It's actually quite easy if you remember your comparison operators and logical operators where we can
+
+00:54.640 --> 00:58.110
+do is just check that it's not a weekday.
+
+00:58.150 --> 01:07.120
+With an exclamation mark so we say it's not a weekday or vacation is true because remember these are
+
+01:07.120 --> 01:11.290
+just boolean values and that's actually all you had to do for this particular function.
+
+01:11.290 --> 01:17.500
+So that's the solution for sleep in check that it's not a weekday or using the two pipe operators that
+
+01:17.500 --> 01:18.970
+were truly on vacation.
+
+01:18.970 --> 01:20.030
+That vacation is true.
+
+01:21.280 --> 01:24.230
+Next up is a similar problem called monkey trouble.
+
+01:24.400 --> 01:30.910
+And here we have two monkeys A and B in the parameters a smile and B smile indicate if each is smiling
+
+01:31.360 --> 01:32.400
+and we're in trouble.
+
+01:32.470 --> 01:38.320
+If they are both smiling or if neither of them is smiling and return true if we are in trouble.
+
+01:38.710 --> 01:40.780
+So here is an example.
+
+01:40.780 --> 01:44.870
+If a smiling and be smiling then we are in trouble.
+
+01:45.160 --> 01:48.330
+If neither of them are smiling then we are in trouble.
+
+01:48.400 --> 01:52.060
+If it's one of the other true false then we're not in trouble.
+
+01:52.060 --> 01:52.980
+False.
+
+01:53.330 --> 01:55.330
+OK so how can we do this.
+
+01:55.330 --> 02:00.970
+Again this is actually an other one liner will say return.
+
+02:01.120 --> 02:04.320
+I want to check for the case where they're both smiling.
+
+02:04.330 --> 02:13.890
+So since these are both booleans I can just say a smile and be smile.
+
+02:16.630 --> 02:20.420
+So if that's true and true then I am in trouble.
+
+02:20.680 --> 02:22.190
+So that's one case.
+
+02:22.420 --> 02:28.210
+Or we have to remember the other case so I can also put the second case in parentheses where neither
+
+02:28.210 --> 02:32.770
+of them are smiling which is going to look almost the same except in this case.
+
+02:32.830 --> 02:34.510
+I have these operators here
+
+02:37.760 --> 02:39.610
+and that's the solution and one line right there.
+
+02:39.620 --> 02:45.910
+So we check the case where they're both smiling or the case where neither of them are smiling.
+
+02:45.980 --> 02:49.180
+Anything else will just return false.
+
+02:49.200 --> 02:51.600
+Let's continue on to Problem number three.
+
+02:51.750 --> 02:56.910
+And if you are having trouble with these and that I'm in multiple lines don't worry I'm showing these
+
+02:56.910 --> 03:01.890
+solutions on purpose because once you've done a lot of programming and you're more of an experienced
+
+03:01.890 --> 03:05.530
+programmer These are the type of solutions are going to be naturally doing.
+
+03:05.670 --> 03:08.850
+If you still got the question right but did it in multiple lines.
+
+03:08.850 --> 03:10.560
+Don't worry if you're just a beginner.
+
+03:10.560 --> 03:12.010
+That's totally fine as well.
+
+03:12.120 --> 03:13.620
+As long as it actually works.
+
+03:13.680 --> 03:15.060
+Don't sweat it.
+
+03:15.070 --> 03:17.850
+Moving along to Problem 3 string times.
+
+03:17.940 --> 03:23.730
+So we are given a string and a non-negative integer n and we want to return a larger string that has
+
+03:23.840 --> 03:26.100
+any copies of the original string.
+
+03:26.240 --> 03:30.210
+We see here some input output examples.
+
+03:30.210 --> 03:31.480
+So how can we do this.
+
+03:31.680 --> 03:38.050
+Well it's type of code and show you are going to make a variable called Return.
+
+03:38.110 --> 03:39.960
+S t r.
+
+03:40.070 --> 03:43.930
+And that's going to be the string that I return and start off with.
+
+03:44.240 --> 03:51.150
+It's just an empty string and then I'm going to say variable I's equal to zero.
+
+03:53.080 --> 03:59.770
+And only a while loop loops a while loop that says While I is less than an
+
+04:02.510 --> 04:14.190
+the return String that I made is going to add SDR which is the actual input string and then I'm going
+
+04:14.190 --> 04:16.230
+to increment.
+
+04:16.240 --> 04:25.760
+I once that while loop is done then I jus return the return String and that's all there is to it.
+
+04:25.820 --> 04:28.070
+So let's review what's actually happening here.
+
+04:28.100 --> 04:30.470
+I make an empty string.
+
+04:30.630 --> 04:36.160
+I initialize I to be equal to zero and then will I is less than n.
+
+04:36.180 --> 04:43.290
+I'm going to keep concatenating the SDR the input string to the return String and then increment by
+
+04:43.290 --> 04:50.290
+one until I reach an and after that the while loop is over and I just return string itself.
+
+04:50.640 --> 04:55.110
+So hopefully you remember here how to use a while loop and the fact that you can concatenate strings
+
+04:55.110 --> 05:01.090
+together Louis long to Problem number four is a little more mathematical.
+
+05:01.090 --> 05:05.770
+In this case even three numerical values A B and C returned their sum.
+
+05:05.770 --> 05:10.690
+However there's a little special rule to it if one of the values is 13 then it does not count towards
+
+05:10.690 --> 05:13.050
+the sum and values to its right.
+
+05:13.060 --> 05:14.080
+Also do not count.
+
+05:14.170 --> 05:18.060
+So for example if B is 13 both B and C do not count.
+
+05:18.070 --> 05:22.770
+So it was 13 then none of the values would count.
+
+05:22.770 --> 05:24.990
+So here we have a function lucky sum.
+
+05:25.140 --> 05:26.730
+And let's see how we can do this.
+
+05:26.760 --> 05:31.250
+It's actually just they essentially a bunch of if statements to check for the various cases.
+
+05:32.750 --> 05:39.520
+So the first statement if I'm going to say if a is equal to 13.
+
+05:39.520 --> 05:43.580
+Remember that was the case where if A's tickled the 13 then it doesn't count.
+
+05:43.630 --> 05:45.830
+And nothing to the right counts right off the bat.
+
+05:45.850 --> 05:47.350
+Physical 13.
+
+05:47.700 --> 05:48.950
+I'm going to return 0
+
+05:51.790 --> 05:59.550
+and then I'm going to check for the next case and that next case can be another if statement if the
+
+06:01.150 --> 06:02.410
+is 13.
+
+06:04.870 --> 06:08.880
+Return a.
+
+06:09.080 --> 06:21.890
+And then we can say if C is equal to 13 in that case return a plus b and if none of those returns get
+
+06:21.890 --> 06:26.710
+executed we could return a B plus C.
+
+06:26.900 --> 06:29.890
+So that's all you can do this with just a bunch of if statements.
+
+06:30.050 --> 06:32.370
+But let's rewrite this now to use if.
+
+06:32.390 --> 06:34.400
+Else if and else statements.
+
+06:34.400 --> 06:38.820
+So I'm going to delete this composite screen if you want to see this code.
+
+06:38.900 --> 06:40.640
+Also the in solution.
+
+06:40.640 --> 06:43.530
+Well let's show you now with if and else if statement.
+
+06:43.530 --> 06:51.950
+So if a is equal to 13 and I was using double equal sign there just because we assume that we're actually
+
+06:51.950 --> 07:02.080
+going to get integers not strings but if it's triple equal science 13 I return 0 then we have LCF.
+
+07:02.230 --> 07:11.620
+So physical 13 then I'm going to return a which makes sense because I still only wants the left of B
+
+07:12.960 --> 07:21.120
+when we say LCF see is equal to 13 and I'm going to return a plus b.
+
+07:22.650 --> 07:23.830
+And else.
+
+07:23.880 --> 07:30.480
+So if a is not equal to 13 and B's not equal to 13 and sees that equaled 13 that I just return the sum
+
+07:30.480 --> 07:36.650
+of all of them a plus b c and that's how you can do this problem using if LCF and L statements.
+
+07:36.730 --> 07:42.210
+It's up to you when you want to use the same gender one makes more sense to you is fine.
+
+07:42.210 --> 07:47.460
+And then finally problem 5 the bonus problem if you're driving a little too fast the police officer
+
+07:47.460 --> 07:48.310
+stops you.
+
+07:48.330 --> 07:54.480
+And basically what happens here is we have to compute the ticket and we have some encoded integer values
+
+07:54.750 --> 07:56.270
+where 0 is no ticket.
+
+07:56.280 --> 08:00.290
+One is a small ticket and two is a big ticket and a first beat.
+
+08:00.290 --> 08:04.980
+Well we were driving a 60 mph or kilometers per hour or less.
+
+08:04.980 --> 08:06.030
+The result is zero.
+
+08:06.300 --> 08:11.580
+If the speed is between 61 and 80 inclusive the result is one we get a small ticket.
+
+08:11.580 --> 08:17.460
+And if the speed is 81 or more the result is two we get a big ticket unless it's your birthday.
+
+08:17.580 --> 08:21.480
+And on that day your speed can be five higher in all cases.
+
+08:21.810 --> 08:30.540
+So the second input this false true that indicates whether or not it is your birthday OK let's actually
+
+08:30.540 --> 08:39.200
+write some code here I'm going to start off by with an if statement and I'm going to say if it's your
+
+08:39.200 --> 08:39.730
+birthday.
+
+08:39.740 --> 08:48.570
+So if is birthday speed I'm just right off the bat going to subtract 5 from it.
+
+08:51.430 --> 09:04.210
+And then I can say if speed is less than or equal to 60 I return 0 and then I can say well show it with
+
+09:04.210 --> 09:06.060
+the IF statements for now.
+
+09:06.250 --> 09:08.050
+If the speed
+
+09:10.620 --> 09:22.180
+is greater than 60 but less than or equal to 80 then I will say return 1.
+
+09:22.340 --> 09:27.060
+And if none of those gets triggered then I just return to going too fast overall.
+
+09:27.290 --> 09:32.950
+So that's say you can do just a few If statements and if you wanted to you could rewrite these to be
+
+09:33.030 --> 09:37.240
+in if LCF and then an ELSE to return to.
+
+09:37.490 --> 09:41.300
+So this would be the if statement this would be the Elspeth.
+
+09:41.300 --> 09:46.030
+And then this would be the else it's really up to you again however you want to write them whether it
+
+09:46.100 --> 09:47.710
+makes more sense to you.
+
+09:47.720 --> 09:54.650
+The trick I used for this was basically this very first if statement which is outside of these last
+
+09:54.650 --> 10:02.110
+three because it says essentially just saying OK if it is your birthday then the speed is minus five.
+
+10:02.180 --> 10:07.000
+And that way I can just check against everything except subtract 5 from it.
+
+10:08.180 --> 10:10.610
+To me personally that's what made the most sense logically.
+
+10:10.820 --> 10:16.190
+But there's tons of solutions for this so your logic may be totally different than what's here depending
+
+10:16.190 --> 10:22.610
+on how you dealt with it is birthday Bulleen so feel free to share the Q&amp;A forums your solutions.
+
+10:22.620 --> 10:27.930
+Finally we have the bonus make bricks and for this bonus problem we wanted to make a row of bricks.
+
+10:27.930 --> 10:33.150
+That is some sort of goal inches long and we have a number of small bricks that are one in sheet and
+
+10:33.150 --> 10:35.660
+a number of big bricks that are 5 inches each.
+
+10:35.660 --> 10:40.470
+We want to return true if it is possible to make the goal by choosing from the given bricks.
+
+10:40.470 --> 10:44.370
+And this is a little harder than it looks but it can actually be done without any loops and in a single
+
+10:44.370 --> 10:45.150
+line.
+
+10:45.150 --> 10:48.710
+And like I said before if you can't figure this one out don't worry it's a bonus.
+
+10:48.870 --> 10:59.520
+But let me show you how you could do this all in one line I'm going to say return and first I will say
+
+10:59.700 --> 11:00.990
+take our goal.
+
+11:00.990 --> 11:10.800
+Inches same model five greater than or equal to zero has to be true.
+
+11:12.050 --> 11:24.870
+And the goal inches model five minus the amount of small Brick's has to be less than or equal to zero.
+
+11:26.070 --> 11:41.080
+And if we come back here we want small plus five times as big to be greater than or equal to the goal.
+
+11:41.690 --> 11:43.130
+And that's how you can do this launch.
+
+11:43.190 --> 11:44.860
+This is problem all in one line.
+
+11:44.860 --> 11:47.450
+So let's actually break down what's happening here.
+
+11:48.460 --> 11:50.210
+So you remember we want to make bricks.
+
+11:50.320 --> 11:54.640
+We have a certain number of small bricks that are 1 inch each and a certain number of big bricks that
+
+11:54.640 --> 11:56.240
+are 5 inches each.
+
+11:56.350 --> 11:59.370
+And we want to make the road that is gole inches long.
+
+11:59.410 --> 12:04.420
+And what we really want to know is return true if it's even possible to make the goal by choosing from
+
+12:04.420 --> 12:05.790
+the given bricks.
+
+12:05.800 --> 12:15.190
+So for example if we have one small brick and one big brick we can make 1 inch five inch and six inch
+
+12:15.190 --> 12:20.350
+goals but we wouldn't be able to make four inch goals because we don't have enough small bricks and
+
+12:20.350 --> 12:25.730
+we have just one big brick so we can't actually make that incircle if you will.
+
+12:26.140 --> 12:28.910
+So that's kind of the logic behind the solution.
+
+12:29.170 --> 12:36.200
+So the very first one just checks if the goal maade of five is greater than or equal to zero.
+
+12:36.370 --> 12:41.050
+Then that checks for the large bricks and then we do this.
+
+12:41.190 --> 12:47.350
+The goal modifies minus the amount of small bricks needs to be less than or equal to zero here.
+
+12:47.400 --> 12:54.750
+And basically what that means is I need to know that I have enough filler bricks between the counts
+
+12:54.840 --> 12:55.790
+of five.
+
+12:55.800 --> 12:57.380
+So between the multiples of 5.
+
+12:57.570 --> 13:04.070
+This checks for the actual filler bricks and then here this last case where I say small plus five times
+
+13:04.080 --> 13:11.130
+big checks I have the right combination of small bricks and big bricks in order to at least meet or
+
+13:11.130 --> 13:12.490
+exceed that goal.
+
+13:12.840 --> 13:13.160
+OK.
+
+13:13.170 --> 13:14.450
+So take your time.
+
+13:14.460 --> 13:16.820
+This one's really tricky to think about.
+
+13:16.830 --> 13:22.670
+And like I said it's not so much about general javascript's syntax it's more about programming in general.
+
+13:22.740 --> 13:25.950
+I would recommend that you check out coding that dot com.
+
+13:25.950 --> 13:31.850
+So if you scroll all the way up here I mentioned the actual Web site called coding that dot com.
+
+13:31.890 --> 13:38.070
+They actually have a full video explanation on how you can get to this one line of code for this make
+
+13:38.070 --> 13:38.960
+bricks problem.
+
+13:38.970 --> 13:43.890
+It's kind of the famous problem on the Web site because it's so tricky and this solution on a one line
+
+13:43.890 --> 13:47.410
+can seem so unintuitive at first so take your time with it.
+
+13:47.460 --> 13:54.060
+Visit coding that com search for make bricks and you'll find that question along with a full video explanation
+
+13:54.150 --> 13:56.370
+of the specific solution for it.
+
+13:56.670 --> 13:57.270
+OK.
+
+13:57.600 --> 13:58.380
+Thanks everyone.
+
+13:58.380 --> 13:59.920
+Hope you enjoyed the exercises.
+
+13:59.940 --> 14:01.490
+Feel free to post the Q&amp;A forums.
+
+14:01.500 --> 14:04.180
+If you get stuck on anything I'll see you at the next lecture.

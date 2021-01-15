@@ -1,0 +1,607 @@
+WEBVTT
+
+00:04.700 --> 00:06.860
+Hello everyone and welcome to part three.
+
+00:06.860 --> 00:12.900
+Array's arrays are going to allow us to store various basic data types in a sequence so we can then
+
+00:12.900 --> 00:15.060
+later access them as needed.
+
+00:15.060 --> 00:17.520
+And this is all best explained through example code.
+
+00:17.670 --> 00:18.610
+So let's get started.
+
+00:18.630 --> 00:22.020
+I'm going to hop right to my browser and open up the console.
+
+00:22.020 --> 00:27.730
+All right so here we have the console open and we want to know why even bother using arrays.
+
+00:27.780 --> 00:36.580
+Well imagine we have three variables that our countries sign this var country one and it's equal to
+
+00:36.580 --> 00:41.880
+the string USA then I have our country too.
+
+00:42.270 --> 00:53.000
+We'll have it be equal to Germany and then we have our country three and let's have it equal to China.
+
+00:53.010 --> 00:56.550
+Now if we wanted to we could keep doing this.
+
+00:56.590 --> 01:02.110
+But instead of having to declare a variable for every single string it will be a lot easier if I just
+
+01:02.110 --> 01:07.900
+had one sort of data structure that could take in the strings themselves and name that whole thing a
+
+01:07.900 --> 01:14.210
+single variable name and who can do that is through the use of brackets which create arrays.
+
+01:14.650 --> 01:22.280
+So I will instead create a variable called countries and set it equal to an array of those strings.
+
+01:22.280 --> 01:32.220
+So now I have USA Germany and China and now this saves me a lot of variable assignments.
+
+01:33.140 --> 01:41.180
+And you could also format of this across multiple lines so you can do something like var countries is
+
+01:41.180 --> 01:45.200
+equal to USA comma.
+
+01:45.210 --> 01:52.490
+And if you hit enter here you can keep typing Germany comma China.
+
+01:52.500 --> 01:58.320
+So that's sometimes another way that you'll see array's being constructed one line per item but usually
+
+01:59.070 --> 02:00.710
+it's the first way.
+
+02:00.720 --> 02:03.090
+It really depends on how many items are in the array.
+
+02:03.090 --> 02:07.710
+So just keep that in mind either of these ways is fine but that's kind of the whole point of entrain.
+
+02:07.740 --> 02:12.030
+Save yourself the effort of having to define multiple variables.
+
+02:12.030 --> 02:14.920
+Now let's talk about accessing elements of the array.
+
+02:15.240 --> 02:21.600
+Each element in this array is in a fixed sequence position meaning the elements are in order and can
+
+02:21.600 --> 02:22.920
+be called by their position.
+
+02:22.920 --> 02:28.900
+So they're get placed in order and they stay in order and indexing just like a string starts at zero.
+
+02:30.040 --> 02:31.710
+So I will clear the con..
+
+02:31.780 --> 02:35.410
+We still have countries defined here wups.
+
+02:35.740 --> 02:37.360
+Let's try that again.
+
+02:37.360 --> 02:41.760
+Countries define USA Germany and China.
+
+02:41.920 --> 02:49.900
+And if I say countries and then you square bracket indexing I can actually grab items from that array.
+
+02:50.020 --> 02:51.770
+So let's say I want to grab China.
+
+02:51.800 --> 02:58.010
+Well if indexing starts at zero that's going to be 0 1 2 and that grabs me China there.
+
+02:58.120 --> 03:02.460
+All right well let's clear this and continue on.
+
+03:02.710 --> 03:08.170
+So again just like indexing characters from a string you can also do reassignments you can reassign
+
+03:08.200 --> 03:11.590
+elements by accessing their index and then just re-assigning it.
+
+03:11.920 --> 03:19.140
+So if I want to change China to another other country we can grab countries too.
+
+03:19.140 --> 03:24.590
+That was where China was and said equal to France enter.
+
+03:24.750 --> 03:30.970
+And now when I call countries I see USA Germany and France now you couldn't do this sort of re-assignment
+
+03:30.970 --> 03:31.750
+of a string.
+
+03:31.840 --> 03:37.370
+And that's the difference between something that's immutable and something that's mutable.
+
+03:37.370 --> 03:41.930
+OK so let's visit a little more on this topic of immutability and mutability.
+
+03:42.320 --> 03:44.780
+And that is just to spell it out for you.
+
+03:44.960 --> 03:54.730
+That's mutable versus mutable coming from the word to mutate or to change.
+
+03:54.740 --> 03:58.490
+So let's clear our consul and show you an example.
+
+03:58.500 --> 04:04.190
+You remember that I right now have countries as USA Germany and France and I could do the re-assignment
+
+04:04.280 --> 04:11.370
+as I did earlier by saying countries whatever index I wanted to change and then some other country.
+
+04:11.610 --> 04:19.790
+So we can make this something like Spain and now when I visit countries again I say USA Germany Spain.
+
+04:19.800 --> 04:21.840
+So that means an array is mutable.
+
+04:22.050 --> 04:25.770
+I can index and re-assign and it's a sequence.
+
+04:25.770 --> 04:29.720
+However not every sequence is mutable so strings are immutable.
+
+04:29.850 --> 04:33.790
+If I try to do the same action it won't actually work.
+
+04:34.110 --> 04:38.780
+So remember country 1 is USA.
+
+04:38.940 --> 04:45.030
+If I try to say country one grab two that's going to be equal to a.
+
+04:45.090 --> 04:55.220
+So country one grab two is a let's try to change it from USA to us b the same way we did with countries.
+
+04:55.240 --> 05:08.910
+So I will say country one to and I will set it equal to B if I enter here it just outputs B.
+
+05:09.130 --> 05:13.350
+But if I actually look at country one to see if anything changed it did it.
+
+05:13.420 --> 05:17.340
+And that's because a string is immutable in this situation.
+
+05:17.350 --> 05:23.050
+So they're both sequences we can index the pretty much the exact same way but the array is mutable and
+
+05:23.050 --> 05:24.350
+the strings are not.
+
+05:24.860 --> 05:28.860
+OK let's continue on by talking about mixed data types.
+
+05:30.330 --> 05:33.720
+So a javascript array can actually take mixed data types.
+
+05:33.720 --> 05:37.950
+We showed earlier in array called countries that only had strings in it.
+
+05:38.520 --> 05:45.120
+But I can make a variable called mixed and it can take in anything it can take in a boolean a number
+
+05:46.590 --> 05:47.310
+and a string.
+
+05:47.310 --> 05:52.350
+And notice here that the syntax highlighting shows these are all three very different data types and
+
+05:52.350 --> 05:54.750
+mixed has no problem holding them in.
+
+05:54.780 --> 06:01.020
+So an array can take in mixed data types and it will also report back a length.
+
+06:01.020 --> 06:06.360
+So here we can see we have three items calling length in an array just reports back how many elements
+
+06:06.420 --> 06:07.980
+are in the array.
+
+06:07.980 --> 06:12.540
+Now let's begin to discuss array methods so we're going to discuss just some basic methods available
+
+06:12.570 --> 06:15.460
+to you when you're working for ways in Javascript.
+
+06:15.570 --> 06:21.630
+And there's actually a link in the documentation to the developer that Mozilla the org page and I'm
+
+06:21.630 --> 06:27.540
+going to go to it now just to show you real quick have it opened here in a new tab array Javascript.
+
+06:27.660 --> 06:30.770
+And this says basically everything you'd ever want to know about an array.
+
+06:30.810 --> 06:37.140
+How to create an array access stuff loop over an array and then to the array center removed from the
+
+06:37.140 --> 06:38.100
+front of an array.
+
+06:38.100 --> 06:41.930
+If you scroll all the way down it has tons and tons of information about arrays.
+
+06:42.030 --> 06:46.650
+A lot of stuff that we're never going to really need or use for our use cases in the course.
+
+06:46.650 --> 06:51.180
+But if you dive deeper into javascript and you end up really enjoying that language you may want to
+
+06:51.180 --> 06:52.770
+check out a lot of the stuff here.
+
+06:52.770 --> 06:57.840
+So again a great resource and the link is in the notes or you can just google search Mozilla developer
+
+06:57.840 --> 07:03.160
+network javascript array and it will take you this page going back to the actual con..
+
+07:03.400 --> 07:07.480
+Let's start with the most basic and useful Array methods.
+
+07:07.550 --> 07:23.570
+So I will clear my console and say variable Mirei is equal to 1 to.
+
+07:23.600 --> 07:25.880
+Now let's talk about adding and removing elements.
+
+07:25.880 --> 07:30.690
+So to add or remove elements from an array use the push and pop methods.
+
+07:31.010 --> 07:32.940
+Let's start with removing the last item.
+
+07:32.990 --> 07:38.440
+So to remove the last item and return it as a new variable use the dot pop method.
+
+07:38.450 --> 07:47.540
+So if I want a variable called last item to be the last item in my arm Ira I will set it equal to my
+
+07:47.540 --> 07:48.770
+are dots
+
+07:51.480 --> 07:54.670
+close parentheses here to actually execute the pop method.
+
+07:55.960 --> 08:00.860
+And now when I checked last item I see number three.
+
+08:00.860 --> 08:08.700
+And if I check my R I see that I've successfully popped off and removed the last item from my array.
+
+08:08.750 --> 08:13.110
+If we instead want to add an item to the end of the array we use the push command.
+
+08:13.310 --> 08:19.580
+Let's show you how to use that very similar feature except you say my A-R or whatever the name of your
+
+08:19.580 --> 08:20.210
+is.
+
+08:20.570 --> 08:26.450
+You type push inside of these princes sees you type whatever item you want to push to the end of the
+
+08:26.450 --> 08:27.170
+array.
+
+08:27.590 --> 08:33.620
+So let's make a string called new item analysis CECCO My array.
+
+08:35.020 --> 08:37.840
+Now we see we have 1 2 and new item.
+
+08:38.080 --> 08:42.820
+And when you push the item it reports back the length of the array after you push it.
+
+08:42.820 --> 08:46.110
+So now we have three items in the race so reported back three.
+
+08:46.170 --> 08:49.170
+And if you want you can also expand this.
+
+08:49.240 --> 08:52.140
+So the console has a nice little feature here where it says ok.
+
+08:52.150 --> 08:57.850
+Index 0 you have one and that's when you have to index to your new item length is three and has more
+
+08:57.850 --> 09:02.430
+information here that we'll discuss in a future lecture OK.
+
+09:02.590 --> 09:05.660
+Let's say you want to index the last item in the array.
+
+09:05.830 --> 09:07.420
+Well that's also really easy.
+
+09:07.450 --> 09:17.000
+You say my are brackets and then it's going to be my are the length minus one.
+
+09:17.240 --> 09:19.270
+And this will return the last item.
+
+09:19.320 --> 09:23.780
+Remember in this indexing starts at zero which is why we're doing that minus one and we can actually
+
+09:23.780 --> 09:25.940
+nest arrays as well.
+
+09:26.000 --> 09:34.330
+So I can make a variable called Matrix and said equal to a nested array so arrays within arrays.
+
+09:34.550 --> 09:36.070
+So something that looks like this.
+
+09:36.120 --> 09:38.100
+Four five six
+
+09:40.780 --> 09:49.710
+and then seven eight nine so now if I look at my matrix I can see I have an array inside of an array
+
+09:50.130 --> 09:55.900
+where it gets reported back how many items are in that array but keep in mind if I check the length
+
+09:55.900 --> 09:58.480
+of my matrix it only has three items in it.
+
+09:58.510 --> 10:03.190
+Each of those items however has an additional 3 items so keep that in mind when you're checking and
+
+10:03.190 --> 10:04.710
+working with nested arrays.
+
+10:05.500 --> 10:10.730
+Now let's talk about array iteration and that is using things like for loops with an array.
+
+10:11.050 --> 10:19.100
+OK so let's discuss array iteration imagine that I have an array we'll call it V or we'll call it a
+
+10:19.100 --> 10:27.660
+r r for array and it's going to have just three strings in it is going to have the letter A the letter
+
+10:27.660 --> 10:29.800
+B the letters C and that's it.
+
+10:29.820 --> 10:32.560
+Just three items in the array.
+
+10:32.750 --> 10:36.160
+And if we check it out there we have it a B and C.
+
+10:36.180 --> 10:39.270
+Imagine I want to print out a b and c how could I do that.
+
+10:39.460 --> 10:41.720
+Well I could use a normal for loop.
+
+10:42.040 --> 10:44.190
+So my for loop would look something like this.
+
+10:46.670 --> 10:49.710
+It would say variables start.
+
+10:49.710 --> 10:58.050
+I start to equal to zero and from I or while I'd lessen the length of the array keep incrementing 1
+
+10:58.080 --> 11:06.490
+to i and then we will say Konsole the log the elements of that array using indexing
+
+11:10.030 --> 11:13.220
+and the heres how we can print a b and c..
+
+11:13.360 --> 11:17.750
+Now that's the for loop way of iterating through an array.
+
+11:18.010 --> 11:25.260
+But there's also the four of statement so we can say we take a look at it.
+
+11:25.460 --> 11:28.180
+We're going to clear this so we can get a better look.
+
+11:29.120 --> 11:38.930
+For and then imprint sees some sort of temporary variable name letter of the array.
+
+11:38.930 --> 11:43.610
+In our case it's called a r r do something.
+
+11:43.610 --> 11:50.950
+So in our case I will say cancel the log the letter.
+
+11:51.170 --> 11:52.730
+And here we get the exact same result.
+
+11:52.730 --> 11:59.870
+So this is the form of loop that we briefly mentioned during the four loops lecture in the course so
+
+11:59.960 --> 12:06.020
+I can say for some temporary variable name of an array and then we can do something with that temporary
+
+12:06.020 --> 12:09.100
+variable and we can call it temporary variable whatever it was.
+
+12:09.110 --> 12:18.210
+So I can say something like for jelly of the array console log.
+
+12:20.530 --> 12:30.060
+Jeli a b and c and we can also do something that's completely unrelated to any elements of the array.
+
+12:30.090 --> 12:34.400
+So instead of saying cancel that log jelly I could just say cancel that log.
+
+12:34.890 --> 12:35.430
+Hello.
+
+12:35.490 --> 12:36.430
+And that's kind of just right.
+
+12:36.450 --> 12:38.130
+Hello three times.
+
+12:38.150 --> 12:38.750
+So hello.
+
+12:38.750 --> 12:39.360
+Hello hello.
+
+12:39.360 --> 12:41.430
+And you could see the chrome estated.
+
+12:41.520 --> 12:43.020
+It was written three times.
+
+12:43.020 --> 12:47.240
+So that is the art of using the for loop.
+
+12:47.310 --> 12:53.640
+Now a really common thing that happens when you're dealing with an array is you want to pass each item
+
+12:53.640 --> 12:56.010
+of that array into a function.
+
+12:56.010 --> 12:57.150
+Let me show you what I mean.
+
+12:58.190 --> 13:06.440
+Going to clear my console imagine I want to alert the user to every letter in that array.
+
+13:06.660 --> 13:09.060
+So I will say four letter
+
+13:13.020 --> 13:14.010
+A R R
+
+13:16.700 --> 13:30.080
+alerts letter and then close those curly brackets hit enter and I get an alert that says a b and c that
+
+13:30.080 --> 13:37.310
+sort of thing is so common to use some sort of function for every element in an array that there's actually
+
+13:37.370 --> 13:39.230
+a shorthand for this.
+
+13:39.290 --> 13:41.180
+And it's the for each method.
+
+13:41.480 --> 13:48.530
+What you do is you take the name of your day and then off of it you call a for each and then you pass
+
+13:48.530 --> 13:50.430
+in the function you want to use.
+
+13:50.540 --> 13:53.890
+In our case it's the alert function.
+
+13:54.490 --> 13:56.740
+And note that I just passed in the function itself.
+
+13:56.780 --> 13:59.960
+I do not call a function like this.
+
+13:59.960 --> 14:04.230
+So there's no close and open print sees around the end of the function.
+
+14:04.610 --> 14:06.210
+It's just the function itself.
+
+14:06.410 --> 14:12.530
+Now if I hit enter this does the exact same thing a b and c..
+
+14:12.590 --> 14:18.950
+So again calling a function for every element in an array is such a common occurrence that javascript
+
+14:18.950 --> 14:21.950
+already has it built in as a method for arrays.
+
+14:22.010 --> 14:29.000
+The dot for each method word that you don't just pasand the function itself into the for each method.
+
+14:29.030 --> 14:35.950
+Let me show you one more example with our own custom defined array or a function I should say I'm going
+
+14:35.950 --> 14:39.790
+to create a function and it will say.
+
+14:41.190 --> 14:49.320
+Awesome name or a function it takes in a name and then it will cancel that log.
+
+14:50.550 --> 14:57.830
+The name plus the phrase is awesome.
+
+15:01.050 --> 15:02.340
+Curly brackets the end that.
+
+15:02.340 --> 15:03.950
+So what does an awesome do.
+
+15:04.110 --> 15:11.510
+Well if I call add awesome the word Django it says Django is awesome.
+
+15:11.550 --> 15:16.240
+So now I will create an array called topic's
+
+15:18.930 --> 15:20.270
+has Python in it.
+
+15:21.280 --> 15:25.860
+Django in it and I will say science in it as well.
+
+15:25.880 --> 15:35.500
+Three awesome things and I'm going say topic's for each and then pasan my function which in my case
+
+15:35.500 --> 15:37.610
+was just an awesome.
+
+15:37.740 --> 15:40.510
+I hit enter and then I see Python is awesome.
+
+15:40.520 --> 15:43.010
+Django is awesome and science is awesome.
+
+15:43.010 --> 15:43.280
+All right.
+
+15:43.280 --> 15:45.210
+That's really the basics of array.
+
+15:45.260 --> 15:47.520
+Remember you have the for each method.
+
+15:47.540 --> 15:51.740
+You have the four of method as well for Array iteration.
+
+15:51.740 --> 15:57.710
+You also have the pop and push methods to take things out of an array and add them to an array.
+
+15:57.740 --> 16:03.410
+You can nest arrays arrays can take in mix types and you can do reassignments for Array and you just
+
+16:03.440 --> 16:07.350
+index arrays with the Brechin rotations starting at index 0.
+
+16:07.420 --> 16:09.890
+Do you have any questions feel free to post the Kewney forums.
+
+16:10.040 --> 16:14.210
+But coming up next is an exercise to get practice on all of these topics.
+
+16:14.240 --> 16:15.300
+I'll see you at the next lecture.

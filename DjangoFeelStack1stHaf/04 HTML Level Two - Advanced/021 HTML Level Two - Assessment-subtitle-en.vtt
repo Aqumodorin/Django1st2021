@@ -1,0 +1,115 @@
+WEBVTT
+
+00:04.990 --> 00:06.310
+Hello everyone and welcome back.
+
+00:06.310 --> 00:08.490
+We've reached the end of each tim level too.
+
+00:08.530 --> 00:11.250
+So we'll have an assessment for this assessment.
+
+00:11.260 --> 00:15.670
+You're just going to be recreating the front end of a basic sign up page for some sort of online course
+
+00:15.670 --> 00:16.470
+web site.
+
+00:16.600 --> 00:19.530
+So check out the file HVM at level 2 assessment reached him.
+
+00:19.540 --> 00:22.770
+I'll just copy the full file path and put it into your browser.
+
+00:22.780 --> 00:25.280
+Try not to actually look at the HVM L.
+
+00:25.300 --> 00:26.970
+And let's explore before you begin.
+
+00:26.980 --> 00:29.650
+Because that's what you're going to be recreating for your assessment.
+
+00:29.650 --> 00:33.850
+All right so here we have the file and I assume that the bits we can see it clearly we have a heading
+
+00:33.850 --> 00:34.110
+here.
+
+00:34.120 --> 00:39.340
+Course sign a page and then it also says please know first thing last name pass from an email are required
+
+00:39.340 --> 00:43.930
+to you're going to make sure that those fields are have some sort of way of being required when you
+
+00:43.930 --> 00:44.850
+click submit.
+
+00:44.860 --> 00:45.630
+Review the lectures.
+
+00:45.640 --> 00:46.920
+If you don't remember how to do that.
+
+00:47.080 --> 00:52.630
+And notice that this first name last name and email also have some placeholder so I see something here
+
+00:52.630 --> 00:55.810
+that says first name and I type and it goes away.
+
+00:56.380 --> 01:00.740
+And then we also password make sure that if you type something in the password it's hidden from view
+
+01:01.250 --> 01:05.140
+that we say are you over the age of 18 and we have two radio buttons.
+
+01:05.140 --> 01:09.700
+Note that as I click yes and no it changes so that means they are linked somehow.
+
+01:09.700 --> 01:12.700
+And then finally we have this do you have a credit card or PayPal.
+
+01:12.880 --> 01:17.040
+And we have a dropdown menu that says either choose credit card or PayPal.
+
+01:17.110 --> 01:19.940
+Another way you could have interpreted this question is do you have a credit card or PayPal.
+
+01:19.960 --> 01:20.970
+Yes or no.
+
+01:21.130 --> 01:21.430
+Really.
+
+01:21.430 --> 01:27.060
+I just care that you remember how to do a dropdown menu and then click sign up and basically.
+
+01:27.070 --> 01:28.600
+Well I need to fill this out.
+
+01:28.780 --> 01:32.010
+So let's do that at gmail dot com.
+
+01:32.130 --> 01:37.900
+Some password Sign-Up and nothing should happen it just basically refreshes.
+
+01:38.650 --> 01:43.920
+In my case the non zoomed in version but you can see appear in the URL that this has changed.
+
+01:43.990 --> 01:44.530
+All right.
+
+01:44.800 --> 01:51.820
+As a bonus if you feel that this is pretty easy what I want you to do is see if you can select an action
+
+01:51.850 --> 01:57.850
+to actually connect this form to some other HVM l page that you've written maybe a thank you page.
+
+01:57.850 --> 02:03.370
+So when you click sign up see if you can link it to a thank you page as a bonus for an action.
+
+02:03.370 --> 02:04.030
+All right.
+
+02:04.030 --> 02:07.330
+Best of luck and I will see you at the next lecture or we actually code through this.

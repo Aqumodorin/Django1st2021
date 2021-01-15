@@ -1,0 +1,370 @@
+WEBVTT
+
+00:04.980 --> 00:10.080
+Hello everyone and welcome to part nine function exercises solutions lecture we're going to be going
+
+00:10.080 --> 00:13.110
+over the solutions for the previous function exercises.
+
+00:13.110 --> 00:15.540
+Let's go and open up the file to get started.
+
+00:15.870 --> 00:18.510
+OK here I am at the function exercises file.
+
+00:18.510 --> 00:23.430
+Let's start off with Problem 1 which is and remember if we wanted to have a list of integers we need
+
+00:23.430 --> 00:28.720
+to return true if the sequence in numbers 1 2 3 appears in the list somewhere.
+
+00:28.880 --> 00:33.790
+And basically for this and we're going to be doing is iterating through the list three at a time.
+
+00:33.860 --> 00:37.110
+So let's show you how we can do that with this array check function.
+
+00:37.670 --> 00:46.130
+I'm going to say for I in range and then I'll go for the length of numbers because I don't know how
+
+00:46.130 --> 00:51.740
+long them is going to be as a list and then I will see minus two because I don't want to go all the
+
+00:51.740 --> 00:52.460
+way to the end.
+
+00:52.490 --> 00:55.400
+I just want to go starting from here.
+
+00:55.490 --> 00:59.160
+So I will go minus two back because I'm going to be counting in steps at 3.
+
+00:59.420 --> 01:01.380
+So let me show you what that looks like.
+
+01:01.970 --> 01:17.890
+I will say if Gnome is an index I as equal to one hand numbs I plus one is equal to two.
+
+01:18.480 --> 01:24.910
+And number of I plus two is equal to three.
+
+01:25.390 --> 01:30.040
+Well that case that I return true if that never happens.
+
+01:30.430 --> 01:34.980
+Meaning I never get a return true instead of that for loop that I will just return false.
+
+01:34.990 --> 01:39.970
+And notice how this return false statement is in line with that for loop which means this entire thing
+
+01:40.240 --> 01:41.210
+has to run through.
+
+01:41.230 --> 01:44.750
+And if we never get a return true here then we never actually break out of this.
+
+01:44.770 --> 01:46.930
+And then we go to return false.
+
+01:47.280 --> 01:47.780
+OK.
+
+01:48.100 --> 01:49.540
+So that's the basic idea.
+
+01:49.580 --> 01:54.880
+Again lengthen them is minus two because I'm hopping over in steps of three and if I went all the way
+
+01:54.880 --> 01:59.510
+to the end I would get an error because it would be indexing outside of the actual list.
+
+01:59.530 --> 02:01.590
+The last one I want to go to is right here.
+
+02:01.700 --> 02:07.810
+Lengthen them minus two indices back that way I can do the plus one and plus two checks.
+
+02:07.820 --> 02:08.240
+All right.
+
+02:08.360 --> 02:13.670
+Now let's go on to Problem two which was given a string return a new string of every other character
+
+02:13.670 --> 02:15.040
+starting with the first.
+
+02:15.080 --> 02:17.320
+So hello yields h ELO.
+
+02:17.700 --> 02:18.200
+OK.
+
+02:18.290 --> 02:19.660
+Now this quick moment.
+
+02:19.670 --> 02:21.890
+There's many many ways you could do this.
+
+02:21.890 --> 02:24.110
+In fact you could just use slicing notation.
+
+02:24.380 --> 02:27.040
+But let me show you a really standard way to do this.
+
+02:27.080 --> 02:28.790
+Just a loop.
+
+02:28.790 --> 02:35.630
+And this one will work across any language we set and output to be result.
+
+02:35.700 --> 02:44.500
+And then I will say for I in range length of the string as TR And actually there isn't a good choice
+
+02:44.500 --> 02:45.020
+here.
+
+02:45.250 --> 02:52.950
+So I will say my string and change this to be my string as an input
+
+02:56.960 --> 03:03.230
+and then I will say if I to is equal to zero.
+
+03:05.370 --> 03:13.490
+Result is equal to results plus my string at the current index which is I.
+
+03:13.650 --> 03:18.300
+And then I'm just going to return the results.
+
+03:18.330 --> 03:22.460
+So this is a very basic algorithmic way of solving this problem.
+
+03:22.470 --> 03:29.190
+The other way you could do this is by actually using slice notation by skipping every other letter.
+
+03:29.220 --> 03:35.460
+So be something like colon colon to so again here we're saying for I'd arranged the length of the string
+
+03:35.910 --> 03:42.810
+if I had to is equal to zero meaning or on even numbers result is result plus my strain and this is
+
+03:42.810 --> 03:48.240
+kind of the same thing as just saying my string colon colon to
+
+03:52.090 --> 03:52.510
+all right.
+
+03:52.510 --> 03:55.840
+Now let's continue on to problem three problem.
+
+03:55.840 --> 04:00.460
+You were given two strains so we wanted to return true if either of the strings appears at the very
+
+04:00.460 --> 04:05.300
+end of the other string and we could ignore case sensitivity here.
+
+04:05.350 --> 04:10.360
+So what we can do is for ignoring case sensitivity right away just make them both lower.
+
+04:10.390 --> 04:23.120
+So say a is equal to a lower and B is equal to be the lower and then I'm going to say return and there's
+
+04:23.450 --> 04:27.720
+two ways we could have done this we could have used the special ends with method.
+
+04:27.890 --> 04:32.030
+Now we didn't actually cover the ends with method so you may not have been aware of it but it looks
+
+04:32.030 --> 04:33.320
+something like this.
+
+04:33.470 --> 04:35.390
+You can say b dot
+
+04:38.270 --> 04:50.050
+ends with a and or I should say or a ends with B.
+
+04:50.530 --> 04:57.110
+And that's the way you do it with the most pythoness stick code using that ends with method that will
+
+04:57.110 --> 04:59.840
+pretend that you didn't know that since we didn't really cover it.
+
+04:59.930 --> 05:11.890
+And sure the more algorithmic way of doing this we will say return the string a minus indexing the length
+
+05:12.790 --> 05:16.930
+of B all the way to the end.
+
+05:16.940 --> 05:24.460
+And so what this basically is doing is it's asking is the string a minus length of B.
+
+05:24.550 --> 05:38.260
+All the way to the end equal to B or is a equal to B minus length of a.
+
+05:38.690 --> 05:45.770
+All the way to the end so all we're doing here is we're checking there's a equal to be with the ending
+
+05:45.770 --> 05:46.910
+part removed.
+
+05:46.910 --> 05:50.160
+And that basically tells you does it end with it.
+
+05:50.210 --> 05:51.070
+So take your time.
+
+05:51.080 --> 05:55.540
+This syntax may look a little weird but this is all we have to really do.
+
+05:55.730 --> 06:05.120
+Again all we're doing here is we're saying this this the string be equal to the length of the all the
+
+06:05.120 --> 06:09.770
+way to the end with the negative indexing which basically allows us to go backwards and essentially
+
+06:09.770 --> 06:18.680
+we're saying if we look up here at this example if I have the string a b c and the string high ABC I
+
+06:18.680 --> 06:23.420
+want to know does the end of this string right here equal the end of the strings.
+
+06:23.420 --> 06:28.520
+I'm using the length of the string to check what's going on with the equal length over here which is
+
+06:28.520 --> 06:33.770
+why we have a negative starting from the backwards or starting from the last index position.
+
+06:33.770 --> 06:35.010
+I should say.
+
+06:35.180 --> 06:36.920
+All right so they could time with this one.
+
+06:36.980 --> 06:38.170
+This one's a little smoother.
+
+06:38.210 --> 06:45.020
+And this one's more algorithmic Okay now for problem 4 we wanted to say given a strong return a string
+
+06:45.020 --> 06:48.270
+where for every character in the original There are about two characters.
+
+06:48.410 --> 06:54.220
+So what we can do for this is we'll create an output string called result which is just an empty string.
+
+06:54.590 --> 07:02.630
+And then we will say for character in my string and we're going to be doing here is taking the results
+
+07:02.660 --> 07:09.810
+which is an empty string and then adding to the string character times to
+
+07:13.120 --> 07:21.180
+and then all we have to do is at the end of this return the result and that's how the character can
+
+07:21.180 --> 07:21.940
+work.
+
+07:22.290 --> 07:28.850
+So all we're doing here is essentially continuously concatenating result with the double of the character
+
+07:29.780 --> 07:31.340
+that are problem five.
+
+07:31.410 --> 07:37.370
+We wanted to do was given those three integer values A B and C returned their sum except for those special
+
+07:37.370 --> 07:37.870
+rules.
+
+07:37.880 --> 07:41.240
+And why this was called the no tene some.
+
+07:41.330 --> 07:44.730
+So we had also the options create this helper function.
+
+07:44.930 --> 07:47.650
+So let's show you what we could have done here.
+
+07:47.660 --> 07:57.770
+So for this first one this no tene some way you could have done or say return and then we'll say 16
+
+07:57.860 --> 08:14.130
+a plus 16 B plus 16 C or 16 is what it's actually doing is just a helper function.
+
+08:14.130 --> 08:18.290
+So in this way we keep voiding writing repeated code.
+
+08:18.330 --> 08:22.040
+We practice the dry pants principle don't repeat yourself again.
+
+08:22.050 --> 08:27.350
+Let's focus on the Finas help her function 16 which really does most of the dirty work.
+
+08:27.450 --> 08:41.090
+So what we can do here is say if n is in 13 14 17 18 or 19 that was the conditional list based off the
+
+08:41.090 --> 08:50.130
+instructions we want to return 0 and if that's not the case what we're going to be returning is the
+
+08:50.130 --> 08:50.790
+actual number.
+
+08:50.790 --> 09:00.000
+And so what this does is it calls 16 on each of the three numbers and with 16 itself thus it checks
+
+09:00.210 --> 09:02.520
+if and is one of these numbers.
+
+09:02.580 --> 09:06.670
+And if it is it just returns 0 otherwise returns the number itself.
+
+09:06.720 --> 09:12.800
+And then what we do to actually call this is call no team some along with this fix team.
+
+09:12.960 --> 09:19.390
+Otherwise we have to write this code three separate times in noting some break.
+
+09:19.390 --> 09:24.670
+Now on to problem 6 the last problem or this probably wanted to return the number of even integers in
+
+09:24.670 --> 09:25.740
+the given array.
+
+09:26.490 --> 09:31.120
+So some is actually quite simple so let's start off by making a variable called count.
+
+09:31.150 --> 09:33.490
+Now we'll set it equal to zero.
+
+09:33.630 --> 09:42.900
+And then after that we're going to say for the elements in numbers or for every Now minims we'll say
+
+09:42.930 --> 09:52.200
+if that particular element divided by two has a remainder of zero meaning it's even.
+
+09:52.200 --> 09:58.680
+So when I say divided by two I really mean remainder I really mean the Mada much later all say counts
+
+10:00.280 --> 10:06.060
+gets another one and then after all this we're going to just say return the count.
+
+10:06.190 --> 10:11.260
+So again all I'm doing here is I'm sending a count equal to zero going through the elements if the element
+
+10:11.260 --> 10:13.870
+is even meaning element 2 is equal to zero.
+
+10:13.960 --> 10:16.430
+Add onto the count and then just return the count.
+
+10:16.480 --> 10:17.940
+All right that's it for this.
+
+10:17.950 --> 10:22.840
+If you have any questions feel free to post the Q&amp;A forums or to check out the solutions lecture which
+
+10:22.840 --> 10:25.270
+has more code and some explanations.
+
+10:25.270 --> 10:27.010
+Thanks everyone and I'll see you at the next lecture.

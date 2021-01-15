@@ -1,0 +1,208 @@
+WEBVTT
+
+00:05.330 --> 00:10.330
+Hello everyone and welcome to the CSSA level on assessment for this assessment.
+
+00:10.360 --> 00:14.090
+You will be given an h t m l file it's actually already filled out with content.
+
+00:14.260 --> 00:20.440
+It will be your task to edit in additional CSSA file to make the age T.M. look like the solution CSSA
+
+00:20.440 --> 00:21.920
+version.
+
+00:21.980 --> 00:25.580
+So there's going to be three files you need to actually complete this.
+
+00:25.670 --> 00:30.280
+You're going to need to grab from the C as it's level 1 folder these three files right here the level
+
+00:30.280 --> 00:36.070
+on assessment see assess level an assessment HVM L and then the test solutions see a SS file.
+
+00:36.290 --> 00:40.870
+Let's explore the assessment and explain how these three files are going to work.
+
+00:41.760 --> 00:46.380
+All right so here we have my editor open as well as my browser and I have downloaded the three files
+
+00:46.380 --> 00:47.070
+I need.
+
+00:47.070 --> 00:52.610
+The assessment that the SS file the assessment team T.M. file and then the solutions that CSSA file.
+
+00:52.650 --> 00:58.890
+So if I open up those files and take a look at first the M L file so C is s level 1 assessment that
+
+00:58.890 --> 00:59.970
+h m l.
+
+00:59.970 --> 01:04.370
+This is basically HTL file that we're going to be working with with C Ss.
+
+01:04.470 --> 01:08.670
+So for this test you're actually not going to be editing any aged him out but instead you're going to
+
+01:08.670 --> 01:12.120
+be editing a C S file it's link to this T.M..
+
+01:12.240 --> 01:19.200
+So what we can do right now is just comments out with control or command forward slash any link to the
+
+01:19.200 --> 01:21.670
+CSSA refresh this assessment test.
+
+01:21.870 --> 01:24.900
+And this is what it looks like at first it says Welcome to the free blog.
+
+01:24.900 --> 01:26.490
+Thanks so much for visiting the site.
+
+01:26.490 --> 01:27.540
+What is this site for.
+
+01:27.540 --> 01:30.730
+Etc. and you see there's a link here that takes you to Google.
+
+01:30.780 --> 01:32.870
+We can expand this text area.
+
+01:33.030 --> 01:36.850
+Please log in to save your post etc. questions or comments sent feedback here.
+
+01:36.990 --> 01:37.230
+All right.
+
+01:37.260 --> 01:43.680
+So we see we have a very basic html site if we undo the link to the solutions that we assess and then
+
+01:43.680 --> 01:45.030
+refresh this.
+
+01:45.090 --> 01:49.410
+We can see that there's a ton of styling here so we've given stuff boarder's stuff background change
+
+01:49.410 --> 01:52.990
+the font color changed some borders down here etc..
+
+01:53.070 --> 01:56.380
+So this Web site is not meant to look better.
+
+01:56.430 --> 02:01.860
+In fact I would say it looks worse than it did without the C Ss but it's meant for you to practice various
+
+02:01.860 --> 02:04.600
+aspects of C Ss that we learn in level 1.
+
+02:04.650 --> 02:08.880
+So what you'll end up doing is once you've opened up the safety mail file you're going to change the
+
+02:08.880 --> 02:09.770
+reference.
+
+02:09.870 --> 02:13.670
+Apart from the solutions back to your assessment.
+
+02:13.740 --> 02:22.140
+So you say see a little one test or level one and you will then make sure it matches the SS file.
+
+02:22.140 --> 02:26.880
+You're going to be filling out which is C Level 1 assessment.
+
+02:27.000 --> 02:30.070
+Save that refreshed this and right now it's blank.
+
+02:30.070 --> 02:33.840
+So now if we go to this file CSSA want assessment that see SS.
+
+02:33.840 --> 02:39.120
+We click on it and we notice here that we actually have a bunch of comments in it and basically for
+
+02:39.120 --> 02:42.330
+this test what you're going to be doing is just doing the tasks here.
+
+02:42.330 --> 02:48.520
+So for instance it says give the body element of the site a light blue background using a hex code.
+
+02:48.810 --> 02:53.910
+So remember just to do this first task to kind of walk you through what the assessment will be like
+
+02:54.360 --> 02:55.070
+you'll fall.
+
+02:55.080 --> 02:56.430
+So it says give the body element.
+
+02:56.470 --> 03:03.150
+OK so I know I want to grab the body and give it a light blue background so I'll say something like
+
+03:03.150 --> 03:09.030
+background color and if I wanted it to be dark blue or just a normal blue I would say something like
+
+03:09.030 --> 03:09.970
+this blue.
+
+03:10.070 --> 03:15.170
+If I refreshed this now everything is blue but you'll have to do when you start this task.
+
+03:15.210 --> 03:17.040
+Is use a hex code to do this.
+
+03:17.070 --> 03:21.540
+So you wants to be a light blue background color using a hex code and don't worry about any particular
+
+03:21.540 --> 03:22.520
+shade of light blue.
+
+03:22.620 --> 03:23.540
+It's really up to you.
+
+03:23.610 --> 03:29.190
+And then you have test to change each one to have a one pixel solid black border etc. so you can see
+
+03:29.190 --> 03:34.560
+here you're going to be editing this assess a little by little until it essentially matches what looks
+
+03:34.560 --> 03:35.660
+like the solutions.
+
+03:35.700 --> 03:36.130
+OK.
+
+03:36.300 --> 03:39.170
+And at the very end there's a bonus challenge and you can.
+
+03:39.300 --> 03:43.080
+There's a link to Google here that will say a little.
+
+03:43.080 --> 03:43.980
+Hence the challenge.
+
+03:43.980 --> 03:45.370
+But don't worry about it too much.
+
+03:45.390 --> 03:50.520
+Basically just complete tasks 1 through 9 and then the next lecture actually going to be coding through
+
+03:50.520 --> 03:51.090
+the solution.
+
+03:51.090 --> 03:53.960
+So again you're just working of the CSSA file here.
+
+03:54.090 --> 03:58.590
+That's connected to the assessment that if you ever need a refresher on what the final product essentially
+
+03:58.590 --> 04:02.680
+looks like reconnects this email file to the solutions.
+
+04:02.680 --> 04:06.310
+What I don't want you to do is just immediately open this solution see SS file.
+
+04:06.330 --> 04:10.310
+Don't do that until you've given your best shot to the assessment test.
+
+04:10.320 --> 04:13.020
+All right thanks everyone and I'll see you at the next lecture.

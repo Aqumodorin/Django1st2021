@@ -1,0 +1,124 @@
+WEBVTT
+
+00:05.170 --> 00:08.780
+Hello everyone and welcome to Python level 1.
+
+00:08.950 --> 00:13.870
+We've already learned so much that it may seem crazy that we're only now reaching how to learn and how
+
+00:13.870 --> 00:20.200
+to code in Python because Django is completely based in Python for a majority of the course from now
+
+00:20.200 --> 00:22.750
+on we're just going to be working of Python.
+
+00:22.780 --> 00:26.100
+But your previous programming experience with learning javascript.
+
+00:26.230 --> 00:27.310
+Tim elsea Yes.
+
+00:27.430 --> 00:33.050
+And those fundamental coding ideas is going to help make learn Python a total breeze.
+
+00:33.170 --> 00:37.400
+So over level 1 and level 2 we're going to be covering a lot of the same general programming topics
+
+00:37.400 --> 00:38.320
+from javascript.
+
+00:38.390 --> 00:40.890
+Things like for loops and while loops etc..
+
+00:41.090 --> 00:46.490
+So we won't spend as much time in Python talking about the very basic idea of what a for loop is or
+
+00:46.490 --> 00:48.830
+what an array is or what those basic ideas are.
+
+00:48.830 --> 00:53.270
+Instead we'll just show you more the syntax of how to work with those ideas in Python.
+
+00:53.420 --> 00:58.310
+And then we're going to expand on these ideas to learn about object oriented programming something we
+
+00:58.310 --> 00:59.430
+haven't talked about yet.
+
+01:00.970 --> 01:05.320
+So if you've already taken a python course you may already know a lot but we're going to be covering.
+
+01:05.380 --> 01:07.800
+Especially if already taken one of my Python courses.
+
+01:07.990 --> 01:12.390
+You may find it easier to skip ahead to a section instead of starting from the very beginning.
+
+01:13.290 --> 01:16.700
+Let's outline some of the topics of both level 1 and level 2.
+
+01:16.860 --> 01:18.440
+To give you an idea of where to start.
+
+01:18.450 --> 01:23.880
+If you already have some experience in Python level one will start by talking about basic data types
+
+01:23.880 --> 01:27.800
+of Python that includes numbers strings lists and dictionaries.
+
+01:27.850 --> 01:33.690
+Then we'll talk about tuples sets and booleans control flow of python and how it uses indentation things
+
+01:33.690 --> 01:35.720
+such as the if else if statements.
+
+01:35.760 --> 01:39.920
+Then we'll talk about functions of Python then starting at Python level too.
+
+01:39.920 --> 01:41.830
+We'll talk about scope with Python.
+
+01:41.840 --> 01:47.270
+Will discuss object oriented programming of Python errors and exceptions decorator's and then regular
+
+01:47.270 --> 01:53.370
+expressions utilize the curriculum outline to jump to the lecture you feel is the most appropriate starting
+
+01:53.370 --> 01:54.100
+point for you.
+
+01:54.270 --> 01:59.160
+If you already have some program experience of Python or if you are a complete beginner feel free to
+
+01:59.160 --> 02:01.250
+just start from here and continue on.
+
+02:01.260 --> 02:03.590
+It has been a really long learning journey so far.
+
+02:03.590 --> 02:04.770
+Just to reach this point.
+
+02:04.770 --> 02:07.740
+So I really want you to take the time and congratulate yourself.
+
+02:07.740 --> 02:10.230
+Everything you've learned so far is challenging material.
+
+02:10.350 --> 02:14.520
+So remind yourself that you are awesome for making it this far into the course and give yourself a huge
+
+02:14.520 --> 02:15.750
+pat on the back.
+
+02:16.550 --> 02:22.110
+OK I level 1 and 2 are the only thing standing between you and the main course topic which is Django.
+
+02:22.290 --> 02:26.550
+So let's dive straight into it and get started by setting up Python and the Adam text editor in the
+
+02:26.550 --> 02:27.540
+next lecture.
+
+02:27.540 --> 02:29.500
+Thanks everyone and I'll see you at the next lecture.

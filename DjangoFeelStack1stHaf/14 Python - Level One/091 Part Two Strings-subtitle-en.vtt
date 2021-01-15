@@ -1,0 +1,556 @@
+WEBVTT
+
+00:04.990 --> 00:10.690
+Hello everyone and welcome to part two strings strings in Python are used to hold text information and
+
+00:10.690 --> 00:15.400
+are indicated the use of either single quotes or double quotes there they're a sequence of characters
+
+00:15.400 --> 00:18.760
+meaning they can also be indexed using the bracket notation.
+
+00:18.760 --> 00:20.480
+Let's explore the basics of strings.
+
+00:20.480 --> 00:22.640
+Some useful methods and more with Python.
+
+00:22.930 --> 00:24.190
+Let's go to the editor now.
+
+00:24.390 --> 00:24.760
+OK.
+
+00:24.790 --> 00:29.180
+So in this lecture We'll cover some string basics such as creating strings and printing strings.
+
+00:29.180 --> 00:33.610
+And we'll talk about string indexing and slicing some basic methods for strings and then how to use
+
+00:34.000 --> 00:36.100
+print or string interpellation.
+
+00:36.470 --> 00:36.940
+OK.
+
+00:37.180 --> 00:43.510
+So to start off with the very basics with a string you can either use single quotes like this or double
+
+00:43.510 --> 00:45.490
+quotes like this.
+
+00:45.490 --> 00:51.040
+And if you want a single quote or a double quote within string itself just use the other quote to wrap
+
+00:51.040 --> 00:51.230
+it.
+
+00:51.280 --> 00:57.310
+So what I mean by that is if you want to type something that says I'm a dog and you want this to be
+
+00:57.310 --> 01:00.370
+a string notice it has a single quote inside of it.
+
+01:00.370 --> 01:06.650
+So you can just wrap that in double quotes and now it's a string so you don't get an error with this
+
+01:06.650 --> 01:09.430
+single string or single quote right there.
+
+01:09.460 --> 01:09.970
+All right.
+
+01:09.970 --> 01:11.500
+This is the string basics.
+
+01:11.590 --> 01:18.550
+Now something that is sometimes confusing to beginners is how to actually index and grab things from
+
+01:18.550 --> 01:19.760
+the string sequence.
+
+01:19.900 --> 01:25.780
+So let's spend a little bit of time talking about that and to show this since the basics are almost
+
+01:25.780 --> 01:27.030
+the same as JavaScript.
+
+01:27.310 --> 01:30.240
+Let's show some indexing with an example.
+
+01:30.250 --> 01:36.070
+I will say my string is equal to A B C D F G.
+
+01:36.070 --> 01:39.080
+And then let's print my string.
+
+01:39.130 --> 01:40.160
+We'll save that.
+
+01:40.360 --> 01:46.150
+And down here this is saved in a file called strings that PI inside of this folder locations.
+
+01:46.150 --> 01:50.960
+I will say Python strings up PI enter and I get out my string.
+
+01:50.980 --> 01:57.100
+Perfect If I want to actually grab a single element all I have to do is use the square bracket notation
+
+01:57.370 --> 02:02.740
+and then pass in the index location of the actual elements I want indexing starts at zero with Python.
+
+02:02.740 --> 02:07.660
+So if I want the very first letter in the string which is a all I have to do is pass and in square brackets
+
+02:07.990 --> 02:16.340
+after the variable name 0 and then that returns a I the very last one python string support negative
+
+02:16.340 --> 02:24.090
+indexing so I can type minus one which means if I run this now I get Geo and if I want anything else
+
+02:24.090 --> 02:27.210
+in the middle then I just count it in this look index locations.
+
+02:27.210 --> 02:34.830
+For instance if I get the letter D That's at index 0 1 2 3 pasand 3 and I should get out the letter.
+
+02:34.840 --> 02:36.140
+Do you want to run this script.
+
+02:36.410 --> 02:37.270
+And there it is.
+
+02:37.520 --> 02:38.240
+OK.
+
+02:38.240 --> 02:40.030
+Now let's talk about slicing.
+
+02:40.100 --> 02:42.590
+Slicing is something that confuses beginners at first.
+
+02:42.740 --> 02:45.380
+So let's make it very clear by breaking down the steps.
+
+02:45.480 --> 02:49.380
+There's going to be three parts to slicing the beginning of the slice.
+
+02:49.430 --> 02:52.310
+The end of the slice and then later on the step size.
+
+02:52.310 --> 02:54.200
+We don't need to always find the step size.
+
+02:54.230 --> 02:57.500
+So let's start off by defining the beginning of the slice.
+
+02:57.770 --> 03:06.470
+If I want to grab everything starting from the index to all the way to the end of the string then I
+
+03:06.470 --> 03:08.720
+just have to type in a colon.
+
+03:08.860 --> 03:11.860
+So if I run this right now I get the letters out.
+
+03:11.890 --> 03:13.310
+C D E F G.
+
+03:13.390 --> 03:20.860
+And basically what this command says is start index 2 which is the letter C 0 1 2 and grab everything
+
+03:20.890 --> 03:22.260
+all the way to the end of the string.
+
+03:22.270 --> 03:24.400
+That's what the colon here stands for.
+
+03:24.850 --> 03:27.630
+So let's imagine I want to grab everything from letter e.
+
+03:27.790 --> 03:30.280
+All the way to the end so e f and g.
+
+03:30.360 --> 03:36.390
+Then I just need to count out 0 1 2 3 4 and a colon to go all the way to the end.
+
+03:36.510 --> 03:39.640
+And if I run this I get e f g.
+
+03:39.640 --> 03:39.920
+All right.
+
+03:39.920 --> 03:42.310
+Now let's discuss how to do slicing.
+
+03:42.310 --> 03:48.400
+If you want to start at the beginning but go up to a certain index the way you do that is you essentially
+
+03:48.400 --> 03:49.660
+reverse this.
+
+03:49.660 --> 03:55.390
+So you say colon and then type the index you want to go up to but this is sometimes a little confusing
+
+03:55.390 --> 03:58.600
+for beginners because indexing starts at zero.
+
+03:58.600 --> 04:02.560
+Python is going to get everything up to but not including the index.
+
+04:02.560 --> 04:07.570
+So if I run this command right now colon three it goes a b and c.
+
+04:07.690 --> 04:11.850
+You may have expected d the letter at index 3 to be included.
+
+04:11.960 --> 04:17.750
+But for Python index slicing notation only goes up to but not including that index.
+
+04:17.770 --> 04:24.070
+So again what we're here telling Python to do is to grab everything from zero up to but not including
+
+04:24.070 --> 04:25.400
+index three.
+
+04:25.690 --> 04:30.820
+And you'll notice this a lot in Python where statements are usually in the context of up to but not
+
+04:30.820 --> 04:35.890
+including in the main ideas because indexing starts at zero and moving along.
+
+04:35.890 --> 04:40.950
+We can expand this idea to define a starting point and define an ending point.
+
+04:41.170 --> 04:47.530
+So let's imagine that I want to grab the letters C D and E What I have to do in this case is to find
+
+04:47.530 --> 04:50.500
+the starting point which happens the index too.
+
+04:50.740 --> 04:56.580
+Then I write a colon and define the ending point which is up to but not including a particular index
+
+04:56.580 --> 05:00.730
+so we'll see 0 1 2 3 4 5.
+
+05:00.730 --> 05:06.640
+So I want to go up to and including five and this should get me these four letters C D and E.
+
+05:06.940 --> 05:09.260
+I run this there is C D and E.
+
+05:09.340 --> 05:15.400
+So take your time with this a good practice for you if you're having trouble with this slicing notation
+
+05:15.490 --> 05:19.840
+is to make a really long string and then in your mind think of some letters you want to grab in the
+
+05:19.840 --> 05:22.770
+middle of it and then practice grabbing them.
+
+05:22.780 --> 05:28.230
+OK so the last thing I want to mention about slicing is that you can actually define step size.
+
+05:28.310 --> 05:34.670
+So if you want to grab everything in a string you just have to say colon colon or even just a single
+
+05:34.670 --> 05:36.620
+colon and that return.
+
+05:36.650 --> 05:42.650
+If we run this the entire string if you wanted the final step size what you do is you say colon colon
+
+05:42.650 --> 05:47.900
+which basically stands for all the way from the beginning all the way to the end and then a number or
+
+05:47.900 --> 05:49.810
+integer for your step size.
+
+05:49.820 --> 05:52.210
+So if a step size of one it grabs everything.
+
+05:52.310 --> 05:57.050
+But if I make this a two and then run the code it ends up skipping every other.
+
+05:57.050 --> 05:58.700
+So the step size becomes two.
+
+05:58.850 --> 06:03.340
+It goes in jumps of two so a C E G.
+
+06:03.880 --> 06:04.280
+OK.
+
+06:04.370 --> 06:06.400
+Those are the very basics of slicing.
+
+06:06.680 --> 06:10.140
+And we'll talk about it more when we actually deal with strings in Jane Doe.
+
+06:10.160 --> 06:11.680
+But that's all you need to know for now.
+
+06:12.430 --> 06:13.420
+Here's a quick note.
+
+06:13.510 --> 06:21.070
+Strings are immutable meaning I cannot say my string grab a particular index cation and then try to
+
+06:21.070 --> 06:26.620
+redefine it so I can't say something like my string of zeros is equal to x because if I try to run this
+
+06:26.950 --> 06:32.950
+I will get an error saying SDR or a string object does not support item assignment meaning a string
+
+06:32.980 --> 06:34.960
+is immutable in that fashion.
+
+06:34.990 --> 06:39.610
+I could always read the find the string to be something completely different but that will just delete
+
+06:39.640 --> 06:42.350
+everything and redefine the variable itself.
+
+06:42.360 --> 06:47.190
+OK now I want to talk about a couple of basic methods that are built into strings.
+
+06:47.320 --> 06:54.420
+A really useful method sometimes that you may find yourself using is upper an upper is a method and
+
+06:54.420 --> 06:57.430
+you can actually see Adam is beginning to help me as I type upper here.
+
+06:57.690 --> 06:58.570
+But what it does.
+
+06:58.590 --> 07:07.780
+Returns a copy of the string converted to uppercase so he can say this and let's define this as X and
+
+07:07.780 --> 07:12.180
+then say Prince X I will save this and run it.
+
+07:12.190 --> 07:19.960
+And now I see Yagan uppercase version of a b c d e f g and the opposite of upper is lower lips spelled
+
+07:20.010 --> 07:20.670
+wrong.
+
+07:20.860 --> 07:27.640
+Or we can see are at their lower and you can actually see that as I say my string dot I get a bunch
+
+07:27.670 --> 07:29.480
+of methods available for me.
+
+07:29.500 --> 07:31.000
+Adam has helped me out here.
+
+07:31.270 --> 07:35.500
+We won't use a lot of these methods but remember they're all here to help you if you have any questions
+
+07:35.500 --> 07:36.370
+on one of these methods.
+
+07:36.370 --> 07:41.740
+Feel free to post of the Q&amp;A forum but a lot of these will actually be defined as you begin to type
+
+07:41.740 --> 07:42.130
+them out.
+
+07:42.160 --> 07:44.920
+So let's say I wanted to learn what capitalized.
+
+07:45.190 --> 07:47.370
+Well then I just start typing capitalize.
+
+07:47.710 --> 07:55.270
+And as I do that we see right here what's known as the function or method docstring and it tells you
+
+07:55.280 --> 07:59.410
+it returns a copy of the string s with only its first character capitalized.
+
+07:59.440 --> 08:07.230
+So unlike upper if I'd select capitalize and then run this I noticed that only the first letter A is
+
+08:07.230 --> 08:11.100
+capitalized that's different and capitalized an upper.
+
+08:11.200 --> 08:16.660
+The last method I want to show you which is really useful is the split method which ends up splitting
+
+08:16.810 --> 08:18.400
+a string.
+
+08:18.400 --> 08:27.310
+So if I just run this right now I get a single item in a list but let's imagine I had multiple words
+
+08:27.310 --> 08:27.610
+here.
+
+08:27.610 --> 08:32.670
+So I say hello world save this and run my code.
+
+08:32.850 --> 08:39.280
+Then I get a list in Python which will cover in the next lecture that has hello is its first item and
+
+08:39.280 --> 08:40.920
+a world as its second item.
+
+08:41.100 --> 08:47.640
+And basically what split does it allows you to split on anything you want for a string and you would
+
+08:47.640 --> 08:51.120
+actually uses for it in a similar case in Javascript.
+
+08:51.120 --> 08:54.760
+But let's imagine that I want it to split on the letter E..
+
+08:55.050 --> 08:58.240
+By default it splits on whitespace which is why we got Hello world.
+
+08:58.350 --> 09:02.660
+But if I wanted to split on the letter E I run this and notice I get back.
+
+09:02.700 --> 09:08.410
+H the ears popped out because we split on it and then everything else becomes a second item in my list.
+
+09:08.460 --> 09:12.080
+I could also do it for something that shows up more than once such as Oh.
+
+09:12.370 --> 09:16.700
+Now if I run this I get hell space w SP.
+
+09:16.980 --> 09:19.270
+Next item is R L D.
+
+09:19.320 --> 09:19.790
+OK.
+
+09:19.920 --> 09:21.750
+So that's the basic split.
+
+09:21.810 --> 09:25.200
+Finally I want to talk about print formatting with Python.
+
+09:25.290 --> 09:27.230
+So let's show you how we can do that.
+
+09:27.240 --> 09:31.710
+So there's many methods that you can use what's known as string interpellation which is basically trying
+
+09:31.710 --> 09:34.690
+to input a string into an other string.
+
+09:34.710 --> 09:37.440
+The best way to do it is with the DOT format method.
+
+09:37.740 --> 09:39.770
+And I will show you the basic way to do this.
+
+09:40.800 --> 09:42.520
+You say some string.
+
+09:42.540 --> 09:49.020
+So I will insert in other string here and then you have curly brackets.
+
+09:49.020 --> 09:54.750
+Note the syntax highlighting there and then off of the string you call format and then pass in whatever
+
+09:54.750 --> 09:55.710
+you want to insert.
+
+09:56.730 --> 10:00.000
+So I'll say insert me save this.
+
+10:00.140 --> 10:01.750
+And now let's run this.
+
+10:02.060 --> 10:07.700
+And we haven't actually printed this yet so let's say this is equal to x and then print x
+
+10:10.420 --> 10:12.960
+save that run this.
+
+10:13.010 --> 10:15.140
+And it says insert another string here.
+
+10:15.360 --> 10:17.250
+And it says insert me.
+
+10:17.460 --> 10:17.880
+OK.
+
+10:17.940 --> 10:18.730
+Perfect.
+
+10:18.750 --> 10:21.080
+Now let's say I want to insert multiple strings.
+
+10:21.080 --> 10:22.080
+How I do that.
+
+10:22.260 --> 10:32.050
+Well all I have to do is say Item 1 and then just pass and let's say Item 2 in other set of curly brackets.
+
+10:32.140 --> 10:38.440
+And over here in format we just passen multiple strings so we can say something like.
+
+10:38.620 --> 10:46.420
+Dog is our first item comma assonance of the string cat as the second item we will save this and then
+
+10:46.990 --> 10:49.310
+we can print X and we get item 1 dog.
+
+10:49.310 --> 10:50.680
+Item 2 cat.
+
+10:50.800 --> 10:55.900
+What's also nice about this stuff forment method is you can actually define variables inside of this
+
+10:55.960 --> 11:00.450
+format so I can say something like x is equal to dog.
+
+11:00.680 --> 11:03.720
+And then why is equal to cat.
+
+11:03.980 --> 11:11.060
+And then inside of these curly brackets I can an x and y and it will come back here to format and read
+
+11:11.060 --> 11:12.740
+what X and Y stand for.
+
+11:12.740 --> 11:15.610
+So if I say this and run this I get back the exact same result.
+
+11:15.860 --> 11:20.750
+But what's nice about this is I can easily switch out the order or double up on things so I can switch
+
+11:20.750 --> 11:27.110
+at the order here and if I run this now I get item one item to his dog or I can have him both print
+
+11:27.320 --> 11:29.170
+out X which is dog.
+
+11:29.530 --> 11:33.650
+And then it says item 1 dog item 2 dog and this is how you're going to see format.
+
+11:33.650 --> 11:39.260
+Most of the time it's curly brackets a specific variable that you find over here and format and then
+
+11:39.260 --> 11:40.570
+you just call it there.
+
+11:40.860 --> 11:41.390
+OK.
+
+11:41.510 --> 11:45.620
+That's the very basics of string formatting and strings in general if you have any questions feel free
+
+11:45.620 --> 11:47.030
+to post to the Q&amp;A forums.
+
+11:47.180 --> 11:50.160
+But as far as this course is concerned that's really all you need to know.
+
+11:50.390 --> 11:51.980
+Thanks and I'll see you at the next lecture.

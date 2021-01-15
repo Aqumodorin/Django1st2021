@@ -1,0 +1,193 @@
+WEBVTT
+
+00:05.050 --> 00:11.550
+Hello everyone and welcome to part four of CSSA level 1 we will actually be doing any coding for this
+
+00:11.550 --> 00:12.200
+lecture.
+
+00:12.210 --> 00:17.580
+Instead we'll just be getting a tour of the Google Chrome browser Inspektor which is a really useful
+
+00:17.580 --> 00:23.180
+tool for us to actually explore the TMLC assess and even later on javascript on a Web site.
+
+00:23.550 --> 00:28.770
+So go ahead and open up Google Chrome and let's start exploring.
+
+00:28.770 --> 00:35.370
+OK so here I am at Google Chrome and I have the part three that HVM mail file from last time which is
+
+00:35.370 --> 00:42.760
+linked to the part 3 C Ss open up in my browser and then in another tab I have the Google home Web site.
+
+00:42.930 --> 00:49.290
+What I want you to do is with the three Rached female file open you can right click and previously you
+
+00:49.290 --> 00:54.830
+seen how we can view page source and that shows just the HCM mail that's linked to this document.
+
+00:54.930 --> 00:59.940
+But what I want to do now is instead of just viewing the page source which is just the HTL I can right
+
+00:59.940 --> 01:03.030
+click on this and click on inspect.
+
+01:03.240 --> 01:05.820
+And now let me zoom in a little bit.
+
+01:05.820 --> 01:07.460
+I can see that here on this panel.
+
+01:07.500 --> 01:08.850
+I have the HTL code.
+
+01:08.850 --> 01:14.110
+So that's what we've seen before and stuff gets highlighted as I select that psoas I select H-3.
+
+01:14.160 --> 01:16.830
+I can see that H-3 over here is highlighted.
+
+01:16.830 --> 01:20.940
+And you can also see that there is almost like a bit of a border around that some parts blue some parts
+
+01:20.940 --> 01:21.310
+orange.
+
+01:21.300 --> 01:23.450
+We're going to be discussing that later on.
+
+01:23.700 --> 01:28.500
+But what I really want to focus on here is the styles since we're talking about C Ss so we can bring
+
+01:28.500 --> 01:34.530
+this tab over and here I can actually see the styles that I was assigning to that CSSA So second div
+
+01:34.980 --> 01:36.810
+is a class where the color is red.
+
+01:36.810 --> 01:41.890
+Now what's really cool about this is you can actually click on some of these things and edit them.
+
+01:41.970 --> 01:46.860
+So if you begin to zoom out so we can see the whole thing click on color red and you can actually change
+
+01:46.860 --> 01:48.640
+this color in real time.
+
+01:48.690 --> 01:51.920
+So if you want it to be blue you can see right here on the second div..
+
+01:52.050 --> 01:54.170
+It's actually changing.
+
+01:54.390 --> 01:56.380
+So we can make it something extreme.
+
+01:56.450 --> 02:03.940
+Can just make it any color of the rainbow we want great and other things we can do is select an element
+
+02:03.970 --> 02:05.040
+inspect it.
+
+02:05.470 --> 02:09.420
+So for instance here on NPR we can see now that it's an ally a.
+
+02:09.490 --> 02:11.020
+And we could see that border in color.
+
+02:11.050 --> 02:15.100
+So again we can change the color or we can even change other properties in real time.
+
+02:15.100 --> 02:21.850
+So photo make this order super thick you can see that I'm changing it in real time as I type this or
+
+02:21.860 --> 02:25.610
+how I want to make it dotted and sort of solid.
+
+02:25.720 --> 02:27.290
+I could do that as well.
+
+02:28.370 --> 02:28.980
+All right.
+
+02:29.090 --> 02:32.120
+So there's two reasons why I want to show you this.
+
+02:32.180 --> 02:38.750
+One reason is that if you're working on a Web site you can immediately just load it up start inspecting
+
+02:38.750 --> 02:44.330
+it and quickly change things on the fly so you can see how things look and change them immediately without
+
+02:44.330 --> 02:47.060
+having to constantly refresh your Web site.
+
+02:47.060 --> 02:51.650
+You can just play out the colors here live instead of constantly refreshing.
+
+02:51.650 --> 02:56.700
+But the more useful tool on this is actually exploring other Web sites.
+
+02:56.720 --> 03:02.330
+So for example you come here to this Google home page and if you're interested in how something works
+
+03:02.330 --> 03:10.200
+or what is going on maybe you right click inspect and you can click on this little tool which is select
+
+03:10.200 --> 03:12.180
+an element in the page to inspect that.
+
+03:12.190 --> 03:13.810
+So click here on the Google search button.
+
+03:13.840 --> 03:19.120
+And now we can see the various styles that have to do with it so you can see it has a color we can change
+
+03:19.120 --> 03:20.490
+that color if we want.
+
+03:20.530 --> 03:25.120
+So we see here we're changing the font of the actual Google search that we changed as something green
+
+03:25.120 --> 03:26.350
+or blue etcetera.
+
+03:26.440 --> 03:30.300
+Something to note here is the only thing I'm changing is what I'm seeing in my browser.
+
+03:30.430 --> 03:35.320
+If I refresh this page I'm not actually changing any of the files or any of the SS files.
+
+03:35.440 --> 03:40.000
+But again you can play around with this maybe make the font huge.
+
+03:40.000 --> 03:41.570
+So Google search et cetera.
+
+03:41.860 --> 03:47.170
+And as we approach javascript and learn how to work with the DOM which we haven't talked about yet but
+
+03:47.180 --> 03:53.470
+we will in the future will see how we can actually use javascript to grab some of these elements and
+
+03:53.470 --> 03:54.720
+then affect them.
+
+03:54.990 --> 03:59.830
+But right now I just want you to be aware of the Chrome browser and Specter as a really great tool for
+
+03:59.830 --> 04:03.970
+you not just to explore your own web sites but other peoples web sites as well.
+
+04:04.170 --> 04:04.590
+OK.
+
+04:04.630 --> 04:05.980
+That's really it for this lecture.
+
+04:05.980 --> 04:07.810
+Thanks everyone and I'll see you at the next lecture.
+
+04:07.810 --> 04:10.330
+We'll hop back in the C S and start coding again.

@@ -1,0 +1,421 @@
+WEBVTT
+
+00:05.340 --> 00:07.200
+Hello everyone and welcome to part one.
+
+00:07.230 --> 00:13.570
+Numbers numbers and Python have two main forms that we're going to be working with for this course.
+
+00:13.690 --> 00:16.050
+That's integers and floating point numbers.
+
+00:16.150 --> 00:19.870
+Integers are whole numbers and floating point numbers have it thus in them.
+
+00:20.080 --> 00:24.640
+So for example an integer something like 23 a floating point number something like twenty three point
+
+00:24.640 --> 00:27.730
+five or twenty three point zero etc..
+
+00:27.850 --> 00:28.190
+All right.
+
+00:28.360 --> 00:31.810
+Let's quickly walk through examples of some very basic arithmetic for Python.
+
+00:31.930 --> 00:34.440
+And we're also going to be covering variable assignment in Python.
+
+00:34.510 --> 00:36.760
+And what makes a dynamic programming language.
+
+00:36.760 --> 00:39.380
+Let's hop over to the Adam text editor to get started.
+
+00:39.760 --> 00:41.790
+OK here I am at the Adam text editor.
+
+00:41.800 --> 00:46.510
+Before we get started talking about numbers integers variables and floating points what I want to quickly
+
+00:46.510 --> 00:50.610
+discuss is the various ways you can run Python and play with Python.
+
+00:50.920 --> 00:54.530
+One way is to directly in your command prompt or terminal.
+
+00:54.670 --> 00:56.730
+Just type python.
+
+00:57.340 --> 01:01.070
+And if you've downloaded Anaconda it should be set to the path.
+
+01:01.120 --> 01:06.970
+See immediately see Python here and you can directly type python now into your command prompt or terminal.
+
+01:06.970 --> 01:08.490
+Which means I could do something like this.
+
+01:08.500 --> 01:13.690
+I can say print parentheses and in quotes.
+
+01:13.690 --> 01:15.430
+Hello world.
+
+01:15.430 --> 01:16.130
+Hit enter.
+
+01:16.150 --> 01:17.630
+And I get the output Hello world.
+
+01:17.630 --> 01:20.380
+So that's just the basic hello world with Python.
+
+01:20.530 --> 01:27.010
+Or I can type 2 plus 1 and since this is in the terminal or command prompt if I enter it directly gives
+
+01:27.010 --> 01:33.990
+me an output in a script it would not give me the output I would have to say print 2 plus 1.
+
+01:34.140 --> 01:36.120
+If I was running a dot PI script.
+
+01:36.120 --> 01:40.070
+So let's show you how you can run a PI script to exit out of this.
+
+01:40.080 --> 01:45.510
+You can just type quits open and close parentheses in you've quit and if you want to clear the screen
+
+01:45.510 --> 01:49.340
+you can do CLX or clear depending on your operating system.
+
+01:49.450 --> 01:49.940
+Right.
+
+01:50.190 --> 01:54.900
+So to actually run a script what you need to know is the current file path you're in.
+
+01:54.900 --> 01:56.610
+So you can type TWD.
+
+01:56.610 --> 02:01.680
+If you're on a Mac or Linux or for a Windows computer you should be able to just see it directly to
+
+02:01.680 --> 02:03.330
+your left the entire file path.
+
+02:03.420 --> 02:08.380
+If you're unsure you can always type CD enter and it outputs the file path right here.
+
+02:08.400 --> 02:10.140
+You'll notice that it might command prompt.
+
+02:10.140 --> 02:14.930
+I have something here in parentheses saying my Django NVI that's a virtual environment.
+
+02:14.940 --> 02:15.770
+I've set up.
+
+02:15.810 --> 02:19.020
+We'll discuss that when we talk about Django in a future lecture.
+
+02:19.020 --> 02:20.630
+You don't need to worry about that right now.
+
+02:20.640 --> 02:27.060
+All you need to know is being able to access whatever your current directory is which is just CD and
+
+02:27.060 --> 02:31.830
+then it should output directory or P.W. the if on a Mac or Linux.
+
+02:31.830 --> 02:38.160
+So what you need to do is create a folder here or add this folder to your project folders and Adam you
+
+02:38.160 --> 02:39.490
+can see here have already added it.
+
+02:39.510 --> 02:43.950
+But if you needed to added it you could just right click here and then select Add project folder and
+
+02:43.950 --> 02:46.130
+then find this folder.
+
+02:46.130 --> 02:51.960
+What I'm going to do is under that project folder I will Right-Click say new file and create a file
+
+02:52.050 --> 02:57.260
+and I'm going to call it numbers and I will make sure to give the extension up pie so that Adam knows
+
+02:57.330 --> 02:58.290
+it's a python file.
+
+02:58.290 --> 03:00.870
+And so that Python also knows it's a python file.
+
+03:00.870 --> 03:07.900
+Now let's discuss some very basic arithmetic her basic arithmetic addition is just two plus one and
+
+03:07.890 --> 03:10.380
+I can zoom in here a little bit so you can see it clearly.
+
+03:11.590 --> 03:15.740
+Two plus one is addition subtraction is just the minus sign.
+
+03:15.850 --> 03:21.370
+Multiplication is just an Asterix and the vision is just a forward slash.
+
+03:21.370 --> 03:23.670
+Again I'm not running these commands because they're so basic.
+
+03:23.740 --> 03:29.040
+And we covered a lot of this when we were talking about javascript for actual powers.
+
+03:29.110 --> 03:31.790
+That is something like two to the power of five.
+
+03:31.930 --> 03:33.990
+You just have two sets of Asterix.
+
+03:34.330 --> 03:36.800
+So this right here is two to the power of five.
+
+03:37.290 --> 03:40.210
+And if you wanted to you could also do roots this way.
+
+03:40.210 --> 03:43.360
+So maybe I want the square root of something I can do for.
+
+03:43.540 --> 03:45.510
+So the power of 0.5.
+
+03:45.520 --> 03:47.050
+That's the same as the square root.
+
+03:47.050 --> 03:51.400
+But later on we'll show you how you can import the math module to do some more complicated math and
+
+03:51.400 --> 03:53.530
+then take the square root that way.
+
+03:54.640 --> 03:55.570
+Couple more notes.
+
+03:55.570 --> 03:57.630
+Order of operations is followed in Python.
+
+03:57.640 --> 04:02.360
+So things like multiplication happening before addition or subtraction that's all followed.
+
+04:02.380 --> 04:14.120
+So if I were to say something like two plus ten times ten plus three let's print this whole thing out
+
+04:14.360 --> 04:15.340
+and see what we get.
+
+04:17.880 --> 04:19.320
+So I'm going to print this.
+
+04:19.350 --> 04:24.240
+I will save it and then if I want to actually run this file all I have to do is add a command prompt
+
+04:24.480 --> 04:31.890
+type python space and then the either the entire file path to the actual file or if I'm in the same
+
+04:31.890 --> 04:34.580
+location as the adult Pi file just the name itself.
+
+04:34.590 --> 04:42.120
+So numbers that pi and you can always do tab to help auto complete this enter.
+
+04:42.120 --> 04:45.040
+And we see it's 105 for order of operation.
+
+04:45.030 --> 04:48.030
+So if I wanted to affect this I can always use parentheses.
+
+04:48.060 --> 04:51.840
+So let's say I want the actual additions happen first.
+
+04:51.840 --> 04:55.980
+So I want to plus tend to happen first before 10 and 10 get multiplied.
+
+04:55.980 --> 05:00.990
+Then I could just add sets a print Cesaire to make sure that happens so if I run this again up on my
+
+05:00.990 --> 05:03.550
+arrow key now I get 156.
+
+05:03.600 --> 05:04.620
+So a little bit different.
+
+05:04.800 --> 05:08.000
+And you can just use parentheses to specify the order of operations.
+
+05:08.330 --> 05:08.730
+OK.
+
+05:08.730 --> 05:11.580
+Now let's talk about variable assignment with Python.
+
+05:11.580 --> 05:16.950
+Python is a dynamic programming language meaning you don't need to declare what a variable type is going
+
+05:16.950 --> 05:19.440
+to be before you actually just do the assignment.
+
+05:19.440 --> 05:21.880
+So Python variable assignment is very simple.
+
+05:21.970 --> 05:27.810
+All you have to do is choose the name of your variable for instance a set is equal to whatever you want
+
+05:27.810 --> 05:28.340
+it to be.
+
+05:28.350 --> 05:34.860
+For instance the number 5 and all those tabs that were popping up dashes Adam auto help there that we
+
+05:34.920 --> 05:36.190
+downloaded one of the plug ins.
+
+05:36.210 --> 05:37.070
+Don't worry about that.
+
+05:37.080 --> 05:42.670
+You can just continue on without it later on when we work with functions and object oriented programming.
+
+05:42.730 --> 05:43.640
+It's going to be really useful.
+
+05:43.650 --> 05:45.230
+But right now you can just ignore it.
+
+05:46.100 --> 05:53.320
+If I want to see the output of this I can just say print a let's save that run our script which has
+
+05:53.320 --> 05:58.910
+Python numbers that pi and here we see the output five I can then also add objects together.
+
+05:58.930 --> 06:07.270
+So for instance a plus say save it run this and I get 10 out Python also supports re-assignment meaning
+
+06:07.270 --> 06:14.030
+I could do something like a is equal to a times five.
+
+06:14.380 --> 06:16.370
+And then I could say print a.
+
+06:16.690 --> 06:21.510
+And now we would expect it to give out not just 10 but also 25.
+
+06:21.620 --> 06:27.010
+And if I ever want to make a comments in Python I just need to do a hash tag and then type whatever
+
+06:27.010 --> 06:28.820
+comments I want.
+
+06:28.910 --> 06:34.880
+And as a quick note by convention usually type comments above the code it references or right next to
+
+06:34.880 --> 06:35.150
+it.
+
+06:36.980 --> 06:37.440
+OK.
+
+06:37.730 --> 06:41.720
+So that's the very basics of variable assignment and comments.
+
+06:41.810 --> 06:43.400
+There are a couple of rules you need to follow.
+
+06:43.400 --> 06:50.180
+When creating variable names with Python one thing Python variable names cannot start a number so you
+
+06:50.180 --> 06:56.800
+can't say something like two dogs is equal to two or something.
+
+06:56.970 --> 07:03.140
+What you would need to do is say two dogs is equal to whatever you want.
+
+07:03.690 --> 07:08.790
+Now keep in mind usually when you're typing in Python and you have multiple words and variables you
+
+07:08.790 --> 07:10.930
+want to separate them using an underscore.
+
+07:10.950 --> 07:13.290
+This is known as snake casing.
+
+07:13.290 --> 07:19.170
+So you'll usually see something like this instead of camel casing which is common with javascript which
+
+07:19.170 --> 07:20.720
+would do something like that.
+
+07:20.940 --> 07:24.610
+And we'll discuss these rules later on when we talk about object oriented programming.
+
+07:24.670 --> 07:28.830
+But right now just keep in mind variable names cannot start for a number.
+
+07:28.860 --> 07:33.120
+They also can't start with certain symbols and these symbols are in notes that it's usually pretty obvious
+
+07:33.120 --> 07:33.890
+stuff.
+
+07:33.930 --> 07:36.270
+Anything that's a shift on a number.
+
+07:36.330 --> 07:40.920
+So you can't start it with basically any of these symbols right here otherwise you'll mess up the variable
+
+07:40.920 --> 07:41.640
+name.
+
+07:42.060 --> 07:42.660
+OK.
+
+07:42.900 --> 07:51.360
+Now let's walk through a very quick example of using object names for table assignment want to do a
+
+07:51.360 --> 08:03.180
+very simple example with my income equal to 100 will say my tax rate is equal to 0.1 my taxes is equal
+
+08:03.180 --> 08:05.070
+to my income.
+
+08:05.070 --> 08:14.760
+And we can see here and being helped out multiplied by tax rate and then I'm going to print my taxes.
+
+08:14.870 --> 08:16.010
+We'll save that.
+
+08:16.010 --> 08:19.280
+So what we get when we run the script I get ten point zero.
+
+08:19.280 --> 08:21.410
+So notice I'm getting a floating point number.
+
+08:21.560 --> 08:23.250
+The first number wasn't integer.
+
+08:23.270 --> 08:25.420
+Second number was a floating point number.
+
+08:25.430 --> 08:29.800
+When I multiply them together Python automatically makes the result a floating point number.
+
+08:30.190 --> 08:30.600
+OK.
+
+08:30.710 --> 08:33.460
+That's really all we need to know about numbers and variable assignments for now.
+
+08:33.530 --> 08:35.150
+Hopefully it is pretty straightforward.
+
+08:35.150 --> 08:36.620
+Thanks and I'll see at the next lecture.
